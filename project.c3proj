@@ -13,12 +13,44 @@
 			"author": "Scirra",
 			"version": "r219.2",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r219.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r219.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r219.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "w8tr8k4u1cf",
 	"objectTypes": {
 		"items": [
-			"Sprite"
+			"Play",
+			"Title",
+			"Background",
+			"Mouse",
+			"Keyboard",
+			"Sprite3",
+			"Load",
+			"settings",
+			"Button"
 		],
 		"subfolders": []
 	},
@@ -30,13 +62,16 @@
 	},
 	"layouts": {
 		"items": [
+			"Title",
 			"Layout 1"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"eTitle",
+			"Event sheet 2"
 		],
 		"subfolders": []
 	},
