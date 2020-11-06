@@ -1,0 +1,57 @@
+{
+	"name": "SaveAndExit",
+	"plugin-id": "Sprite",
+	"sid": 799128848158208,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 342,
+						"height": 208,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4013423,
+						"collisionPoly": {
+							"points": [
+								0.15789473684210525,
+								0.25961538461538464,
+								0.5,
+								0.1875,
+								0.7865497076023392,
+								0.34615384615384615,
+								0.7251461988304093,
+								0.5,
+								0.7222222222222222,
+								0.5432692307692307,
+								0.5,
+								0.7403846153846154,
+								0.23391812865497075,
+								0.6105769230769231,
+								0.23976608187134502,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 903474458628869,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

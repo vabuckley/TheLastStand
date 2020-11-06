@@ -45,7 +45,8 @@
 			"ReturnIcon",
 			"Back",
 			"Save",
-			"Sprite5"
+			"Sprite5",
+			"SaveAndExit"
 		],
 		"subfolders": []
 	},
