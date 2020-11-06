@@ -45,6 +45,22 @@
 					"parameters": {
 						"object": "Load"
 					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 932237350674080,
+					"parameters": {
+						"object": "Save"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 593643881100260,
+					"parameters": {
+						"object": "ReturnIcon"
+					}
 				}
 			],
 			"actions": [

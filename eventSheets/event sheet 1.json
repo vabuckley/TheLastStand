@@ -19,9 +19,9 @@
 				{
 					"id": "go-to-layout-by-name",
 					"objectClass": "System",
-					"sid": 337689679011103,
+					"sid": 300768709365160,
 					"parameters": {
-						"layout": "\"Settings\""
+						"layout": "\"SettingSave\""
 					}
 				}
 			],

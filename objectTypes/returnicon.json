@@ -1,7 +1,7 @@
 {
-	"name": "settings",
+	"name": "ReturnIcon",
 	"plugin-id": "Sprite",
-	"sid": 524704856402616,
+	"sid": 709692988128454,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,13 +18,33 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 435860,
+						"imageSpriteId": 7298123,
+						"collisionPoly": {
+							"points": [
+								0.162109375,
+								0.162109375,
+								0.5,
+								0.3203125,
+								0.677734375,
+								0.3203125,
+								0.974609375,
+								0.5,
+								0.86328125,
+								0.86328125,
+								0.5,
+								0.9140625,
+								0.0859375,
+								0.912109375,
+								0.109375,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 406129377652507,
-				"name": "Default",
+				"sid": 692275490169939,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
