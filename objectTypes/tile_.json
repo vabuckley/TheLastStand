@@ -1,7 +1,7 @@
 {
-	"name": "Sprite",
+	"name": "Tile_",
 	"plugin-id": "Sprite",
-	"sid": 946986538817703,
+	"sid": 769385910286605,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 576,
-						"height": 324,
+						"width": 32,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5764805,
+						"imageSpriteId": 4509738,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 521306084513840,
+				"sid": 589321657161364,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

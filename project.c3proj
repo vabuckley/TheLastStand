@@ -46,7 +46,19 @@
 			"Back",
 			"Save",
 			"Sprite5",
-			"SaveAndExit"
+			"SaveAndExit",
+			"Sprite",
+			"Sprite2",
+			"Tile_",
+			"Tile_2",
+			"Tile_3",
+			"Tile_4",
+			"Tile_5",
+			"Tile_6",
+			"Tile_7",
+			"Tile_8",
+			"Tile_9",
+			"Tile_10"
 		],
 		"subfolders": []
 	},
@@ -60,7 +72,8 @@
 		"items": [
 			"Title",
 			"Layout 1",
-			"SettingSave"
+			"SettingSave",
+			"ForestChamber"
 		],
 		"subfolders": []
 	},
@@ -68,7 +81,8 @@
 		"items": [
 			"Event sheet 1",
 			"eTitle",
-			"eSettingSave"
+			"eSettingSave",
+			"eForestChamber"
 		],
 		"subfolders": []
 	},
