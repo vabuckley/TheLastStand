@@ -1,5 +1,19 @@
 {
 	"name": "River Chamber",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Sprite19",
+					"sid": 601227197799030,
+					"behaviorType": "8Direction"
+				}
+			],
+			"actions": [],
+			"sid": 402149921992990
+		}
+	],
 	"sid": 434592628913255
 }

@@ -45,6 +45,14 @@
 			"author": "Scirra",
 			"version": "r219.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r219.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "w8tr8k4u1cf",
@@ -91,7 +99,8 @@
 			"Sprite15",
 			"Sprite16",
 			"Sprite17",
-			"Sprite18"
+			"Sprite18",
+			"Sprite19"
 		],
 		"subfolders": []
 	},
