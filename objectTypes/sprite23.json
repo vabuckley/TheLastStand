@@ -1,7 +1,7 @@
 {
-	"name": "Sprite20",
+	"name": "Sprite23",
 	"plugin-id": "Sprite",
-	"sid": 999487797682435,
+	"sid": 246121498175392,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5471243,
+						"imageSpriteId": 7415910,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -43,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 590749499725314,
+				"sid": 671831851562006,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

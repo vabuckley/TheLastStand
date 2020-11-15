@@ -53,6 +53,14 @@
 			"author": "Scirra",
 			"version": "r219.2",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "stretch",
+			"name": "Stretch",
+			"author": "Brad Larson",
+			"version": "r219.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "w8tr8k4u1cf",
@@ -100,7 +108,34 @@
 			"Sprite16",
 			"Sprite17",
 			"Sprite18",
-			"Sprite19"
+			"Sprite19",
+			"Sprite20",
+			"Sprite21",
+			"Sprite22",
+			"Sprite23",
+			"TiledBackground3",
+			"TiledBackground4",
+			"Sprite24",
+			"Sprite25",
+			"Sprite26",
+			"Sprite27",
+			"Sprite28",
+			"Sprite29",
+			"TiledBackground5",
+			"Sprite30",
+			"Sprite31",
+			"TiledBackground6",
+			"Sprite32",
+			"Sprite33",
+			"Sprite34",
+			"Sprite35",
+			"Sprite36",
+			"Sprite37",
+			"Sprite38",
+			"Sprite39",
+			"Sprite40",
+			"Sprite41",
+			"Sprite42"
 		],
 		"subfolders": []
 	},
@@ -116,7 +151,8 @@
 			"Layout 1",
 			"SettingSave",
 			"ForestChamber",
-			"River Chamber"
+			"River Chamber",
+			"Inventory"
 		],
 		"subfolders": []
 	},
@@ -126,7 +162,8 @@
 			"eTitle",
 			"eSettingSave",
 			"eForestChamber",
-			"River Chamber"
+			"River Chamber",
+			"Inventory"
 		],
 		"subfolders": []
 	},

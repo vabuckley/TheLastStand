@@ -1,49 +1,51 @@
 {
-	"name": "Sprite20",
+	"name": "Sprite25",
 	"plugin-id": "Sprite",
-	"sid": 999487797682435,
+	"sid": 301348807863619,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 184595185468636
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 132,
-						"height": 128,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 59,
+						"height": 91,
+						"originX": 3.3813559322033897,
+						"originY": 0.6098901098901099,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5471243,
+						"imageSpriteId": 4553318,
 						"collisionPoly": {
 							"points": [
 								0,
 								0,
-								0.5,
+								1,
 								0,
-								0.9924242424242424,
+								1,
+								0.6098901098901099,
+								1,
+								1,
 								0,
-								0.9924242424242424,
-								0.5,
-								0.9924242424242424,
-								0.9921875,
-								0.5,
-								0.9921875,
+								1,
 								0,
-								0.9921875,
-								0,
-								0.5
+								0.6098901098901099
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 590749499725314,
+				"sid": 441904342072205,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
