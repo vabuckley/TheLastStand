@@ -93,7 +93,6 @@
 			"Tile_10",
 			"TiledBackground",
 			"TiledBackground2",
-			"Tilemap",
 			"Sprite4",
 			"Sprite6",
 			"Sprite7",
@@ -135,7 +134,12 @@
 			"Sprite39",
 			"Sprite40",
 			"Sprite41",
-			"Sprite42"
+			"Sprite42",
+			"Tilemap2",
+			"Tilemap",
+			"foliagePack_",
+			"Sprite43",
+			"foliagePack_2"
 		],
 		"subfolders": []
 	},
