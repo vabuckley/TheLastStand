@@ -2044,35 +2044,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 54,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 512,
-						"y": 352,
-						"width": 32,
-						"height": 96.00000000000001,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "foliagePack_",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 55,
 					"instanceVariables": {},
 					"behaviors": {},
@@ -2131,41 +2102,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 57,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 480,
-						"y": 416,
-						"width": 64,
-						"height": 96,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "foliagePack_2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 58,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 608,
-						"y": 352,
+						"x": 576,
+						"y": 320,
 						"width": 64,
 						"height": 96,
 						"originX": 0.5,
@@ -8573,7 +8515,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 320,
+						"x": 384,
 						"y": 352,
 						"width": 32,
 						"height": 96.00000000000001,
@@ -13266,6 +13208,52 @@
 						],
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Sprite19",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Walking",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 490,
+					"instanceVariables": {},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 768,
+						"y": 320,
+						"width": 63,
+						"height": 97,
+						"originX": 0.5873015873015873,
+						"originY": 0.5463917525773195,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 686190088964859,
@@ -13296,8 +13284,8 @@
 	"sid": 832449677972735,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
-	"unboundedScrolling": false,
+	"width": 720,
+	"height": 480,
+	"unboundedScrolling": true,
 	"eventSheet": "eForestChamber"
 }

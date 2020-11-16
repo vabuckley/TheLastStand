@@ -3,75 +3,39 @@
 	"events": [
 		{
 			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 639676923454663
+		},
+		{
+			"eventType": "block",
 			"conditions": [
 				{
-					"id": "key-is-down",
+					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 242987469399479,
-					"parameters": {
-						"key": 37
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 321089403538599,
+					"sid": 366642091418364,
 					"parameters": {
 						"key": 39
 					}
 				},
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 787304456281214,
-					"parameters": {
-						"key": 40
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 237464006384781,
-					"parameters": {
-						"key": 38
-					}
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 558030776402308
 				}
 			],
 			"actions": [
 				{
-					"id": "scroll-to-x",
-					"objectClass": "System",
-					"sid": 192050882191334,
+					"id": "set-animation",
+					"objectClass": "Sprite19",
+					"sid": 733031579607802,
 					"parameters": {
-						"x": "scrollx -2"
-					}
-				},
-				{
-					"id": "scroll-to-x",
-					"objectClass": "System",
-					"sid": 392101551088776,
-					"parameters": {
-						"x": "scrollx+2"
-					}
-				},
-				{
-					"id": "scroll-to-y",
-					"objectClass": "System",
-					"sid": 794754055947120,
-					"parameters": {
-						"y": "scrolly-2"
-					}
-				},
-				{
-					"id": "scroll-to-y",
-					"objectClass": "System",
-					"sid": 323235484788516,
-					"parameters": {
-						"y": "scrolly+2"
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
 					}
 				}
 			],
-			"sid": 954881820446039
+			"sid": 846489622014705
 		}
 	],
 	"sid": 247304593041462

@@ -55,6 +55,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r219.2",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "stretch",
 			"name": "Stretch",
@@ -166,7 +174,7 @@
 			"eTitle",
 			"eSettingSave",
 			"eForestChamber",
-			"River Chamber",
+			"eRiver Chamber",
 			"Inventory"
 		],
 		"subfolders": []
