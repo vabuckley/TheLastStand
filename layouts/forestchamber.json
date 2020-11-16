@@ -13136,7 +13136,7 @@
 							"height": 30,
 							"max-width": 53,
 							"max-height": 30,
-							"data": "10x0,2,4x12,22,24x0,2,4x12,22,24x0,2,4x12,22,24x0,2,4x12,22,24x0,2,4x12,22,24x0,2,4x12,22,17x0,1,6x11,26,4x12,6,4x11,21,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,6,2x11,10x0,2,19x12,10x0,2,19x12,10x0,2,15x12,4,3x13,10x0,2,15x12,22,13x0,2,15x12,22,13x0,3,15x13,23,640x0"
+							"data": "10x0,2,4x12,22,24x0,2,4x12,22,24x0,2,4x12,22,24x0,2,4x12,22,24x0,2,4x12,22,24x0,2,4x12,22,17x0,1,6x11,26,4x12,6,4x11,21,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,22,12x0,2,16x12,6,6x11,21,5x0,2,23x12,22,5x0,2,23x12,22,5x0,2,15x12,4,5x13,24,12,22,5x0,2,15x12,22,5x0,2,12,22,5x0,2,15x12,22,5x0,2,12,22,5x0,3,5x13,24,2x12,4,6x13,23,5x0,2,12,22,11x0,2,2x12,22,12x0,2,12,22,11x0,2,2x12,22,12x0,2,12,22,11x0,2,2x12,22,12x0,2,12,22,11x0,2,2x12,22,7x0,1,4x11,26,12,6,11,21,9x0,2,2x12,22,7x0,2,8x12,22,9x0,2,2x12,22,7x0,2,8x12,22,9x0,2,2x12,6,3x11,21,3x0,2,8x12,22,3x0,1,5x11,26,6x12,22,3x0,2,8x12,22,3x0,2,12x12,22,3x0,2,8x12,22,3x0,2,12x12,22,3x0,2,8x12,22,3x0,2,12x12,22,3x0,2,8x12,22,3x0,2,12x12,22,3x0,2,8x12,22,3x0,2,12x12,22,3x0,3,8x13,23,3x0,3,12x13,23,223x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -13210,15 +13210,53 @@
 					}
 				},
 				{
-					"type": "Sprite19",
+					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Walking",
+						"initial-animation": "Idle_Down",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 490,
+					"uid": 54,
+					"instanceVariables": {
+						"Walking": false,
+						"Direction": "Down"
+					},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 160,
+						"y": 384,
+						"width": 20.181984540673895,
+						"height": 23.065125189341593,
+						"originX": 0.5,
+						"originY": 0.4375,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.277535649776002,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player_Base",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 491,
 					"instanceVariables": {},
 					"behaviors": {
 						"8Direction": {
@@ -13228,23 +13266,18 @@
 								"deceleration": 500,
 								"directions": "dir-8",
 								"set-angle": "no",
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"ScrollTo": {
-							"properties": {
+								"default-controls": false,
 								"enabled": true
 							}
 						}
 					},
 					"world": {
-						"x": 768,
+						"x": 256,
 						"y": 320,
-						"width": 63,
-						"height": 97,
-						"originX": 0.5873015873015873,
-						"originY": 0.5463917525773195,
+						"width": 17.4928556845359,
+						"height": 17.4928556845359,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

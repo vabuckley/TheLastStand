@@ -147,7 +147,9 @@
 			"Tilemap",
 			"foliagePack_",
 			"Sprite43",
-			"foliagePack_2"
+			"foliagePack_2",
+			"Player",
+			"Player_Base"
 		],
 		"subfolders": []
 	},
@@ -164,7 +166,8 @@
 			"SettingSave",
 			"ForestChamber",
 			"River Chamber",
-			"Inventory"
+			"Inventory",
+			"ObjectBank"
 		],
 		"subfolders": []
 	},
