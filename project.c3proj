@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 21902,
+	"savedWithRelease": 22500,
 	"name": "The Last Stand",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -8,10 +8,10 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "Keyboard",
+			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r219.2",
+			"version": "r225",
 			"bundled": false
 		},
 		{
@@ -19,23 +19,31 @@
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
-			"version": "r219.2",
+			"version": "r225",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Keyboard",
+			"id": "LocalStorage",
+			"name": "Local storage",
 			"author": "Scirra",
-			"version": "r219.2",
+			"version": "r225",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "Dictionary",
+			"name": "Dictionary",
 			"author": "Scirra",
-			"version": "r219.2",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r225",
 			"bundled": false
 		},
 		{
@@ -43,15 +51,15 @@
 			"id": "Tilemap",
 			"name": "Tilemap",
 			"author": "Scirra",
-			"version": "r219.2",
+			"version": "r225",
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "EightDir",
-			"name": "8 Direction",
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
 			"author": "Scirra",
-			"version": "r219.2",
+			"version": "r225",
 			"bundled": false
 		},
 		{
@@ -59,7 +67,15 @@
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
-			"version": "r219.2",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r225",
 			"bundled": false
 		},
 		{
@@ -67,28 +83,14 @@
 			"id": "stretch",
 			"name": "Stretch",
 			"author": "Brad Larson",
-			"version": "r219.2",
+			"version": "r225",
 			"bundled": false
 		}
 	],
 	"uniqueId": "w8tr8k4u1cf",
 	"objectTypes": {
 		"items": [
-			"Play",
-			"Title",
-			"Background",
-			"Mouse",
-			"Keyboard",
-			"Sprite3",
-			"Load",
-			"settings",
-			"ReturnIcon",
-			"Back",
-			"Save",
 			"Sprite5",
-			"SaveAndExit",
-			"Sprite",
-			"Sprite2",
 			"TiledBackground",
 			"TiledBackground2",
 			"Sprite4",
@@ -133,16 +135,60 @@
 			"Sprite40",
 			"Sprite41",
 			"Sprite42",
-			"Tilemap",
-			"foliagePack_",
-			"Sprite43",
-			"foliagePack_2",
-			"Player",
-			"Player_Base",
-			"Tilemap2",
-			"Tilemap3"
+			"Sprite43"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Keyboard",
+					"Mouse",
+					"LocalStorage",
+					"Dictionary"
+				],
+				"subfolders": [],
+				"name": "System"
+			},
+			{
+				"items": [
+					"Player",
+					"Player_Base"
+				],
+				"subfolders": [],
+				"name": "Player"
+			},
+			{
+				"items": [
+					"Background",
+					"foliagePack_",
+					"foliagePack_2"
+				],
+				"subfolders": [],
+				"name": "Backgrounds"
+			},
+			{
+				"items": [
+					"Back",
+					"Load",
+					"Play",
+					"ReturnIcon",
+					"Save",
+					"SaveAndExit",
+					"settings",
+					"Title"
+				],
+				"subfolders": [],
+				"name": "Objects/Icons"
+			},
+			{
+				"items": [
+					"Tilemap",
+					"Tilemap2",
+					"Tilemap3"
+				],
+				"subfolders": [],
+				"name": "TileSets"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
