@@ -1,50 +1,12 @@
 {
-	"name": "ObjectBank",
+	"name": "Layout 1",
 	"layers": [
 		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Player",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Idle_Down",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 57,
-					"instanceVariables": {
-						"Walking": false,
-						"Direction": "Down"
-					},
-					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 69,
-						"y": 50,
-						"width": 20.181984540673895,
-						"height": 23.065125189341593,
-						"originX": 0.5,
-						"originY": 0.4375,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.277535649776002,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Player_Base",
+					"type": "Sprite3",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -52,26 +14,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 490,
+					"uid": 8,
 					"instanceVariables": {},
-					"behaviors": {
-						"8Direction": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"default-controls": true,
-								"enabled": true
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 37,
-						"y": 51,
-						"width": 17.4928556845359,
-						"height": 17.4928556845359,
+						"x": 428,
+						"y": 258,
+						"width": 377,
+						"height": 380,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -85,7 +35,7 @@
 					}
 				}
 			],
-			"sid": 655590328146873,
+			"sid": 402976687910582,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -108,13 +58,71 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"global": false
+		},
+		{
+			"name": "HUD",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "settings",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 50.82216784674258,
+						"y": 43.9335849952947,
+						"width": 64.963335064269,
+						"height": 64.4528176963769,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 237450117379526,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": true
 		}
 	],
-	"sid": 154327177812791,
+	"sid": 818612160322332,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1708,
 	"height": 960,
 	"unboundedScrolling": false,
-	"eventSheet": null
+	"eventSheet": "Event sheet 1"
 }

@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 22500,
+	"savedWithRelease": 21902,
 	"name": "The Last Stand",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,31 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r225",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Dictionary",
-			"name": "Dictionary",
-			"author": "Scirra",
-			"version": "r225",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Keyboard",
-			"author": "Scirra",
-			"version": "r225",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "LocalStorage",
-			"name": "Local storage",
-			"author": "Scirra",
-			"version": "r225",
+			"version": "r219.2",
 			"bundled": false
 		},
 		{
@@ -43,7 +19,15 @@
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r219.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r219.2",
 			"bundled": false
 		},
 		{
@@ -51,7 +35,7 @@
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r219.2",
 			"bundled": false
 		},
 		{
@@ -59,23 +43,7 @@
 			"id": "Tilemap",
 			"name": "Tilemap",
 			"author": "Scirra",
-			"version": "r225",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
-			"author": "Scirra",
-			"version": "r225",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"version": "r225",
+			"version": "r219.2",
 			"bundled": false
 		},
 		{
@@ -83,23 +51,15 @@
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r219.2",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "bound",
-			"name": "Bound to layout",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
-			"version": "r225",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
-			"author": "Scirra",
-			"version": "r225",
+			"version": "r219.2",
 			"bundled": false
 		},
 		{
@@ -107,15 +67,26 @@
 			"id": "stretch",
 			"name": "Stretch",
 			"author": "Brad Larson",
-			"version": "r225",
+			"version": "r219.2",
 			"bundled": false
 		}
 	],
 	"uniqueId": "w8tr8k4u1cf",
 	"objectTypes": {
 		"items": [
+			"Play",
 			"Title",
+			"Background",
+			"Mouse",
+			"Keyboard",
+			"Sprite3",
+			"Load",
+			"settings",
+			"ReturnIcon",
+			"Back",
+			"Save",
 			"Sprite5",
+			"SaveAndExit",
 			"Sprite",
 			"Sprite2",
 			"TiledBackground",
@@ -163,70 +134,15 @@
 			"Sprite41",
 			"Sprite42",
 			"Tilemap",
+			"foliagePack_",
 			"Sprite43",
+			"foliagePack_2",
+			"Player",
+			"Player_Base",
 			"Tilemap2",
-			"Tilemap3",
-			"Tilemap4",
-			"Sprite44",
-			"Text",
-			"TiledBackground7",
-			"Sprite45",
-			"Sprite46"
+			"Tilemap3"
 		],
-		"subfolders": [
-			{
-				"items": [
-					"Player",
-					"Player_Base"
-				],
-				"subfolders": [],
-				"name": "Player"
-			},
-			{
-				"items": [
-					"Dictionary",
-					"Keyboard",
-					"LocalStorage",
-					"Mouse"
-				],
-				"subfolders": [],
-				"name": "System"
-			},
-			{
-				"items": [
-					"book",
-					"Back",
-					"Load",
-					"Play",
-					"removebutton",
-					"ReturnIcon",
-					"Save",
-					"SaveAndExit",
-					"settings"
-				],
-				"subfolders": [],
-				"name": "Icons/Buttons"
-			},
-			{
-				"items": [
-					"Background",
-					"foliagePack_",
-					"foliagePack_2"
-				],
-				"subfolders": [],
-				"name": "Backgrounds"
-			},
-			{
-				"items": [
-					"Health",
-					"Hunger",
-					"Hydration",
-					"HUD"
-				],
-				"subfolders": [],
-				"name": "HUD"
-			}
-		]
+		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],
@@ -237,13 +153,12 @@
 	"layouts": {
 		"items": [
 			"Title",
+			"Layout 1",
 			"SettingSave",
+			"ForestChamber",
 			"River Chamber",
 			"Inventory",
-			"ObjectBank",
-			"ForestChamber",
-			"Journal",
-			"GlobalLayers"
+			"ObjectBank"
 		],
 		"subfolders": []
 	},
@@ -252,10 +167,9 @@
 			"Event sheet 1",
 			"eTitle",
 			"eSettingSave",
-			"player",
+			"eForestChamber",
 			"eRiver Chamber",
-			"Inventory",
-			"main"
+			"Inventory"
 		],
 		"subfolders": []
 	},

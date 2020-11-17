@@ -248,34 +248,6 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"global": false
-		},
-		{
-			"name": "HUD",
-			"overriden": 1,
-			"instances": [],
-			"sid": 951770695154407,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 0,
-			"parallaxY": 0,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"global": false
 		}
 	],
 	"sid": 888696052721053,
@@ -284,5 +256,5 @@
 	"width": 1708,
 	"height": 960,
 	"unboundedScrolling": false,
-	"eventSheet": "main"
+	"eventSheet": "eRiver Chamber"
 }

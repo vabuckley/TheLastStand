@@ -2,6 +2,64 @@
 	"name": "SettingSave",
 	"layers": [
 		{
+			"name": "Background",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Background",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 431.89917083595634,
+						"y": 239.2779890917362,
+						"width": 869.4053515427564,
+						"height": 483.10200499427066,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 331315520574576,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
 			"name": "Save Menu",
 			"overriden": 0,
 			"instances": [
@@ -20,8 +78,37 @@
 					"world": {
 						"x": 463,
 						"y": 251.5,
-						"width": 5071.373359343308,
-						"height": 2700.030803410358,
+						"width": 633.9216699179135,
+						"height": 337.5038504262948,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ReturnIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 35.99059398395997,
+						"y": 34.99059398395997,
+						"width": 48.73253204839137,
+						"height": 48.73253204839137,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

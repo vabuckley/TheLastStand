@@ -148,14 +148,7 @@
 		}
 	],
 	"sid": 117921322834614,
-	"nonworld-instances": [
-		{
-			"type": "Dictionary",
-			"properties": {},
-			"uid": 299,
-			"instanceVariables": {}
-		}
-	],
+	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1708,
 	"height": 960,
