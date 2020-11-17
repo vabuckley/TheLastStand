@@ -27,8 +27,8 @@
 						}
 					},
 					"world": {
-						"x": 69,
-						"y": 50,
+						"x": 74,
+						"y": 49,
 						"width": 20.181984540673895,
 						"height": 23.065125189341593,
 						"originX": 0.5,
@@ -72,6 +72,64 @@
 						"y": 51,
 						"width": 17.4928556845359,
 						"height": 17.4928556845359,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "InventoryGrid",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 298,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 114,
+						"y": 23,
+						"width": 130,
+						"height": 130,
+						"originX": -0.023622047244094488,
+						"originY": 0.007751937984496124,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite46",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 496,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 305.5,
+						"y": 52,
+						"width": 35,
+						"height": 35,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
