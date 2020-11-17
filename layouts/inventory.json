@@ -6,6 +6,39 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "TiledBackground6",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 287,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -3,
+						"y": -2,
+						"width": 861,
+						"height": 487,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Sprite32",
 					"properties": {
 						"initially-visible": true,
@@ -296,7 +329,7 @@
 					}
 				},
 				{
-					"type": "InventoryGrid",
+					"type": "Sprite42",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -304,103 +337,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 287,
+					"uid": 298,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 136,
-						"y": 23,
-						"width": 130,
-						"height": 130,
-						"originX": -0.023622047244094488,
-						"originY": 0.007751937984496124,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "InventoryGrid2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 493,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 255,
-						"y": 23,
-						"width": 130,
-						"height": 130,
-						"originX": -0.023622047244094488,
-						"originY": 0.007751937984496124,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "InventoryGrid3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 494,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 136,
-						"y": 140,
-						"width": 130,
-						"height": 130,
-						"originX": -0.023622047244094488,
-						"originY": 0.007751937984496124,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "InventoryGrid4",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 495,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 255,
-						"y": 140,
-						"width": 130,
-						"height": 130,
-						"originX": -0.023622047244094488,
-						"originY": 0.007751937984496124,
+						"x": 182,
+						"y": 114,
+						"width": 56,
+						"height": 57,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

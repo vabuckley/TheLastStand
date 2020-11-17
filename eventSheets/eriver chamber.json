@@ -1,0 +1,79 @@
+{
+	"name": "eRiver Chamber",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Sprite19",
+					"sid": 737517561626502,
+					"behaviorType": "8Direction"
+				}
+			],
+			"actions": [],
+			"sid": 402149921992990
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 517165965286842
+				}
+			],
+			"actions": [],
+			"sid": 317932763834764
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite25",
+					"sid": 125246718282153,
+					"parameters": {
+						"object": "Sprite27"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite27",
+					"sid": 640887430656319,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"stretch\""
+					}
+				}
+			],
+			"sid": 617456551408080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 571613310290340,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite27"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite27",
+					"sid": 203640742559909
+				}
+			],
+			"sid": 635961934811688
+		}
+	],
+	"sid": 434592628913255
+}
