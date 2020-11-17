@@ -1,7 +1,7 @@
 {
-	"name": "Sprite5",
+	"name": "book",
 	"plugin-id": "Sprite",
-	"sid": 309746579198142,
+	"sid": 458983783023695,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 2000,
-						"height": 2000,
+						"width": 512,
+						"height": 512,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2158906,
+						"imageSpriteId": 1184500,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 530172718193522,
-				"name": "Animation 1",
+				"sid": 577098172641169,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

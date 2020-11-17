@@ -17,7 +17,8 @@
 					"uid": 57,
 					"instanceVariables": {
 						"Walking": false,
-						"Direction": "Down"
+						"Direction": "Down",
+						"Journal_Active": false
 					},
 					"behaviors": {
 						"ScrollTo": {
@@ -65,6 +66,11 @@
 								"default-controls": true,
 								"enabled": true
 							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
 						}
 					},
 					"world": {
@@ -72,6 +78,35 @@
 						"y": 51,
 						"width": 17.4928556845359,
 						"height": 17.4928556845359,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ReturnIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 53,
+						"y": 143,
+						"width": 48.73253204839137,
+						"height": 48.73253204839137,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -116,5 +151,5 @@
 	"width": 1708,
 	"height": 960,
 	"unboundedScrolling": false,
-	"eventSheet": null
+	"eventSheet": "main"
 }

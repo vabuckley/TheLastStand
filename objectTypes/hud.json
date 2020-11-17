@@ -1,7 +1,7 @@
 {
-	"name": "ReturnIcon",
+	"name": "HUD",
 	"plugin-id": "Sprite",
-	"sid": 709692988128454,
+	"sid": 937359783783122,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,39 +11,35 @@
 			{
 				"frames": [
 					{
-						"width": 512,
-						"height": 512,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 307,
+						"height": 151,
+						"originX": 0.739413680781759,
+						"originY": 0.076158940397351,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5809040,
+						"imageSpriteId": 6674671,
 						"collisionPoly": {
 							"points": [
-								0.162109375,
-								0.162109375,
-								0.5,
-								0.3203125,
-								0.677734375,
-								0.3203125,
-								0.974609375,
-								0.5,
-								0.86328125,
-								0.86328125,
-								0.5,
-								0.9140625,
-								0.0859375,
-								0.912109375,
-								0.109375,
-								0.5
+								0.05537459283387622,
+								0,
+								0.739413680781759,
+								0,
+								1,
+								0,
+								0.9381107491856677,
+								0,
+								0.739413680781759,
+								0.9801324503311258,
+								0.06188925081433225,
+								0.8609271523178808
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 692275490169939,
+				"sid": 876335696354838,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

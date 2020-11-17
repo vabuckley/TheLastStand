@@ -15,6 +15,12 @@
 			"type": "string",
 			"desc": "",
 			"sid": 110227357679034
+		},
+		{
+			"name": "Journal_Active",
+			"type": "boolean",
+			"desc": "",
+			"sid": 233444901843130
 		}
 	],
 	"behaviorTypes": [

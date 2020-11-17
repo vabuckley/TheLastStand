@@ -15,16 +15,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 647248595500118,
-					"parameters": {
-						"layout": "Layout 1"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 256081217261798
 		},
 		{

@@ -1,12 +1,12 @@
 {
-	"name": "SettingSave",
+	"name": "Journal",
 	"layers": [
 		{
-			"name": "Save Menu",
+			"name": "Journal",
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Sprite5",
+					"type": "Sprite46",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -14,14 +14,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 14,
+					"uid": 498,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 463,
-						"y": 251.5,
-						"width": 5071.373359343308,
-						"height": 2700.030803410358,
+						"x": 418.1420959007702,
+						"y": 240.82492267815962,
+						"width": 662.5990573731322,
+						"height": 349.8706180781086,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -35,22 +35,64 @@
 					}
 				},
 				{
-					"type": "Back",
+					"type": "Text",
+					"properties": {
+						"text": "Water: Clean Source",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 496,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 135,
+						"y": 209,
+						"width": 235,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "removebutton",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 12,
+					"uid": 497,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": 40,
-						"y": 74,
-						"width": 69.00400418356875,
-						"height": 41.029407892932774,
+						"y": 43,
+						"width": 55.12500372166963,
+						"height": 55.12500372166963,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -64,7 +106,7 @@
 					}
 				},
 				{
-					"type": "Save",
+					"type": "Sprite45",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -72,43 +114,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 13,
+					"uid": 495,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 454,
-						"y": 183,
-						"width": 190.15902435975673,
-						"height": 105.91135533961133,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SaveAndExit",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 15,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 457,
-						"y": 307,
-						"width": 226.39926256221443,
-						"height": 137.6931187512883,
+						"x": 252,
+						"y": 151,
+						"width": 268.2483092963852,
+						"height": 56.8099504961489,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -122,7 +135,7 @@
 					}
 				}
 			],
-			"sid": 449378887421455,
+			"sid": 471114674420510,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -137,21 +150,21 @@
 				1,
 				1
 			],
-			"isTransparent": true,
+			"isTransparent": false,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,
 			"blendMode": "normal",
-			"global": false
+			"global": true
 		}
 	],
-	"sid": 389116701233694,
+	"sid": 949386785956118,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1708,
 	"height": 960,
 	"unboundedScrolling": false,
-	"eventSheet": "eSettingSave"
+	"eventSheet": "main"
 }

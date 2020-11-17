@@ -1,0 +1,182 @@
+{
+	"name": "main",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Game_Start",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 591117655109123
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "player"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Save",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 406592554875080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 916305626526773,
+					"parameters": {
+						"variable": "Game_Start",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 487533524747762,
+					"parameters": {
+						"variable": "Game_Start",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 317093741454316
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 156123159058299,
+					"parameters": {
+						"key": "\"Save_Data\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "SaveData_SetDefault",
+					"sid": 567494648531515
+				}
+			],
+			"sid": 749588238296313
+		},
+		{
+			"functionName": "SaveData_SetDefault",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 872641304333805,
+					"parameters": {
+						"key": "\"Max Health\"",
+						"value": "20"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 464249977600843,
+					"parameters": {
+						"key": "\"Heath\"",
+						"value": "Self.Get(\"Max Health\")"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 189296867533392,
+					"parameters": {
+						"key": "\"Hunger\"",
+						"value": "5"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 960116732492500,
+					"parameters": {
+						"key": "\"Hydration\"",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 792516275036683
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 415062688191939,
+					"parameters": {
+						"key": "\"Save_Data\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 153194837395407,
+					"parameters": {
+						"key": "\"Save_Data\""
+					}
+				}
+			],
+			"sid": 100987879113088
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 329939939313604,
+					"parameters": {
+						"key": "\"Save_Data\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "Dictionary",
+					"sid": 841935733888674,
+					"parameters": {
+						"json": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 410654573827586
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "HUD",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 172767453917507
+		}
+	],
+	"sid": 591690386458870
+}
