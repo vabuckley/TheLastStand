@@ -174,7 +174,10 @@
 					"Save",
 					"SaveAndExit",
 					"settings",
-					"Title"
+					"Title",
+					"Fire",
+					"book",
+					"removebutton"
 				],
 				"subfolders": [],
 				"name": "Objects/Icons"
@@ -187,6 +190,16 @@
 				],
 				"subfolders": [],
 				"name": "TileSets"
+			},
+			{
+				"items": [
+					"Hud",
+					"Health",
+					"Hunger",
+					"Hydration"
+				],
+				"subfolders": [],
+				"name": "HUD"
 			}
 		]
 	},
@@ -199,12 +212,12 @@
 	"layouts": {
 		"items": [
 			"Title",
-			"Layout 1",
 			"SettingSave",
 			"ForestChamber",
 			"River Chamber",
 			"Inventory",
-			"ObjectBank"
+			"ObjectBank",
+			"GlobalLayers"
 		],
 		"subfolders": []
 	},
