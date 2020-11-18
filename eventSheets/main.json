@@ -1,0 +1,265 @@
+{
+	"name": "Main",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Game_Start",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 329706414212535
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Player"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cursor Options",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 712865978539076,
+							"parameters": {
+								"object": "SaveAndExit"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 714247059481398,
+							"parameters": {
+								"object": "ReturnIcon"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 214009699739507,
+							"parameters": {
+								"object": "Play"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 737042431689352,
+							"parameters": {
+								"object": "Load"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 882072199731124,
+							"parameters": {
+								"object": "Save"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 830923016885305,
+							"parameters": {
+								"object": "ReturnIcon"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 321434151255978,
+							"parameters": {
+								"cursor-style": "hand"
+							}
+						}
+					],
+					"sid": 888021463125952,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 494108503104394
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 594945886438239,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						}
+					],
+					"sid": 731247915577693,
+					"isOrBlock": true
+				}
+			],
+			"sid": 832662893525225
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Save Data",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 895603540839116,
+							"parameters": {
+								"variable": "Game_Start",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 553349525373952,
+							"parameters": {
+								"variable": "Game_Start",
+								"value": "1"
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 896573437486292,
+							"parameters": {
+								"key": "\"Save_Data\""
+							}
+						}
+					],
+					"sid": 949939903365585
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 658698846274442,
+							"parameters": {
+								"key": "\"Sava_Data\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Save_Data_Set_Default",
+							"sid": 721540994224849
+						}
+					],
+					"sid": 714780665842622
+				}
+			],
+			"sid": 876599449095423
+		},
+		{
+			"functionName": "Save_Data_Set_Default",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 664068100039616,
+					"parameters": {
+						"key": "\"Max Health\"",
+						"value": "20"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 543986322014694,
+					"parameters": {
+						"key": "\"Health\"",
+						"value": "Self.Get(\"Max Health\")"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 337418984463597,
+					"parameters": {
+						"key": "\"Max Health\"",
+						"value": "20"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 270931115601412,
+					"parameters": {
+						"key": "\"Health\"",
+						"value": "Self.Get(\"Max Health\")"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 380699979464736,
+					"parameters": {
+						"key": "\"Max Health\"",
+						"value": "20"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 768021268011613,
+					"parameters": {
+						"key": "\"Health\"",
+						"value": "Self.Get(\"Max Health\")"
+					}
+				}
+			],
+			"sid": 500253572201809
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "HUD",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 611757720807826
+				}
+			],
+			"sid": 121207136385606
+		}
+	],
+	"sid": 829106802608209
+}

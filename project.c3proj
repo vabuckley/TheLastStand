@@ -265,12 +265,9 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
-			"eTitle",
-			"eSettingSave",
-			"eForestChamber",
-			"eRiver Chamber",
-			"Inventory"
+			"Main",
+			"Player",
+			"eRiver Chamber"
 		],
 		"subfolders": []
 	},
