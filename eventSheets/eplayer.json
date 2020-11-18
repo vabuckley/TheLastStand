@@ -538,16 +538,7 @@
 			"children": [
 				{
 					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player",
-							"sid": 337527458314672,
-							"parameters": {
-								"object": "logs"
-							}
-						}
-					],
+					"conditions": [],
 					"actions": [
 						{
 							"id": "set-layer-visible",
