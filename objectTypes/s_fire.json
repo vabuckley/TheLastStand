@@ -1,0 +1,57 @@
+{
+	"name": "S_Fire",
+	"plugin-id": "Sprite",
+	"sid": 374177187132570,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 676,
+						"height": 153,
+						"originX": 0.5428994082840237,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5167053,
+						"collisionPoly": {
+							"points": [
+								0.013313609467455622,
+								0.058823529411764705,
+								0.5428994082840237,
+								0.006535947712418301,
+								0.9970414201183432,
+								0.38562091503267976,
+								0.9970414201183432,
+								0.5,
+								0.9970414201183432,
+								0.6078431372549019,
+								0.5428994082840237,
+								0.9869281045751634,
+								0.013313609467455622,
+								0.934640522875817,
+								0.0014792899408284023,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 641979500689752,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

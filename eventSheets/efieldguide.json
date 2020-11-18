@@ -1,0 +1,53 @@
+{
+	"name": "eFieldGuide",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 816648755055100
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Env_WF_Des",
+					"sid": 661043206993898,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 450040436658878
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 432078258783686,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Env_WF"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Env_WF_Des",
+					"sid": 579173784208439,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 397440756354333
+		}
+	],
+	"sid": 608835146393270
+}

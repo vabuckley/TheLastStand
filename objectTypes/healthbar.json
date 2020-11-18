@@ -1,7 +1,7 @@
 {
-	"name": "Hunger",
+	"name": "HealthBar",
 	"plugin-id": "TiledBg",
-	"sid": 201407161367248,
+	"sid": 204975075554176,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -14,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 9393033,
+		"imageSpriteId": 1629763,
 		"useCollisionPoly": true
 	}
 }

@@ -1,0 +1,57 @@
+{
+	"name": "Env_WF_Des",
+	"plugin-id": "Sprite",
+	"sid": 757760119086293,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 750,
+						"height": 771,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9807694,
+						"collisionPoly": {
+							"points": [
+								0.04933333333333333,
+								0.04798962386511025,
+								0.5,
+								0,
+								0.948,
+								0.04928664072632944,
+								0.996,
+								0.5,
+								0.948,
+								0.9494163424124513,
+								0.5,
+								0.9987029831387808,
+								0.04933333333333333,
+								0.9507133592736705,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 663330081213200,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

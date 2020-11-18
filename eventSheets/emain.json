@@ -1,5 +1,5 @@
 {
-	"name": "Main",
+	"name": "eMain",
 	"events": [
 		{
 			"eventType": "variable",
@@ -13,7 +13,11 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "Player"
+			"includeSheet": "ePlayer"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eFieldGuide"
 		},
 		{
 			"eventType": "group",
@@ -93,21 +97,20 @@
 						{
 							"id": "else",
 							"objectClass": "System",
-							"sid": 494108503104394
+							"sid": 256460555938463
 						}
 					],
 					"actions": [
 						{
 							"id": "set-cursor-style",
 							"objectClass": "Mouse",
-							"sid": 594945886438239,
+							"sid": 801353637017506,
 							"parameters": {
 								"cursor-style": "normal"
 							}
 						}
 					],
-					"sid": 731247915577693,
-					"isOrBlock": true
+					"sid": 240437650969451
 				}
 			],
 			"sid": 832662893525225
@@ -173,6 +176,54 @@
 						}
 					],
 					"sid": 714780665842622
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 200412713981659,
+							"parameters": {
+								"key": "\"Save_Data\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 873071532995475,
+							"parameters": {
+								"key": "\"Save_Data\""
+							}
+						}
+					],
+					"sid": 997653962081011
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 462022692477259,
+							"parameters": {
+								"key": "\"Save_Data\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Dictionary",
+							"sid": 399419819819972,
+							"parameters": {
+								"json": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 716284261640646
 				}
 			],
 			"sid": 876599449095423
@@ -208,36 +259,36 @@
 				{
 					"id": "add-key",
 					"objectClass": "Dictionary",
-					"sid": 337418984463597,
+					"sid": 723348599473047,
 					"parameters": {
-						"key": "\"Max Health\"",
+						"key": "\"Max Nutrition\"",
 						"value": "20"
 					}
 				},
 				{
 					"id": "add-key",
 					"objectClass": "Dictionary",
-					"sid": 270931115601412,
+					"sid": 922124024830137,
 					"parameters": {
-						"key": "\"Health\"",
-						"value": "Self.Get(\"Max Health\")"
+						"key": "\"Nutrition\"",
+						"value": "Self.Get(\"Max Hunger\")"
 					}
 				},
 				{
 					"id": "add-key",
 					"objectClass": "Dictionary",
-					"sid": 380699979464736,
+					"sid": 616203576370178,
 					"parameters": {
-						"key": "\"Max Health\"",
+						"key": "\"Max Hydration\"",
 						"value": "20"
 					}
 				},
 				{
 					"id": "add-key",
 					"objectClass": "Dictionary",
-					"sid": 768021268011613,
+					"sid": 490707952082077,
 					"parameters": {
-						"key": "\"Health\"",
+						"key": "\"Hydration\"",
 						"value": "Self.Get(\"Max Health\")"
 					}
 				}
@@ -259,6 +310,102 @@
 				}
 			],
 			"sid": 121207136385606
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 157981275698947
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "HealthBar",
+					"sid": 649039218894299,
+					"parameters": {
+						"width": "77/Dictionary.Get(\"Max Health\")*Dictionary.Get(\"Health\")"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "NutritionBar",
+					"sid": 760865340977627,
+					"parameters": {
+						"width": "77/Dictionary.Get(\"Max Nutrition\")*Dictionary.Get(\"Nutrition\")"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "HydrationBar",
+					"sid": 850575627927425,
+					"parameters": {
+						"width": "78/Dictionary.Get(\"Max Hydration\")*Dictionary.Get(\"Hydration\")"
+					}
+				}
+			],
+			"sid": 216361229918845
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Field Guide",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "OpenGuide",
+							"sid": 259041962866136
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 678026931641258,
+							"parameters": {
+								"layer": "\"Field Guide\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 652039370201876
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 910850752619290,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "removebutton"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 333055728850976,
+							"parameters": {
+								"layer": "\"Field Guide\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 221134737476141
+				}
+			],
+			"sid": 178142049900453
 		}
 	],
 	"sid": 829106802608209

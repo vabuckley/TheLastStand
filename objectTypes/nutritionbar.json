@@ -1,7 +1,7 @@
 {
-	"name": "Hydration",
+	"name": "NutritionBar",
 	"plugin-id": "TiledBg",
-	"sid": 352130079190714,
+	"sid": 201407161367248,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -14,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 3065668,
+		"imageSpriteId": 9393033,
 		"useCollisionPoly": true
 	}
 }

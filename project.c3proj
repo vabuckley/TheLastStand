@@ -177,7 +177,13 @@
 			"NO1",
 			"DirtButton",
 			"PourButton",
-			"RunButton"
+			"RunButton",
+			"JournalBackground",
+			"H20_Clean",
+			"S_Fire",
+			"Sprite3",
+			"Env_WF",
+			"Env_WF_Des"
 		],
 		"subfolders": [
 			{
@@ -236,9 +242,9 @@
 			{
 				"items": [
 					"Hud",
-					"Health",
-					"Hunger",
-					"Hydration"
+					"HealthBar",
+					"NutritionBar",
+					"HydrationBar"
 				],
 				"subfolders": [],
 				"name": "HUD"
@@ -265,9 +271,10 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Main",
-			"Player",
-			"eRiver Chamber"
+			"eMain",
+			"ePlayer",
+			"eRiver Chamber",
+			"eFieldGuide"
 		],
 		"subfolders": []
 	},
