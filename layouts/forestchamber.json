@@ -13342,7 +13342,7 @@
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
-						"enable-collisions": false,
+						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 499,
@@ -13484,7 +13484,7 @@
 			],
 			"sid": 604719525830308,
 			"effectTypes": [],
-			"isInitiallyVisible": false,
+			"isInitiallyVisible": true,
 			"color": [
 				1,
 				1,
