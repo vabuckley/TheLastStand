@@ -1,0 +1,14 @@
+{
+	"name": "OpenGuide",
+	"plugin-id": "Button",
+	"sid": 954160039906278,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 193982430361176
+		}
+	]
+}

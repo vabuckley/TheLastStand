@@ -1,0 +1,14 @@
+{
+	"name": "SettingsButton",
+	"plugin-id": "Button",
+	"sid": 142970310489129,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 263273323124436
+		}
+	]
+}

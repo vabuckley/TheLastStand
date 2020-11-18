@@ -528,6 +528,41 @@
 				}
 			],
 			"sid": 471889685229618
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Fire Event",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 337527458314672,
+							"parameters": {
+								"object": "logs"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 434975170981605,
+							"parameters": {
+								"layer": "3",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 255106754777511
+				}
+			],
+			"sid": 192554031184551
 		}
 	],
 	"sid": 247304593041462

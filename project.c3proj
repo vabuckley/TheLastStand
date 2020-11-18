@@ -63,6 +63,22 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
@@ -74,6 +90,22 @@
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
@@ -135,7 +167,17 @@
 			"Sprite40",
 			"Sprite41",
 			"Sprite42",
-			"Sprite43"
+			"Sprite43",
+			"logs",
+			"OpenGuide",
+			"SettingsButton",
+			"StartFire",
+			"FireOut",
+			"Yes1",
+			"NO1",
+			"DirtButton",
+			"PourButton",
+			"RunButton"
 		],
 		"subfolders": [
 			{
