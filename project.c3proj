@@ -79,6 +79,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "video",
+			"name": "Video",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
@@ -142,7 +150,9 @@
 			"Env_WF_Des",
 			"Fire",
 			"Sprite",
-			"BarBacking1"
+			"BarBacking1",
+			"Video",
+			"FireStartGIF"
 		],
 		"subfolders": [
 			{
