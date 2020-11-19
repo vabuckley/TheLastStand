@@ -554,6 +554,531 @@
 				}
 			],
 			"sid": 192554031184551
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player/Object Interaction",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 604483469464317,
+							"parameters": {
+								"object": "PositiveCollectibles"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "PositiveCollectibles",
+							"sid": 893441134830987,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "0.5"
+							}
+						},
+						{
+							"callFunction": "PositiveCollectible_Disappear",
+							"sid": 254258065860950,
+							"parameters": [
+								"PositiveCollectibles.UID"
+							]
+						}
+					],
+					"sid": 119826063695683
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 770260401331253,
+							"parameters": {
+								"object": "NegativeCollectibles"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "Player",
+							"sid": 616814207695117,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "0.5"
+							}
+						},
+						{
+							"callFunction": "PlayerHurtHealth",
+							"sid": 396957044116390,
+							"parameters": [
+								"NegativeCollectibles.HealthDamage"
+							]
+						},
+						{
+							"callFunction": "NegativeCollectibles_Disappear",
+							"sid": 657550961292954,
+							"parameters": [
+								"NegativeCollectibles.UID"
+							]
+						}
+					],
+					"sid": 775816924941578
+				},
+				{
+					"functionName": "PositiveCollectible_Disappear",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "collectibleUID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 428100932332613
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 930946579560142,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "PositiveCollectibles",
+									"sid": 107346615358224,
+									"parameters": {
+										"unique-id": "PositiveCollectibles.UID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 134018609162418,
+									"parameters": {
+										"seconds": "0.5"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "PositiveCollectibles",
+									"sid": 913798404510929
+								}
+							],
+							"sid": 496308762032687
+						}
+					]
+				},
+				{
+					"functionName": "NegativeCollectibles_Disappear",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "collectibleUID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 752201432151976
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 567420847595870,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "NegativeCollectibles",
+									"sid": 417360384005038,
+									"parameters": {
+										"unique-id": "NegativeCollectibles.UID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 133583619796132,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "NegativeCollectibles",
+									"sid": 623121068561937
+								}
+							],
+							"sid": 891670869013819
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 746430606276128,
+							"parameters": {
+								"object": "GoodMush"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "PlayerAddNutrition",
+							"sid": 775583269940530,
+							"parameters": [
+								"PositiveCollectibles.AddNutrition"
+							]
+						},
+						{
+							"callFunction": "PlayerAddHealth",
+							"sid": 495806817381334,
+							"parameters": [
+								"PositiveCollectibles.AddHealth"
+							]
+						}
+					],
+					"sid": 209228302661930
+				}
+			],
+			"sid": 553905456655066
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player Functions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "PlayerHurtHealth",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "HealthDamage",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 446389647549272
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 184187810443927,
+							"parameters": {
+								"key": "\"Health\"",
+								"value": "Self.Get(\"Health\")-HealthDamage"
+							}
+						}
+					],
+					"sid": 556958078708417,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "Dictionary",
+									"sid": 458670831591216,
+									"parameters": {
+										"key": "\"Health\"",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 786862890870758
+						}
+					]
+				},
+				{
+					"functionName": "PlayerHurtHydration",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "DepleteHydration",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 779413535069220
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 420199252875745,
+							"parameters": {
+								"key": "\"Hydration\"",
+								"value": "Self.Get(\"Hydration\")-DepleteHydration"
+							}
+						}
+					],
+					"sid": 919154631701661,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "Dictionary",
+									"sid": 582229574633701,
+									"parameters": {
+										"key": "\"Hydration\"",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 709485876555362,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"functionName": "PlayerHurtNutrition",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "DepleteNutrition",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 493028026134417
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 242282460544964,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "Dictionary",
+									"sid": 933610585638273,
+									"parameters": {
+										"key": "\"Nutrition\"",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-key",
+									"objectClass": "Dictionary",
+									"sid": 556153284508426,
+									"parameters": {
+										"key": "\"Nutrition\"",
+										"value": "Self.Get(\"Nutrition\")-DepleteNutrition"
+									}
+								}
+							],
+							"sid": 609081202001374,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"functionName": "PlayerAddHydration",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "AddHydration",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 269927762535622
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 399860226024628,
+							"parameters": {
+								"key": "\"Hydration\"",
+								"value": "Self.Get(\"Hydration\")+AddHydration"
+							}
+						}
+					],
+					"sid": 912429472931806,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "Dictionary",
+									"sid": 442055736165806,
+									"parameters": {
+										"key": "\"Hydration\"",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 670812744987726
+						}
+					]
+				},
+				{
+					"functionName": "PlayerAddHealth",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "AddHealth",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 944608866741314
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 265468206103014,
+							"parameters": {
+								"key": "\"Health\"",
+								"value": "Self.Get(\"Health\")+AddHealth"
+							}
+						}
+					],
+					"sid": 125002317116099,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "Dictionary",
+									"sid": 863584007592290,
+									"parameters": {
+										"key": "\"Health\"",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 436477871424280
+						}
+					]
+				},
+				{
+					"functionName": "PlayerAddNutrition",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "AddNutrition",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 365377002280487
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 500476405309269,
+							"parameters": {
+								"key": "\"Nutrition\"",
+								"value": "Self.Get(\"Nutrition\")+AddNutrition"
+							}
+						}
+					],
+					"sid": 248499532399465,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "Dictionary",
+									"sid": 402608568799773,
+									"parameters": {
+										"key": "\"Nutrition\"",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 451157181934900
+						}
+					]
+				}
+			],
+			"sid": 537633062023978
 		}
 	],
 	"sid": 247304593041462

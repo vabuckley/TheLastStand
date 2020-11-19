@@ -1,0 +1,41 @@
+{
+	"name": "PositiveCollectibles",
+	"plugin-id": "Sprite",
+	"sid": 925051737820178,
+	"instanceVariables": [
+		{
+			"name": "AddHealth",
+			"type": "number",
+			"desc": "",
+			"sid": 332822940801492
+		},
+		{
+			"name": "AddNutrition",
+			"type": "number",
+			"desc": "",
+			"sid": 374765874349722
+		},
+		{
+			"name": "AddHydration",
+			"type": "number",
+			"desc": "",
+			"sid": 177762153353092
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 154160792815861
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 194975907934420
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"GoodMush"
+	]
+}

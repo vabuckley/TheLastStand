@@ -1,0 +1,53 @@
+{
+	"name": "BadMushroom",
+	"plugin-id": "Sprite",
+	"sid": 873926427779751,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 24,
+						"originX": 1.96,
+						"originY": 0.5416666666666666,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 860145,
+						"collisionPoly": {
+							"points": [
+								0.28,
+								0.2916666666666667,
+								1,
+								0.375,
+								1,
+								0.5416666666666666,
+								1,
+								0.6666666666666666,
+								0.28,
+								0.75,
+								0.08,
+								0.5416666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 900414058884167,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

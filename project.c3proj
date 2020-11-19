@@ -88,6 +88,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
@@ -98,6 +106,14 @@
 			"type": "behavior",
 			"id": "Anchor",
 			"name": "Anchor",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
@@ -123,7 +139,8 @@
 			"S_Fire",
 			"Sprite3",
 			"Env_WF",
-			"Env_WF_Des"
+			"Env_WF_Des",
+			"Fire"
 		],
 		"subfolders": [
 			{
@@ -163,12 +180,11 @@
 					"SaveAndExit",
 					"settings",
 					"Title",
-					"Fire",
 					"book",
 					"removebutton"
 				],
 				"subfolders": [],
-				"name": "Objects/Icons"
+				"name": "Icons"
 			},
 			{
 				"items": [
@@ -188,13 +204,36 @@
 				],
 				"subfolders": [],
 				"name": "HUD"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"GoodMush"
+						],
+						"subfolders": [],
+						"name": "Positive"
+					},
+					{
+						"items": [
+							"BadMushroom"
+						],
+						"subfolders": [],
+						"name": "Negative"
+					}
+				],
+				"name": "Positive Collectibles"
 			}
 		]
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"PositiveCollectibles",
+			"NegativeCollectibles"
+		],
 		"subfolders": []
 	},
 	"layouts": {
@@ -211,7 +250,6 @@
 		"items": [
 			"eMain",
 			"ePlayer",
-			"eRiver Chamber",
 			"eFieldGuide"
 		],
 		"subfolders": []

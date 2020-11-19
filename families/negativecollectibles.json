@@ -1,0 +1,29 @@
+{
+	"name": "NegativeCollectibles",
+	"plugin-id": "Sprite",
+	"sid": 168299249758012,
+	"instanceVariables": [
+		{
+			"name": "HealthDamage",
+			"type": "number",
+			"desc": "",
+			"sid": 960992413189292
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 603742980383559
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 659643845674036
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"BadMushroom"
+	]
+}
