@@ -178,6 +178,73 @@
 					"sid": 714780665842622
 				},
 				{
+					"functionName": "Save_Data_Set_Default",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 802420389748903,
+							"parameters": {
+								"key": "\"Max Health\"",
+								"value": "400"
+							}
+						},
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 219386991446169,
+							"parameters": {
+								"key": "\"Health\"",
+								"value": "Self.Get(\"Max Health\")"
+							}
+						},
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 286233552791594,
+							"parameters": {
+								"key": "\"Max Nutrition\"",
+								"value": "20"
+							}
+						},
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 589594439795130,
+							"parameters": {
+								"key": "\"Nutrition\"",
+								"value": "Self.Get(\"Max Nutrition\")"
+							}
+						},
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 982785533884835,
+							"parameters": {
+								"key": "\"Max Hydration\"",
+								"value": "20"
+							}
+						},
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 667779091210964,
+							"parameters": {
+								"key": "\"Hydration\"",
+								"value": "Self.Get(\"Max Hydration\")"
+							}
+						}
+					],
+					"sid": 586541823710396
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -229,73 +296,6 @@
 			"sid": 876599449095423
 		},
 		{
-			"functionName": "Save_Data_Set_Default",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "add-key",
-					"objectClass": "Dictionary",
-					"sid": 664068100039616,
-					"parameters": {
-						"key": "\"Max Health\"",
-						"value": "20"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "Dictionary",
-					"sid": 543986322014694,
-					"parameters": {
-						"key": "\"Health\"",
-						"value": "Self.Get(\"Max Health\")"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "Dictionary",
-					"sid": 723348599473047,
-					"parameters": {
-						"key": "\"Max Nutrition\"",
-						"value": "20"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "Dictionary",
-					"sid": 922124024830137,
-					"parameters": {
-						"key": "\"Nutrition\"",
-						"value": "Self.Get(\"Max Hunger\")"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "Dictionary",
-					"sid": 616203576370178,
-					"parameters": {
-						"key": "\"Max Hydration\"",
-						"value": "20"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "Dictionary",
-					"sid": 490707952082077,
-					"parameters": {
-						"key": "\"Hydration\"",
-						"value": "Self.Get(\"Max Health\")"
-					}
-				}
-			],
-			"sid": 500253572201809
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "HUD",
@@ -324,25 +324,25 @@
 				{
 					"id": "set-width",
 					"objectClass": "HealthBar",
-					"sid": 649039218894299,
+					"sid": 686075251737251,
 					"parameters": {
-						"width": "77/Dictionary.Get(\"Max Health\")*Dictionary.Get(\"Health\")"
+						"width": "80/Dictionary.Get(\"Max Health\")*Dictionary.Get(\"Health\")"
 					}
 				},
 				{
 					"id": "set-width",
 					"objectClass": "NutritionBar",
-					"sid": 760865340977627,
+					"sid": 386116355262977,
 					"parameters": {
-						"width": "77/Dictionary.Get(\"Max Nutrition\")*Dictionary.Get(\"Nutrition\")"
+						"width": "80/Dictionary.Get(\"Max Nutrition\")*Dictionary.Get(\"Nutrition\")"
 					}
 				},
 				{
 					"id": "set-width",
 					"objectClass": "HydrationBar",
-					"sid": 850575627927425,
+					"sid": 519777953643081,
 					"parameters": {
-						"width": "78/Dictionary.Get(\"Max Hydration\")*Dictionary.Get(\"Hydration\")"
+						"width": "80/Dictionary.Get(\"Max Hydration\")*Dictionary.Get(\"Hydration\")"
 					}
 				}
 			],

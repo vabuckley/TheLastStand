@@ -1,7 +1,7 @@
 {
 	"name": "NutritionBar",
 	"plugin-id": "TiledBg",
-	"sid": 201407161367248,
+	"sid": 103573683659943,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -14,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 9393033,
+		"imageSpriteId": 1655008,
 		"useCollisionPoly": true
 	}
 }

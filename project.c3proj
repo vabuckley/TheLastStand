@@ -140,7 +140,9 @@
 			"Sprite3",
 			"Env_WF",
 			"Env_WF_Des",
-			"Fire"
+			"Fire",
+			"Sprite",
+			"BarBacking1"
 		],
 		"subfolders": [
 			{
@@ -199,8 +201,8 @@
 				"items": [
 					"Hud",
 					"HealthBar",
-					"NutritionBar",
-					"HydrationBar"
+					"HydrationBar",
+					"NutritionBar"
 				],
 				"subfolders": [],
 				"name": "HUD"

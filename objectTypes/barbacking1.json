@@ -1,0 +1,37 @@
+{
+	"name": "BarBacking1",
+	"plugin-id": "Sprite",
+	"sid": 471674445313229,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 77,
+						"height": 11,
+						"originX": 1.3506493506493507,
+						"originY": 5.818181818181818,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4903900,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 199060392378280,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
