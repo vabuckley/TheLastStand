@@ -231,13 +231,13 @@
 					},
 					{
 						"items": [
-							"BadMushroom"
+							"BadMush"
 						],
 						"subfolders": [],
 						"name": "Negative"
 					}
 				],
-				"name": "Positive Collectibles"
+				"name": "Collectibles"
 			}
 		]
 	},

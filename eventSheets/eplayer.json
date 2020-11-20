@@ -578,12 +578,12 @@
 						{
 							"id": "flash",
 							"objectClass": "PositiveCollectibles",
-							"sid": 893441134830987,
+							"sid": 107710532778248,
 							"behaviorType": "Flash",
 							"parameters": {
 								"on-time": "0.1",
 								"off-time": "0.1",
-								"duration": "0.5"
+								"duration": "0.3"
 							}
 						},
 						{
@@ -612,12 +612,12 @@
 						{
 							"id": "flash",
 							"objectClass": "Player",
-							"sid": 616814207695117,
+							"sid": 859234465923230,
 							"behaviorType": "Flash",
 							"parameters": {
 								"on-time": "0.1",
 								"off-time": "0.1",
-								"duration": "0.5"
+								"duration": "0.3"
 							}
 						},
 						{
@@ -671,14 +671,6 @@
 							],
 							"actions": [
 								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 533472063130434,
-									"parameters": {
-										"seconds": "0.3"
-									}
-								},
-								{
 									"id": "destroy",
 									"objectClass": "PositiveCollectibles",
 									"sid": 913798404510929
@@ -722,14 +714,6 @@
 							],
 							"actions": [
 								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 133583619796132,
-									"parameters": {
-										"seconds": "0.3"
-									}
-								},
-								{
 									"id": "destroy",
 									"objectClass": "NegativeCollectibles",
 									"sid": 623121068561937
@@ -745,7 +729,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
-							"sid": 746430606276128,
+							"sid": 639682520240178,
 							"parameters": {
 								"object": "GoodMush"
 							}

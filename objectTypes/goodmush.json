@@ -1,7 +1,7 @@
 {
 	"name": "GoodMush",
 	"plugin-id": "Sprite",
-	"sid": 370172388774143,
+	"sid": 954657135374959,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,31 +11,35 @@
 			{
 				"frames": [
 					{
-						"width": 19,
-						"height": 23,
-						"originX": 0.5789473684210525,
-						"originY": 0.6086956521739131,
+						"width": 24,
+						"height": 24,
+						"originX": 2,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7356501,
+						"imageSpriteId": 3461955,
 						"collisionPoly": {
 							"points": [
-								0,
-								0.043478260869565216,
+								0.25,
+								0.25,
 								1,
-								0.043478260869565216,
+								0.3333333333333333,
 								1,
-								0.9565217391304348,
-								0,
-								0.9565217391304348
+								0.5,
+								1,
+								0.625,
+								0.25,
+								0.7083333333333334,
+								0.041666666666666664,
+								0.5
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 978815447378530,
+				"sid": 444439914992827,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
