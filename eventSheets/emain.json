@@ -3,13 +3,13 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "Game_Start",
+			"name": "Game_Initialize",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 329706414212535
+			"sid": 793849306422072
 		},
 		{
 			"eventType": "include",
@@ -128,9 +128,9 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 895603540839116,
+							"sid": 540750149920280,
 							"parameters": {
-								"variable": "Game_Start",
+								"variable": "Game_Initialize",
 								"comparison": 0,
 								"value": "0"
 							}
@@ -140,22 +140,22 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 553349525373952,
+							"sid": 903103498253257,
 							"parameters": {
-								"variable": "Game_Start",
+								"variable": "Game_Initialize",
 								"value": "1"
 							}
 						},
 						{
 							"id": "check-item-exists",
 							"objectClass": "LocalStorage",
-							"sid": 896573437486292,
+							"sid": 192854318735984,
 							"parameters": {
-								"key": "\"Save_Data\""
+								"key": "\"SaveData\""
 							}
 						}
 					],
-					"sid": 949939903365585
+					"sid": 296694707806496
 				},
 				{
 					"eventType": "block",
@@ -163,22 +163,22 @@
 						{
 							"id": "on-item-missing",
 							"objectClass": "LocalStorage",
-							"sid": 658698846274442,
+							"sid": 824391654459491,
 							"parameters": {
-								"key": "\"Sava_Data\""
+								"key": "\"SaveData\""
 							}
 						}
 					],
 					"actions": [
 						{
-							"callFunction": "Save_Data_Set_Default",
-							"sid": 721540994224849
+							"callFunction": "SaveData_SetDefault",
+							"sid": 570651032117166
 						}
 					],
-					"sid": 714780665842622
+					"sid": 755918695956381
 				},
 				{
-					"functionName": "Save_Data_Set_Default",
+					"functionName": "SaveData_SetDefault",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -190,59 +190,59 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 802420389748903,
+							"sid": 507672305590776,
 							"parameters": {
-								"key": "\"Max Health\"",
-								"value": "400"
+								"key": "\"MaxHealth\"",
+								"value": "20"
 							}
 						},
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 219386991446169,
+							"sid": 309912271022022,
 							"parameters": {
 								"key": "\"Health\"",
-								"value": "Self.Get(\"Max Health\")"
+								"value": "Self.Get(\"MaxHealth\")"
 							}
 						},
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 286233552791594,
+							"sid": 305373506851897,
 							"parameters": {
-								"key": "\"Max Nutrition\"",
+								"key": "\"MaxNutrition\"",
 								"value": "20"
 							}
 						},
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 589594439795130,
+							"sid": 722928362828752,
 							"parameters": {
 								"key": "\"Nutrition\"",
-								"value": "Self.Get(\"Max Nutrition\")"
+								"value": "Self.Get(\"MaxNutrition\")"
 							}
 						},
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 982785533884835,
+							"sid": 728072886082581,
 							"parameters": {
-								"key": "\"Max Hydration\"",
+								"key": "\"MaxHydration\"",
 								"value": "20"
 							}
 						},
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 667779091210964,
+							"sid": 231634811545649,
 							"parameters": {
 								"key": "\"Hydration\"",
-								"value": "Self.Get(\"Max Hydration\")"
+								"value": "Self.Get(\"MaxHydration\")"
 							}
 						}
 					],
-					"sid": 586541823710396
+					"sid": 989986725253084
 				},
 				{
 					"eventType": "block",
@@ -250,9 +250,9 @@
 						{
 							"id": "on-item-exists",
 							"objectClass": "LocalStorage",
-							"sid": 200412713981659,
+							"sid": 563416766276450,
 							"parameters": {
-								"key": "\"Save_Data\""
+								"key": "\"SaveData\""
 							}
 						}
 					],
@@ -260,13 +260,13 @@
 						{
 							"id": "get-item",
 							"objectClass": "LocalStorage",
-							"sid": 873071532995475,
+							"sid": 583864290959963,
 							"parameters": {
-								"key": "\"Save_Data\""
+								"key": "\"SaveData\""
 							}
 						}
 					],
-					"sid": 997653962081011
+					"sid": 545041400007611
 				},
 				{
 					"eventType": "block",
@@ -274,9 +274,9 @@
 						{
 							"id": "on-item-get",
 							"objectClass": "LocalStorage",
-							"sid": 462022692477259,
+							"sid": 415587468699017,
 							"parameters": {
-								"key": "\"Save_Data\""
+								"key": "\"SaveData\""
 							}
 						}
 					],
@@ -284,13 +284,13 @@
 						{
 							"id": "load",
 							"objectClass": "Dictionary",
-							"sid": 399419819819972,
+							"sid": 615461700946522,
 							"parameters": {
 								"json": "LocalStorage.ItemValue"
 							}
 						}
 					],
-					"sid": 716284261640646
+					"sid": 777429363783347
 				}
 			],
 			"sid": 876599449095423
@@ -304,9 +304,24 @@
 			"children": [
 				{
 					"eventType": "block",
-					"conditions": [],
-					"actions": [],
-					"sid": 611757720807826
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 905706707177106
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "HealthBar",
+							"sid": 471408013736876,
+							"parameters": {
+								"width": "80/Dictionary.Get(\"MaxHealth\")*Dictionary.Get(\"Health\")"
+							}
+						}
+					],
+					"sid": 785547567607359
 				}
 			],
 			"sid": 121207136385606
@@ -320,32 +335,7 @@
 					"sid": 157981275698947
 				}
 			],
-			"actions": [
-				{
-					"id": "set-width",
-					"objectClass": "HealthBar",
-					"sid": 686075251737251,
-					"parameters": {
-						"width": "80/Dictionary.Get(\"Max Health\")*Dictionary.Get(\"Health\")"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "NutritionBar",
-					"sid": 386116355262977,
-					"parameters": {
-						"width": "80/Dictionary.Get(\"Max Nutrition\")*Dictionary.Get(\"Nutrition\")"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "HydrationBar",
-					"sid": 519777953643081,
-					"parameters": {
-						"width": "80/Dictionary.Get(\"Max Hydration\")*Dictionary.Get(\"Hydration\")"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 216361229918845
 		},
 		{

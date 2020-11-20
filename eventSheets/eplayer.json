@@ -622,14 +622,14 @@
 						},
 						{
 							"callFunction": "PlayerHurtHealth",
-							"sid": 396957044116390,
+							"sid": 855089155366724,
 							"parameters": [
 								"NegativeCollectibles.HealthDamage"
 							]
 						},
 						{
 							"callFunction": "NegativeCollectibles_Disappear",
-							"sid": 657550961292954,
+							"sid": 354988189138264,
 							"parameters": [
 								"NegativeCollectibles.UID"
 							]
@@ -673,9 +673,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 134018609162418,
+									"sid": 533472063130434,
 									"parameters": {
-										"seconds": "0.5"
+										"seconds": "0.3"
 									}
 								},
 								{
@@ -753,17 +753,17 @@
 					],
 					"actions": [
 						{
-							"callFunction": "PlayerAddNutrition",
-							"sid": 775583269940530,
-							"parameters": [
-								"PositiveCollectibles.AddNutrition"
-							]
-						},
-						{
 							"callFunction": "PlayerAddHealth",
 							"sid": 495806817381334,
 							"parameters": [
 								"PositiveCollectibles.AddHealth"
+							]
+						},
+						{
+							"callFunction": "PlayerAddNutrition",
+							"sid": 171913338437157,
+							"parameters": [
+								"PositiveCollectibles.AddNutrition"
 							]
 						}
 					],
@@ -800,10 +800,10 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 184187810443927,
+							"sid": 272455474756601,
 							"parameters": {
 								"key": "\"Health\"",
-								"value": "Self.Get(\"Health\")-HealthDamage"
+								"value": "Self.Get(\"Health\") - HealthDamage"
 							}
 						}
 					],
@@ -815,7 +815,7 @@
 								{
 									"id": "compare-value",
 									"objectClass": "Dictionary",
-									"sid": 458670831591216,
+									"sid": 679220526117071,
 									"parameters": {
 										"key": "\"Health\"",
 										"comparison": 4,
@@ -825,108 +825,6 @@
 							],
 							"actions": [],
 							"sid": 786862890870758
-						}
-					]
-				},
-				{
-					"functionName": "PlayerHurtHydration",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionIsAsync": false,
-					"functionParameters": [
-						{
-							"name": "DepleteHydration",
-							"type": "number",
-							"initialValue": "0",
-							"comment": "",
-							"sid": 779413535069220
-						}
-					],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "add-key",
-							"objectClass": "Dictionary",
-							"sid": 420199252875745,
-							"parameters": {
-								"key": "\"Hydration\"",
-								"value": "Self.Get(\"Hydration\")-DepleteHydration"
-							}
-						}
-					],
-					"sid": 919154631701661,
-					"disabled": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-value",
-									"objectClass": "Dictionary",
-									"sid": 582229574633701,
-									"parameters": {
-										"key": "\"Hydration\"",
-										"comparison": 4,
-										"value": "0"
-									}
-								}
-							],
-							"actions": [],
-							"sid": 709485876555362,
-							"disabled": true
-						}
-					]
-				},
-				{
-					"functionName": "PlayerHurtNutrition",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionIsAsync": false,
-					"functionParameters": [
-						{
-							"name": "DepleteNutrition",
-							"type": "number",
-							"initialValue": "0",
-							"comment": "",
-							"sid": 493028026134417
-						}
-					],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [],
-					"sid": 242282460544964,
-					"disabled": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-value",
-									"objectClass": "Dictionary",
-									"sid": 933610585638273,
-									"parameters": {
-										"key": "\"Nutrition\"",
-										"comparison": 4,
-										"value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "add-key",
-									"objectClass": "Dictionary",
-									"sid": 556153284508426,
-									"parameters": {
-										"key": "\"Nutrition\"",
-										"value": "Self.Get(\"Nutrition\")-DepleteNutrition"
-									}
-								}
-							],
-							"sid": 609081202001374,
-							"disabled": true
 						}
 					]
 				},
@@ -951,10 +849,10 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 399860226024628,
+							"sid": 335987906305153,
 							"parameters": {
 								"key": "\"Hydration\"",
-								"value": "Self.Get(\"Hydration\")+AddHydration"
+								"value": "Self.Get(\"Hydration\") + AddHydration"
 							}
 						}
 					],
@@ -966,7 +864,7 @@
 								{
 									"id": "compare-value",
 									"objectClass": "Dictionary",
-									"sid": 442055736165806,
+									"sid": 998462894688884,
 									"parameters": {
 										"key": "\"Hydration\"",
 										"comparison": 4,
@@ -1000,10 +898,10 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 265468206103014,
+							"sid": 487226068163884,
 							"parameters": {
 								"key": "\"Health\"",
-								"value": "Self.Get(\"Health\")+AddHealth"
+								"value": "Self.Get(\"Health\") + AddHealth"
 							}
 						}
 					],
@@ -1015,7 +913,7 @@
 								{
 									"id": "compare-value",
 									"objectClass": "Dictionary",
-									"sid": 863584007592290,
+									"sid": 484096273899497,
 									"parameters": {
 										"key": "\"Health\"",
 										"comparison": 4,
@@ -1049,7 +947,7 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 500476405309269,
+							"sid": 944014493956202,
 							"parameters": {
 								"key": "\"Nutrition\"",
 								"value": "Self.Get(\"Nutrition\")+AddNutrition"
@@ -1064,7 +962,7 @@
 								{
 									"id": "compare-value",
 									"objectClass": "Dictionary",
-									"sid": 402608568799773,
+									"sid": 673049452114367,
 									"parameters": {
 										"key": "\"Nutrition\"",
 										"comparison": 4,
@@ -1079,6 +977,15 @@
 				}
 			],
 			"sid": 537633062023978
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Collectibles",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 523517853302699
 		}
 	],
 	"sid": 247304593041462

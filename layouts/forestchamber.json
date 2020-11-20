@@ -13270,8 +13270,7 @@
 					"instanceVariables": {
 						"AddHealth": 5,
 						"AddNutrition": 5,
-						"AddHydration": 5,
-						"Nutrition": 5
+						"AddHydration": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -13313,10 +13312,7 @@
 					"uid": 54,
 					"instanceVariables": {
 						"Walking": false,
-						"Direction": "Down",
-						"Health": 20,
-						"Nutrition": 20,
-						"Hydration": 20
+						"Direction": "Down"
 					},
 					"behaviors": {
 						"ScrollTo": {
@@ -13440,8 +13436,7 @@
 					"instanceVariables": {
 						"AddHealth": 5,
 						"AddNutrition": 5,
-						"AddHydration": 5,
-						"Nutrition": 5
+						"AddHydration": 0
 					},
 					"behaviors": {
 						"Flash": {

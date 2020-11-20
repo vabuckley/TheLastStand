@@ -24,16 +24,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "LocalStorage",
-			"name": "Local storage",
+			"id": "Dictionary",
+			"name": "Dictionary",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Dictionary",
-			"name": "Dictionary",
+			"id": "LocalStorage",
+			"name": "Local storage",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
@@ -152,15 +152,17 @@
 			"Sprite",
 			"BarBacking1",
 			"Video",
-			"FireStartGIF"
+			"FireStartGIF",
+			"Sprite2",
+			"Text"
 		],
 		"subfolders": [
 			{
 				"items": [
 					"Keyboard",
 					"Mouse",
-					"LocalStorage",
-					"Dictionary"
+					"Dictionary",
+					"LocalStorage"
 				],
 				"subfolders": [],
 				"name": "System"

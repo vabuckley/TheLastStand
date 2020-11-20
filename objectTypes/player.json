@@ -15,24 +15,6 @@
 			"type": "string",
 			"desc": "",
 			"sid": 110227357679034
-		},
-		{
-			"name": "Health",
-			"type": "number",
-			"desc": "",
-			"sid": 428380078480174
-		},
-		{
-			"name": "Nutrition",
-			"type": "number",
-			"desc": "",
-			"sid": 120421996627073
-		},
-		{
-			"name": "Hydration",
-			"type": "number",
-			"desc": "",
-			"sid": 670124114592577
 		}
 	],
 	"behaviorTypes": [
