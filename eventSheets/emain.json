@@ -35,7 +35,7 @@
 			"eventType": "variable",
 			"name": "SecondsLeft",
 			"type": "number",
-			"initialValue": "59",
+			"initialValue": "900",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -522,9 +522,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "Timer",
-							"sid": 824536380908262,
+							"sid": 680241560412665,
 							"parameters": {
-								"text": "MinutesLeft&colon&SecondsLeft"
+								"text": "\"Seconds Remaining:\"&SecondsLeft"
 							}
 						}
 					],
@@ -543,71 +543,13 @@
 						{
 							"id": "set-text",
 							"objectClass": "Timer",
-							"sid": 353116469642509,
+							"sid": 800661863642114,
 							"parameters": {
-								"text": "MinutesLeft&colon&SecondsLeft"
+								"text": "\"Seconds Remaining:\"&SecondsLeft"
 							}
 						}
 					],
 					"sid": 265171927250361
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 364193665834379,
-							"parameters": {
-								"interval-seconds": "59"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 597936977150319,
-							"parameters": {
-								"variable": "MinutesLeft",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Timer",
-							"sid": 824105729320299,
-							"parameters": {
-								"text": "MinutesLeft&colon&SecondsLeft"
-							}
-						}
-					],
-					"sid": 948564239458989
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 859379628918788,
-							"parameters": {
-								"interval-seconds": "58"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 323169383009797,
-							"parameters": {
-								"variable": "SecondsLeft",
-								"value": "60"
-							}
-						}
-					],
-					"sid": 525298169555805
 				}
 			],
 			"sid": 782109194962514
