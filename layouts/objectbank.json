@@ -356,6 +356,44 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "RunningWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Running Water",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 503,
+					"instanceVariables": {
+						"WaterCount": 0
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 85,
+						"y": 818,
+						"width": 200.03499693803582,
+						"height": 100.01749846901791,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 655590328146873,

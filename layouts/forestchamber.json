@@ -13319,62 +13319,6 @@
 			"global": false
 		},
 		{
-			"name": "HUD",
-			"overriden": 1,
-			"instances": [],
-			"sid": 154893066811787,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 0,
-			"parallaxY": 0,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"global": false
-		},
-		{
-			"name": "Field Guide",
-			"overriden": 1,
-			"instances": [],
-			"sid": 436717817116694,
-			"effectTypes": [],
-			"isInitiallyVisible": false,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 0,
-			"parallaxY": 0,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"global": false
-		},
-		{
 			"name": "Playable Area",
 			"overriden": 0,
 			"instances": [
@@ -13978,6 +13922,44 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "RunningWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Running Water",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 504,
+					"instanceVariables": {
+						"WaterCount": 0
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1279.661316209486,
+						"y": 892.4139566608496,
+						"width": 289.6997431720938,
+						"height": 40.445313002490366,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 686190088964859,
@@ -13998,6 +13980,62 @@
 			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "HUD",
+			"overriden": 1,
+			"instances": [],
+			"sid": 154893066811787,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Field Guide",
+			"overriden": 1,
+			"instances": [],
+			"sid": 436717817116694,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,

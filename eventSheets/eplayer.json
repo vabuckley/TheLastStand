@@ -585,12 +585,23 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
+							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 147297488657633
+							"sid": 258461837045341,
+							"parameters": {
+								"interval-seconds": "5"
+							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"callFunction": "HealthTimerDeplete",
+							"sid": 811163332738624,
+							"parameters": [
+								"80"
+							]
+						}
+					],
 					"sid": 342033377121918
 				}
 			],
@@ -856,6 +867,31 @@
 							"sid": 999531958185518
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 338430864860683,
+							"parameters": {
+								"object": "RunningWater"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "RunningWater",
+							"sid": 510948058225480,
+							"parameters": {
+								"instance-variable": "WaterCount",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 125985157070277
 				}
 			],
 			"sid": 553905456655066
@@ -888,7 +924,7 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 272455474756601,
+							"sid": 835686229480568,
 							"parameters": {
 								"key": "\"Health\"",
 								"value": "Self.Get(\"Health\") - HealthDamage"
@@ -1065,6 +1101,73 @@
 				}
 			],
 			"sid": 537633062023978
+		},
+		{
+			"functionName": "HealthTimerDeplete",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "HealthTimerDeplete",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 751092321416000
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 861560901417575,
+					"parameters": {
+						"key": "\"Health\"",
+						"value": "Self.Get(\"Health\")-1"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 264691065727073,
+					"parameters": {
+						"key": "\"Nutrition\"",
+						"value": "Self.Get(\"Nutrition\")-1"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 182800843281258,
+					"parameters": {
+						"key": "\"Hydration\"",
+						"value": "Self.Get(\"Hydration\")-1"
+					}
+				}
+			],
+			"sid": 728209982071753,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "Dictionary",
+							"sid": 861981034159516,
+							"parameters": {
+								"key": "\"Health\"",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 306987249817350
+				}
+			]
 		}
 	],
 	"sid": 247304593041462

@@ -1,0 +1,102 @@
+{
+	"name": "RunningWater",
+	"plugin-id": "Sprite",
+	"sid": 743610378059569,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "WaterCount",
+			"type": "number",
+			"desc": "",
+			"sid": 202812250391054
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 155050244690408
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5789029,
+						"collisionPoly": {
+							"points": [
+								0,
+								1,
+								0,
+								0.5,
+								0,
+								0.03125,
+								0.5,
+								0.03125,
+								0.984375,
+								0.03125,
+								0.984375,
+								0.5,
+								0.984375,
+								1,
+								0.5,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 2
+					},
+					{
+						"width": 64,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9823469,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0,
+								0.984375,
+								0,
+								0.984375,
+								0.5,
+								0.984375,
+								0.96875,
+								0.5,
+								0.96875,
+								0,
+								0.96875,
+								0,
+								0.5,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 2
+					}
+				],
+				"sid": 673572432046794,
+				"name": "Running Water",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
