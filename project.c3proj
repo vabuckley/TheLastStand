@@ -184,7 +184,8 @@
 			"Sprite10",
 			"BadFirewoodPhoto",
 			"BoilingWaterPhoto",
-			"SmotheredCampfirePhoto"
+			"SmotheredCampfirePhoto",
+			"Timer"
 		],
 		"subfolders": [
 			{

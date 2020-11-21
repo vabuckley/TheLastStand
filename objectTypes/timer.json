@@ -1,0 +1,16 @@
+{
+	"name": "Timer",
+	"plugin-id": "Text",
+	"sid": 712445710372525,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Time",
+			"type": "number",
+			"desc": "",
+			"sid": 460231061044302
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

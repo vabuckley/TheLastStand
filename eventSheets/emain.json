@@ -12,6 +12,36 @@
 			"sid": 793849306422072
 		},
 		{
+			"eventType": "variable",
+			"name": "MinutesLeft",
+			"type": "number",
+			"initialValue": "14",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 331385864061969
+		},
+		{
+			"eventType": "variable",
+			"name": "colon",
+			"type": "string",
+			"initialValue": ":",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 223637693320386
+		},
+		{
+			"eventType": "variable",
+			"name": "SecondsLeft",
+			"type": "number",
+			"initialValue": "59",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 324422135462773
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "ePlayer"
 		},
@@ -459,6 +489,128 @@
 				}
 			],
 			"sid": 178142049900453
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Timer",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 845971322586442,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 601931752446284,
+							"parameters": {
+								"variable": "SecondsLeft",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Timer",
+							"sid": 824536380908262,
+							"parameters": {
+								"text": "MinutesLeft&colon&SecondsLeft"
+							}
+						}
+					],
+					"sid": 797584123845842
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 802227341621506
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Timer",
+							"sid": 353116469642509,
+							"parameters": {
+								"text": "MinutesLeft&colon&SecondsLeft"
+							}
+						}
+					],
+					"sid": 265171927250361
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 364193665834379,
+							"parameters": {
+								"interval-seconds": "59"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 597936977150319,
+							"parameters": {
+								"variable": "MinutesLeft",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Timer",
+							"sid": 824105729320299,
+							"parameters": {
+								"text": "MinutesLeft&colon&SecondsLeft"
+							}
+						}
+					],
+					"sid": 948564239458989
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 859379628918788,
+							"parameters": {
+								"interval-seconds": "58"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 323169383009797,
+							"parameters": {
+								"variable": "SecondsLeft",
+								"value": "60"
+							}
+						}
+					],
+					"sid": 525298169555805
+				}
+			],
+			"sid": 782109194962514
 		}
 	],
 	"sid": 829106802608209
