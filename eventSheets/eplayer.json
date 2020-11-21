@@ -874,23 +874,13 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
-							"sid": 338430864860683,
+							"sid": 475253129861767,
 							"parameters": {
-								"object": "RunningWater"
+								"object": "GoodWater"
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "add-to-instvar",
-							"objectClass": "RunningWater",
-							"sid": 510948058225480,
-							"parameters": {
-								"instance-variable": "WaterCount",
-								"value": "1"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 125985157070277
 				}
 			],

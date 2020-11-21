@@ -87,6 +87,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
@@ -157,7 +165,9 @@
 			"Text",
 			"Text2",
 			"Retry",
-			"Sprite4"
+			"Sprite4",
+			"Item",
+			"ItemQuantity"
 		],
 		"subfolders": [
 			{
@@ -227,14 +237,16 @@
 					{
 						"items": [
 							"GoodMush",
-							"RunningWater"
+							"RunningWater",
+							"GoodWater"
 						],
 						"subfolders": [],
 						"name": "Positive"
 					},
 					{
 						"items": [
-							"BadMush"
+							"BadMush",
+							"BadWater"
 						],
 						"subfolders": [],
 						"name": "Negative"

@@ -1,0 +1,67 @@
+{
+	"name": "GoodWater",
+	"plugin-id": "Sprite",
+	"sid": 586110662473033,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "AddHydration",
+			"type": "number",
+			"desc": "",
+			"sid": 216559317457720
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3788234,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 354664460967930,
+				"name": "GoodWater",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8897980,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 419646243511880,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

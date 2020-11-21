@@ -13960,6 +13960,99 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "GoodWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "GoodWater",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 513,
+					"instanceVariables": {
+						"AddHydration": 5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1375.7832649932843,
+						"y": 854.482875034455,
+						"width": 28.19532783908178,
+						"height": 28.19532783908178,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "GoodWater",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 524,
+					"instanceVariables": {
+						"AddHydration": 5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1343.3159937264468,
+						"y": 854.4828750344551,
+						"width": 28.19532783908178,
+						"height": 28.19532783908178,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "GoodWater",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 525,
+					"instanceVariables": {
+						"AddHydration": 5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1359.867935940913,
+						"y": 825.1986695780915,
+						"width": 28.19532783908178,
+						"height": 28.19532783908178,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 686190088964859,

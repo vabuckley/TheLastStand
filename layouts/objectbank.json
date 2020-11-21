@@ -394,6 +394,66 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "GoodWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "GoodWater",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 511,
+					"instanceVariables": {
+						"AddHydration": 5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 45.14179794845961,
+						"y": 161.1417979484596,
+						"width": 28.19532783908178,
+						"height": 28.19532783908178,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 512,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 98.71206577810635,
+						"y": 160.71206577810636,
+						"width": 30.969204789961562,
+						"height": 30.969204789961562,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 655590328146873,
