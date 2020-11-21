@@ -13162,7 +13162,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "FireOut",
+					"type": "WaterPrompt",
 					"properties": {
 						"text": "Uh oh, it looks like the fire is getting a little bit out of control. What will you do?",
 						"enable-bbcode": true,
