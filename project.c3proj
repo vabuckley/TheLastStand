@@ -175,7 +175,16 @@
 			"Retry",
 			"Sprite4",
 			"Item_spawn",
-			"ItemQuantity"
+			"ItemQuantity",
+			"GoodMushroomPhoto",
+			"BadMushroomPhoto",
+			"BadWaterPhotot",
+			"GoodWaterPhoto",
+			"GoodFirewoodPhoto",
+			"Sprite10",
+			"BadFirewoodPhoto",
+			"BoilingWaterPhoto",
+			"SmotheredCampfirePhoto"
 		],
 		"subfolders": [
 			{
