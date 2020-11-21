@@ -882,14 +882,13 @@
 					],
 					"actions": [
 						{
-							"id": "pin-to-object-properties",
+							"id": "pin-to-object-imagepoint",
 							"objectClass": "GoodWater",
-							"sid": 122791512180829,
+							"sid": 634854090427642,
 							"behaviorType": "Pin",
 							"parameters": {
 								"pin-to": "Player",
-								"x": true,
-								"y": true,
+								"image-point": "1",
 								"angle": true,
 								"width-type": "no",
 								"height-type": "no",

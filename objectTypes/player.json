@@ -56,6 +56,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": -0.5,
+								"y": 0.625
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -68,6 +75,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 3981879,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": -0.42857142857142855,
+								"y": 0.625
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -80,6 +94,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 9876467,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": -0.5,
+								"y": 0.625
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -101,7 +122,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9517907,
+						"imageSpriteId": 8389399,
 						"collisionPoly": {
 							"points": [
 								0.16666666666666666,
@@ -123,6 +144,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": 1.4166666666666667,
+								"y": 0.625
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -155,6 +183,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": 1.3846153846153846,
+								"y": 0.5882352941176471
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -187,6 +222,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": 1.4615384615384615,
+								"y": 0.5882352941176471
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -230,6 +272,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": 0.42857142857142855,
+								"y": -0.25
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -262,6 +311,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": 0.4375,
+								"y": -0.3125
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -294,6 +350,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": 0.4375,
+								"y": -0.3125
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -337,6 +400,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": 0.5,
+								"y": 1.4375
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -369,6 +439,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": 0.5,
+								"y": 1.4375
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -401,6 +478,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Water Carry",
+								"x": 0.4375,
+								"y": 1.4375
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -444,6 +528,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Carry",
+								"x": 0.5,
+								"y": 1.4375
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -479,6 +570,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Carry",
+								"x": 0.5,
+								"y": -0.5
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -502,6 +600,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 311477,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Carry",
+								"x": 1.6666666666666667,
+								"y": 0.625
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -525,6 +630,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 4664612,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Carry",
+								"x": -0.75,
+								"y": 0.625
+							}
+						],
 						"duration": 1
 					}
 				],
