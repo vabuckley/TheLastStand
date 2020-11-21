@@ -553,6 +553,37 @@
 				}
 			],
 			"sid": 782109194962514
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Settings",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "SettingsButton",
+							"sid": 479270273134756
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 880742725252161,
+							"parameters": {
+								"layout": "SettingsPage"
+							}
+						}
+					],
+					"sid": 433021960802573
+				}
+			],
+			"sid": 673586124447367
 		}
 	],
 	"sid": 829106802608209

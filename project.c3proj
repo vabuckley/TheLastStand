@@ -185,7 +185,13 @@
 			"BadFirewoodPhoto",
 			"BoilingWaterPhoto",
 			"SmotheredCampfirePhoto",
-			"Timer"
+			"Timer",
+			"Sprite6",
+			"Text3",
+			"Text4",
+			"ExitGameButton",
+			"StartOverButton",
+			"ReturnToGameButton"
 		],
 		"subfolders": [
 			{
@@ -290,7 +296,8 @@
 			"ForestChamber",
 			"ObjectBank",
 			"GlobalLayers",
-			"GameOver"
+			"GameOver",
+			"SettingsPage"
 		],
 		"subfolders": []
 	},
@@ -299,7 +306,8 @@
 			"eMain",
 			"ePlayer",
 			"eFieldGuide",
-			"eEnvironmentalChanges"
+			"eEnvironmentalChanges",
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
