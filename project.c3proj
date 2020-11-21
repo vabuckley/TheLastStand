@@ -112,16 +112,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Anchor",
-			"name": "Anchor",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
+			"id": "Anchor",
+			"name": "Anchor",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
@@ -154,7 +154,10 @@
 			"Video",
 			"FireStartGIF",
 			"Sprite2",
-			"Text"
+			"Text",
+			"Text2",
+			"Retry",
+			"Sprite4"
 		],
 		"subfolders": [
 			{
@@ -211,7 +214,6 @@
 			},
 			{
 				"items": [
-					"Hud",
 					"HealthBar",
 					"HydrationBar",
 					"NutritionBar"
@@ -256,7 +258,8 @@
 			"SettingSave",
 			"ForestChamber",
 			"ObjectBank",
-			"GlobalLayers"
+			"GlobalLayers",
+			"GameOver"
 		],
 		"subfolders": []
 	},

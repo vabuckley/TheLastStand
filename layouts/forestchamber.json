@@ -13394,14 +13394,21 @@
 					},
 					"uid": 492,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"ownData": {
 						"tilemapData": {
 							"width": 55,
 							"height": 30,
 							"max-width": 60,
 							"max-height": 44,
-							"data": "8x0,1,6x0,1,36x0,1,6x0,1,36x0,1,6x0,1,36x0,1,6x0,1,36x0,1,6x0,1,29x0,8x1,6x0,6x1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,8x1,17x0,1,25x0,1,17x0,1,25x0,1,17x0,1,25x0,1,17x0,1,25x0,1,17x0,1,17x0,5x1,3x0,1,17x0,1,17x0,1,3x0,1,3x0,1,17x0,1,17x0,1,3x0,1,3x0,1,17x0,7x1,4x0,8x1,3x0,1,3x0,1,23x0,1,4x0,1,10x0,1,3x0,1,23x0,1,4x0,1,5x0,6x1,3x0,3x1,21x0,1,4x0,1,5x0,1,10x0,1,21x0,1,4x0,1,5x0,1,10x0,1,21x0,1,4x0,5x1,0,1,10x0,1,15x0,7x1,8x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,12x1,15x0,16x1,599x0"
+							"data": "8x0,1,0,6x1,36x0,1,6x0,1,36x0,1,6x0,1,36x0,1,6x0,1,36x0,1,6x0,1,29x0,8x1,6x0,6x1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,1,24x0,1,18x0,8x1,17x0,1,25x0,1,17x0,1,25x0,1,17x0,1,25x0,1,17x0,1,25x0,1,17x0,1,17x0,5x1,3x0,1,17x0,1,17x0,1,3x0,1,3x0,1,17x0,1,17x0,1,3x0,1,3x0,1,17x0,7x1,4x0,8x1,3x0,1,3x0,1,23x0,1,4x0,1,10x0,1,3x0,1,23x0,1,4x0,1,5x0,6x1,3x0,3x1,21x0,1,4x0,1,5x0,1,10x0,1,21x0,1,4x0,1,5x0,1,10x0,1,21x0,1,4x0,5x1,0,1,10x0,1,15x0,7x1,8x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,1,10x0,1,15x0,1,14x0,1,0,12x1,15x0,16x1,599x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -13625,6 +13632,338 @@
 					},
 					"world": {
 						"x": 512,
+						"y": 512,
+						"width": 22,
+						"height": 23,
+						"originX": 0.5454545454545454,
+						"originY": 0.5652173913043478,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodMush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"instanceVariables": {
+						"AddHealth": 5,
+						"AddNutrition": 5,
+						"AddHydration": 5
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 480,
+						"y": 544,
+						"width": 24,
+						"height": 24,
+						"originX": 2,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodMush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 282,
+					"instanceVariables": {
+						"AddHealth": 5,
+						"AddNutrition": 5,
+						"AddHydration": 5
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 448,
+						"y": 544,
+						"width": 24,
+						"height": 24,
+						"originX": 2,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadMush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 283,
+					"instanceVariables": {
+						"HealthDamage": 5
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 544,
+						"y": 512,
+						"width": 22,
+						"height": 23,
+						"originX": 0.5454545454545454,
+						"originY": 0.5652173913043478,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadMush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 298,
+					"instanceVariables": {
+						"HealthDamage": 5
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 544,
+						"y": 544,
+						"width": 22,
+						"height": 23,
+						"originX": 0.5454545454545454,
+						"originY": 0.5652173913043478,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadMush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 493,
+					"instanceVariables": {
+						"HealthDamage": 5
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 576,
+						"y": 512,
+						"width": 22,
+						"height": 23,
+						"originX": 0.5454545454545454,
+						"originY": 0.5652173913043478,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadMush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 494,
+					"instanceVariables": {
+						"HealthDamage": 5
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 576,
+						"y": 544,
+						"width": 22,
+						"height": 23,
+						"originX": 0.5454545454545454,
+						"originY": 0.5652173913043478,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadMush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 495,
+					"instanceVariables": {
+						"HealthDamage": 5
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 608,
+						"y": 544,
+						"width": 22,
+						"height": 23,
+						"originX": 0.5454545454545454,
+						"originY": 0.5652173913043478,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadMush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 496,
+					"instanceVariables": {
+						"HealthDamage": 5
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 608,
 						"y": 512,
 						"width": 22,
 						"height": 23,

@@ -525,6 +525,73 @@
 						}
 					],
 					"sid": 887238929412813
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "Dictionary",
+							"sid": 259943182715674,
+							"parameters": {
+								"key": "\"Health\"",
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-value",
+							"objectClass": "Dictionary",
+							"sid": 862221913734908,
+							"parameters": {
+								"key": "\"Nutrition\"",
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-value",
+							"objectClass": "Dictionary",
+							"sid": 379818974547226,
+							"parameters": {
+								"key": "\"Hydration\"",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 421755068236696,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 575609625836642,
+							"parameters": {
+								"layout": "GameOver"
+							}
+						}
+					],
+					"sid": 856281364115399,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 147297488657633
+						}
+					],
+					"actions": [],
+					"sid": 342033377121918
 				}
 			],
 			"sid": 471889685229618
@@ -735,23 +802,60 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 209228302661930,
+					"children": [
 						{
-							"callFunction": "PlayerAddHealth",
-							"sid": 495806817381334,
-							"parameters": [
-								"PositiveCollectibles.AddHealth"
-							]
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "Dictionary",
+									"sid": 715558802231655,
+									"parameters": {
+										"key": "\"Health\"",
+										"comparison": 2,
+										"value": "Dictionary.Get(\"MaxHealth\")"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "PlayerAddHealth",
+									"sid": 888343085278984,
+									"parameters": [
+										"PositiveCollectibles.AddHealth"
+									]
+								}
+							],
+							"sid": 715862392224324
 						},
 						{
-							"callFunction": "PlayerAddNutrition",
-							"sid": 171913338437157,
-							"parameters": [
-								"PositiveCollectibles.AddNutrition"
-							]
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "Dictionary",
+									"sid": 856073563398481,
+									"parameters": {
+										"key": "\"Nutrition\"",
+										"comparison": 2,
+										"value": "Dictionary.Get(\"MaxNutrition\")"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "PlayerAddNutrition",
+									"sid": 516003053020057,
+									"parameters": [
+										"PositiveCollectibles.AddNutrition"
+									]
+								}
+							],
+							"sid": 999531958185518
 						}
-					],
-					"sid": 209228302661930
+					]
 				}
 			],
 			"sid": 553905456655066
@@ -961,15 +1065,6 @@
 				}
 			],
 			"sid": 537633062023978
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Collectibles",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [],
-			"sid": 523517853302699
 		}
 	],
 	"sid": 247304593041462

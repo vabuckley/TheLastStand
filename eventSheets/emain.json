@@ -291,6 +291,31 @@
 						}
 					],
 					"sid": 777429363783347
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "Retry",
+							"sid": 278141099330025
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "SaveData_SetDefault",
+							"sid": 598591891899747
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 919558121263539,
+							"parameters": {
+								"layout": "ForestChamber"
+							}
+						}
+					],
+					"sid": 405416431006238
 				}
 			],
 			"sid": 876599449095423
@@ -315,9 +340,25 @@
 						{
 							"id": "set-width",
 							"objectClass": "HealthBar",
-							"sid": 471408013736876,
+							"sid": 894595147176642,
 							"parameters": {
 								"width": "80/Dictionary.Get(\"MaxHealth\")*Dictionary.Get(\"Health\")"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "NutritionBar",
+							"sid": 698909027135573,
+							"parameters": {
+								"width": "80/Dictionary.Get(\"MaxNutrition\")*Dictionary.Get(\"Nutrition\")"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HydrationBar",
+							"sid": 688030680921138,
+							"parameters": {
+								"width": "80/Dictionary.Get(\"MaxHydration\")*Dictionary.Get(\"Hydration\")"
 							}
 						}
 					],
