@@ -24,7 +24,30 @@
 					}
 				],
 				"sid": 272069394892000,
-				"name": "Animation 1",
+				"name": "BadWater",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9214321,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 358527403975172,
+				"name": "EmptyBucketBad",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

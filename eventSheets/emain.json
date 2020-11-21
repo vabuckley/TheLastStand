@@ -20,6 +20,10 @@
 			"includeSheet": "eFieldGuide"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "eEnvironmentalChanges"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Cursor Options",

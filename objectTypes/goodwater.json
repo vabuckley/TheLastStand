@@ -11,7 +11,13 @@
 			"sid": 216559317457720
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 461310416799229
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -31,7 +37,7 @@
 					}
 				],
 				"sid": 354664460967930,
-				"name": "GoodWater",
+				"name": "GoodWaterFull",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -48,13 +54,13 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8897980,
+						"imageSpriteId": 9900305,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 419646243511880,
-				"name": "Animation 2",
+				"sid": 396774466559845,
+				"name": "EmptyBucket",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

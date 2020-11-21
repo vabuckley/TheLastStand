@@ -1,0 +1,104 @@
+{
+	"name": "eEnvironmentalChanges",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Water",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 769378700385086
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "GoodWater",
+							"sid": 532059103784943,
+							"parameters": {
+								"animation": "\"EmptyBucket\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 168495221630818
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "GoodWater",
+							"sid": 608543204477258,
+							"parameters": {
+								"object": "RunningWater"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "GoodWater",
+							"sid": 846011187514095,
+							"parameters": {
+								"animation": "\"GoodWaterFull\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 861407488875070
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "GoodWater",
+							"sid": 595289106493016
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 179351820636632,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 562021863325834,
+							"parameters": {
+								"object-to-create": "GoodWater",
+								"layer": "\"Playable Area\"",
+								"x": "1350",
+								"y": "851"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "GoodWater",
+							"sid": 324960590464338,
+							"parameters": {
+								"animation": "\"EmptyBucket\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 297817036798273
+				}
+			],
+			"sid": 801217814758754
+		}
+	],
+	"sid": 354399469016029
+}

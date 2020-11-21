@@ -4,7 +4,13 @@
 	"sid": 348516671742236,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 272549814290130
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -269,7 +275,7 @@
 				],
 				"sid": 174372918488556,
 				"name": "Flame",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

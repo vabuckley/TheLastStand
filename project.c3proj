@@ -128,6 +128,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Anchor",
 			"name": "Anchor",
 			"author": "Scirra",
@@ -166,7 +174,7 @@
 			"Text2",
 			"Retry",
 			"Sprite4",
-			"Item",
+			"Item_spawn",
 			"ItemQuantity"
 		],
 		"subfolders": [
@@ -280,7 +288,8 @@
 		"items": [
 			"eMain",
 			"ePlayer",
-			"eFieldGuide"
+			"eFieldGuide",
+			"eEnvironmentalChanges"
 		],
 		"subfolders": []
 	},

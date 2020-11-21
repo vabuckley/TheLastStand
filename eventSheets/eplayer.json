@@ -880,8 +880,103 @@
 							}
 						}
 					],
-					"actions": [],
-					"sid": 125985157070277
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "GoodWater",
+							"sid": 122791512180829,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Player",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 125985157070277,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "GoodWater",
+									"sid": 349152000604620,
+									"parameters": {
+										"object": "Fire"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "PlayerAddHydration",
+									"sid": 183798929123195,
+									"parameters": [
+										"PositiveCollectibles.addhydration"
+									]
+								},
+								{
+									"callFunction": "PlayerAddHealth",
+									"sid": 405736964097467,
+									"parameters": [
+										"PositiveCollectibles.AddHealth"
+									]
+								},
+								{
+									"id": "unpin",
+									"objectClass": "GoodWater",
+									"sid": 679354615271910,
+									"behaviorType": "Pin"
+								},
+								{
+									"id": "destroy",
+									"objectClass": "GoodWater",
+									"sid": 282926864907078
+								}
+							],
+							"sid": 702311426328998,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Dictionary",
+											"sid": 849463016322185,
+											"parameters": {
+												"key": "\"Health\"",
+												"comparison": 2,
+												"value": "Dictionary.Get(\"MaxHealth\")"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 835662929709238
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Dictionary",
+											"sid": 237254651430711,
+											"parameters": {
+												"key": "\"Hydration\"",
+												"comparison": 2,
+												"value": "Dictionary.Get(\"MaxHydration\")"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 234157275777003
+								}
+							]
+						}
+					]
 				}
 			],
 			"sid": 553905456655066
