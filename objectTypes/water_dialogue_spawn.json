@@ -1,23 +1,11 @@
 {
-	"name": "Item_spawn",
+	"name": "Water_Dialogue_Spawn",
 	"plugin-id": "Sprite",
 	"sid": 780818730524388,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "SlotID",
-			"type": "number",
-			"desc": "",
-			"sid": 474514081237244
-		},
-		{
-			"name": "Item_Quantity",
-			"type": "number",
-			"desc": "",
-			"sid": 265353110686740
-		},
-		{
-			"name": "Item_Name",
+			"name": "Dialogue",
 			"type": "string",
 			"desc": "",
 			"sid": 889400272841436

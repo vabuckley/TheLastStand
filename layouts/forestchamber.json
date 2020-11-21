@@ -13447,10 +13447,13 @@
 						},
 						"Flash": {
 							"properties": {}
+						},
+						"Timer": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 160,
+						"x": 159,
 						"y": 384,
 						"width": 20.181984540673895,
 						"height": 23.065125189341593,
@@ -13575,8 +13578,8 @@
 						}
 					},
 					"world": {
-						"x": 512,
-						"y": 512,
+						"x": 514.6198072722395,
+						"y": 531.2119199964233,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13702,8 +13705,8 @@
 						}
 					},
 					"world": {
-						"x": 544,
-						"y": 512,
+						"x": 546.6198072722395,
+						"y": 531.2119199964233,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13743,8 +13746,8 @@
 						}
 					},
 					"world": {
-						"x": 544,
-						"y": 544,
+						"x": 546.6198072722395,
+						"y": 563.2119199964233,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13784,8 +13787,8 @@
 						}
 					},
 					"world": {
-						"x": 576,
-						"y": 512,
+						"x": 578.6198072722395,
+						"y": 531.2119199964233,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13825,8 +13828,8 @@
 						}
 					},
 					"world": {
-						"x": 576,
-						"y": 544,
+						"x": 578.6198072722395,
+						"y": 563.2119199964233,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13866,8 +13869,8 @@
 						}
 					},
 					"world": {
-						"x": 608,
-						"y": 544,
+						"x": 610.6198072722395,
+						"y": 563.2119199964233,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13907,8 +13910,8 @@
 						}
 					},
 					"world": {
-						"x": 608,
-						"y": 512,
+						"x": 610.6198072722395,
+						"y": 531.2119199964233,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -14006,80 +14009,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 513,
-					"instanceVariables": {
-						"AddHydration": 5
-					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1403.6750505205137,
-						"y": 850.3458444007773,
-						"width": 16.390190300401596,
-						"height": 16.390190300401596,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "GoodWater",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "GoodWaterFull",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 524,
-					"instanceVariables": {
-						"AddHydration": 5
-					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1390.9427872786166,
-						"y": 827.4277705653623,
-						"width": 16.390190300401596,
-						"height": 16.390190300401596,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "GoodWater",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "GoodWaterFull",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 525,
 					"instanceVariables": {
 						"AddHydration": 5
@@ -14092,12 +14021,114 @@
 						}
 					},
 					"world": {
-						"x": 1378.39084506415,
-						"y": 850.0726180765874,
+						"x": 1400.2225723328127,
+						"y": 852.692425348827,
 						"width": 16.390190300401596,
 						"height": 16.390190300401596,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "StandingWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 527,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1322.2811511538494,
+						"y": 740.804349525217,
+						"width": 71.87008617007365,
+						"height": 57.65280554687438,
+						"originX": -0.39473684210526316,
+						"originY": 2.0264550264550265,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "BadWaterFull",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 513,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1406.841562607193,
+						"y": 717.6627107236905,
+						"width": 16.40075322702262,
+						"height": 16.40075322702262,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Water_Dialogue_Spawn",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 524,
+					"instanceVariables": {
+						"Dialogue": "Looks like you found a good source of water, great job! Before you drink your water, make sure you check the field guide for some important tips on how to make sure your water is safe to drink."
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1051.3949861295957,
+						"y": 816.2222364248947,
+						"width": 43.62895836794087,
+						"height": 68.50102662247093,
+						"originX": 0.5723684210526315,
+						"originY": 0.4897959183673469,
 						"color": [
 							1,
 							1,

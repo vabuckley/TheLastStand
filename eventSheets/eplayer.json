@@ -912,13 +912,6 @@
 							],
 							"actions": [
 								{
-									"callFunction": "PlayerAddHydration",
-									"sid": 183798929123195,
-									"parameters": [
-										"PositiveCollectibles.addhydration"
-									]
-								},
-								{
 									"callFunction": "PlayerAddHealth",
 									"sid": 405736964097467,
 									"parameters": [
@@ -972,6 +965,108 @@
 									],
 									"actions": [],
 									"sid": 234157275777003
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 773327122012761,
+							"parameters": {
+								"object": "BadWater"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "BadWater",
+							"sid": 476839047474020,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Player",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 595586301446679,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "BadWater",
+									"sid": 325427598550843,
+									"parameters": {
+										"object": "Fire"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "PlayerHurtHealth",
+									"sid": 157901114536449,
+									"parameters": [
+										"NegativeCollectibles.HealthDamage"
+									]
+								},
+								{
+									"id": "unpin",
+									"objectClass": "BadWater",
+									"sid": 987680760058542,
+									"behaviorType": "Pin"
+								},
+								{
+									"id": "destroy",
+									"objectClass": "BadWater",
+									"sid": 433123228283600
+								}
+							],
+							"sid": 428684735858921,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Dictionary",
+											"sid": 515317302288879,
+											"parameters": {
+												"key": "\"Health\"",
+												"comparison": 2,
+												"value": "Dictionary.Get(\"MaxHealth\")"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 647194485819970
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Dictionary",
+											"sid": 459656072730857,
+											"parameters": {
+												"key": "\"Hydration\"",
+												"comparison": 2,
+												"value": "Dictionary.Get(\"MaxHydration\")"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 969655123058360
 								}
 							]
 						}

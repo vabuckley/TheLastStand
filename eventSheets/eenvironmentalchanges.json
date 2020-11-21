@@ -26,6 +26,15 @@
 								"animation": "\"EmptyBucket\"",
 								"from": "beginning"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BadWater",
+							"sid": 582718359399419,
+							"parameters": {
+								"animation": "\"EmptyBucket\"",
+								"from": "beginning"
+							}
 						}
 					],
 					"sid": 168495221630818
@@ -95,6 +104,97 @@
 						}
 					],
 					"sid": 297817036798273
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BadWater",
+							"sid": 206304291922213,
+							"parameters": {
+								"object": "StandingWater"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BadWater",
+							"sid": 312310188944132,
+							"parameters": {
+								"animation": "\"BadWaterFull\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 577382623161126
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "BadWater",
+							"sid": 269218757003493
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 815656541125606,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 521441869574528,
+							"parameters": {
+								"object-to-create": "BadWater",
+								"layer": "\"Playable Area\"",
+								"x": "1368",
+								"y": "713"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BadWater",
+							"sid": 233264890342838,
+							"parameters": {
+								"animation": "\"EmptyBucket\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 755356958730492
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 386684276571171,
+							"parameters": {
+								"object": "Water_Dialogue_Spawn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Water_Dialogue_Spawn",
+							"sid": 870819196841055,
+							"parameters": {
+								"instance-variable": "Dialogue",
+								"value": "Water_Dialogue_Spawn.Dialogue"
+							}
+						}
+					],
+					"sid": 293214268414445
 				}
 			],
 			"sid": 801217814758754

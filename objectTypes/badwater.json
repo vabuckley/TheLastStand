@@ -4,7 +4,13 @@
 	"sid": 211496284225971,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 183205766031429
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -24,7 +30,7 @@
 					}
 				],
 				"sid": 272069394892000,
-				"name": "BadWater",
+				"name": "BadWaterFull",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -47,7 +53,7 @@
 					}
 				],
 				"sid": 358527403975172,
-				"name": "EmptyBucketBad",
+				"name": "EmptyBucket",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

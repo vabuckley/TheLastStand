@@ -27,6 +27,9 @@
 						},
 						"Flash": {
 							"properties": {}
+						},
+						"Timer": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -324,14 +327,20 @@
 					"type": "BadWater",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "BadWater",
+						"initial-animation": "BadWaterFull",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 512,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"world": {
 						"x": 91.42783999663688,
 						"y": 153.4278399966369,
@@ -394,7 +403,7 @@
 					}
 				},
 				{
-					"type": "Text6",
+					"type": "WaterSources",
 					"properties": {
 						"text": "Looks like you found a good source of water, great job! Before you drink your water, make sure you check the field guide for some important tips on how to make sure your water is safe to drink.",
 						"enable-bbcode": true,
@@ -593,6 +602,42 @@
 						"height": 45.16635916254486,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "StandingWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 510,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 52,
+						"y": 471,
+						"width": 79.80929651064348,
+						"height": 79.38924758164009,
+						"originX": -0.39473684210526316,
+						"originY": 2.0264550264550265,
 						"color": [
 							1,
 							1,
