@@ -175,26 +175,65 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-collision-with-another-object",
+							"id": "is-overlapping-another-object",
 							"objectClass": "Player",
-							"sid": 386684276571171,
+							"sid": 931317813846660,
 							"parameters": {
-								"object": "Water_Dialogue_Spawn"
+								"object": "WaterTextSpawn"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-instvar-value",
-							"objectClass": "Water_Dialogue_Spawn",
-							"sid": 870819196841055,
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 917308208710940,
 							"parameters": {
-								"instance-variable": "Dialogue",
-								"value": "Water_Dialogue_Spawn.Dialogue"
+								"layer": "\"ShowDialogue\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Dialogue",
+							"sid": 934537052476620,
+							"parameters": {
+								"text": "WaterTextSpawn.Dialogue"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "WaterTextSpawn",
+							"sid": 434303671102491,
+							"parameters": {
+								"instance-variable": "ShowWaterText",
+								"value": "true"
 							}
 						}
 					],
 					"sid": 293214268414445
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 313523162498838
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 829558454757373,
+							"parameters": {
+								"layer": "\"ShowDialogue\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 912755495643543
 				}
 			],
 			"sid": 801217814758754

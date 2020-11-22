@@ -13426,6 +13426,38 @@
 					}
 				},
 				{
+					"type": "WaterTextSpawn",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 524,
+					"instanceVariables": {
+						"Dialogue": "Looks like you found a good source of water, great job! Before you drink your water, make sure you check the field guide for some important tips on how to make sure your water is safe to drink.",
+						"ShowWaterText": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1073.8500864792304,
+						"y": 815.603854416407,
+						"width": 72.73792813660361,
+						"height": 91.2060229818801,
+						"originX": 0.5723684210526315,
+						"originY": 0.4897959183673469,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -13949,9 +13981,9 @@
 					},
 					"world": {
 						"x": 1279.661316209486,
-						"y": 892.4139566608496,
+						"y": 892.899106156994,
 						"width": 289.6997431720938,
-						"height": 40.445313002490366,
+						"height": 39.475014010201676,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -14107,37 +14139,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Water_Dialogue_Spawn",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 524,
-					"instanceVariables": {
-						"Dialogue": "Looks like you found a good source of water, great job! Before you drink your water, make sure you check the field guide for some important tips on how to make sure your water is safe to drink."
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1051.3949861295957,
-						"y": 816.2222364248947,
-						"width": 43.62895836794087,
-						"height": 68.50102662247093,
-						"originX": 0.5723684210526315,
-						"originY": 0.4897959183673469,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 686190088964859,
@@ -14169,6 +14170,34 @@
 			"overriden": 1,
 			"instances": [],
 			"sid": 154893066811787,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "ShowDialogue",
+			"overriden": 1,
+			"instances": [],
+			"sid": 320729157694718,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [

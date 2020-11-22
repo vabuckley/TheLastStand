@@ -919,6 +919,13 @@
 									]
 								},
 								{
+									"callFunction": "PlayerAddHydration",
+									"sid": 388681367628968,
+									"parameters": [
+										"PositiveCollectibles.AddHydration"
+									]
+								},
+								{
 									"id": "unpin",
 									"objectClass": "GoodWater",
 									"sid": 679354615271910,
