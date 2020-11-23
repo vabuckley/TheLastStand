@@ -581,6 +581,53 @@
 						}
 					],
 					"sid": 433021960802573
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "ReturnToGameButton",
+							"sid": 520999211625882
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 214681624774808,
+							"parameters": {
+								"layout": "ForestChamber"
+							}
+						}
+					],
+					"sid": 500808139220550
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "StartOverButton",
+							"sid": 708833317911931
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 766628447722343,
+							"parameters": {
+								"layout": "ForestChamber"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 454458673944159
+						}
+					],
+					"sid": 972018037262984
 				}
 			],
 			"sid": 673586124447367

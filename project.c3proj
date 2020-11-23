@@ -209,7 +209,9 @@
 			"Text10",
 			"Dialogue",
 			"Sprite7",
-			"DialogBox"
+			"DialogBox",
+			"GoodWood",
+			"BadWood"
 		],
 		"subfolders": [
 			{

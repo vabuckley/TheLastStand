@@ -77,36 +77,6 @@
 					}
 				},
 				{
-					"type": "ExitGameButton",
-					"properties": {
-						"type": "button",
-						"text": "EXIT GAME",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 537,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 499,
-						"y": 191,
-						"width": 108,
-						"height": 33,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
 					"type": "StartOverButton",
 					"properties": {
 						"type": "button",
@@ -122,8 +92,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 245,
-						"y": 193,
+						"x": 369,
+						"y": 191,
 						"width": 119,
 						"height": 31,
 						"originX": 0,
@@ -152,8 +122,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 332,
-						"y": 276,
+						"x": 337,
+						"y": 263,
 						"width": 183,
 						"height": 31,
 						"originX": 0,
