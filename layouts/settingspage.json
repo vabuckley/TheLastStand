@@ -122,7 +122,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 337,
+						"x": 342,
 						"y": 263,
 						"width": 183,
 						"height": 31,
@@ -168,5 +168,5 @@
 	"width": 1708,
 	"height": 960,
 	"unboundedScrolling": false,
-	"eventSheet": "Event sheet 1"
+	"eventSheet": "eMain"
 }

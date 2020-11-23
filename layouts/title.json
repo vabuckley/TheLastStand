@@ -76,39 +76,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 305,
-						"y": 302,
+						"x": 438,
+						"y": 289,
 						"width": 159.24577090459704,
 						"height": 123.3140523650607,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Load",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 633,
-						"y": 317,
-						"width": 167.25244563481505,
-						"height": 115.15010280989002,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
