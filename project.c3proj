@@ -211,7 +211,9 @@
 			"Sprite7",
 			"DialogBox",
 			"GoodWood",
-			"BadWood"
+			"BadWood",
+			"Background_intro",
+			"Play_button"
 		],
 		"subfolders": [
 			{
@@ -318,7 +320,8 @@
 			"ObjectBank",
 			"GlobalLayers",
 			"GameOver",
-			"SettingsPage"
+			"SettingsPage",
+			"Introduction"
 		],
 		"subfolders": []
 	},
@@ -328,7 +331,8 @@
 			"ePlayer",
 			"eFieldGuide",
 			"eEnvironmentalChanges",
-			"Event sheet 1"
+			"eTitle",
+			"eIntroduction"
 		],
 		"subfolders": []
 	},
