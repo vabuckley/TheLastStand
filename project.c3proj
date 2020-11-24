@@ -217,7 +217,12 @@
 			"FireTextSpawn2",
 			"Text6",
 			"FireOkayButto",
-			"Text7"
+			"Text7",
+			"Play_button",
+			"Intro_bkgrd",
+			"PlayIntro_btn",
+			"PlayGame_btn",
+			"IntroText1"
 		],
 		"subfolders": [
 			{
@@ -324,7 +329,8 @@
 			"ObjectBank",
 			"GlobalLayers",
 			"GameOver",
-			"SettingsPage"
+			"SettingsPage",
+			"Intro"
 		],
 		"subfolders": []
 	},
@@ -334,7 +340,8 @@
 			"ePlayer",
 			"eFieldGuide",
 			"eEnvironmentalChanges",
-			"Event sheet 1"
+			"eTitle",
+			"eIntro"
 		],
 		"subfolders": []
 	},

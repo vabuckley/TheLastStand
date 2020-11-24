@@ -1,0 +1,172 @@
+{
+	"name": "Intro",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Intro_bkgrd",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 516,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 426,
+						"y": 242,
+						"width": 900,
+						"height": 498,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.75
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlayIntro_btn",
+					"properties": {
+						"type": "button",
+						"text": "PLAY INTRO",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 517,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 229,
+						"y": 358,
+						"width": 108,
+						"height": 58,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "PlayGame_btn",
+					"properties": {
+						"type": "button",
+						"text": "PLAY GAME",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 546,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 538,
+						"y": 358,
+						"width": 108,
+						"height": 58,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "IntroText1",
+					"properties": {
+						"text": "A deadly pandemic has swept the planet, killing nearly every last person on Earth. The virus spread quickly and killed quickly. Within weeks, around the globe, government infrastructures failed and all communications ceased.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 548,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 419,
+						"y": 67,
+						"width": 595,
+						"height": 133,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 147810824977131,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		}
+	],
+	"sid": 643696773310828,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 1708,
+	"height": 960,
+	"unboundedScrolling": false,
+	"eventSheet": "eIntro"
+}

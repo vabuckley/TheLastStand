@@ -1,0 +1,27 @@
+{
+	"name": "eIntro",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "PlayGame_btn",
+					"sid": 674341433103284
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 346580577233602,
+					"parameters": {
+						"layout": "ForestChamber"
+					}
+				}
+			],
+			"sid": 468253911949971
+		}
+	],
+	"sid": 112656403791943
+}
