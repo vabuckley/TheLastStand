@@ -1,0 +1,27 @@
+{
+	"name": "eTitle",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Play_button",
+					"sid": 269022811347240
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 975365566866422,
+					"parameters": {
+						"layout": "Introduction"
+					}
+				}
+			],
+			"sid": 899294094437532
+		}
+	],
+	"sid": 745701139676431
+}
