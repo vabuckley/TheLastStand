@@ -28,7 +28,7 @@
 							1,
 							1,
 							1,
-							0.75
+							0.65
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -47,11 +47,13 @@
 						"id": ""
 					},
 					"uid": 517,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"WaitTime": 3
+					},
 					"behaviors": {},
 					"world": {
 						"x": 229,
-						"y": 358,
+						"y": 380,
 						"width": 108,
 						"height": 58,
 						"originX": 0,
@@ -80,8 +82,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 538,
-						"y": 358,
+						"x": 498,
+						"y": 380,
 						"width": 108,
 						"height": 58,
 						"originX": 0,
@@ -120,10 +122,94 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 419,
-						"y": 67,
-						"width": 595,
-						"height": 133,
+						"x": 426,
+						"y": 69,
+						"width": 596,
+						"height": 110,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "IntroText1",
+					"properties": {
+						"text": "You have survived by sheltering in place for several months, but now your food supply is low. You must take what supplies you can carry and venture out in search of food, water, and other survivors.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 549,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 426,
+						"y": 179,
+						"width": 638,
+						"height": 110,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "IntroText1",
+					"properties": {
+						"text": "You will have to find safe food and water, build a fire, and avoid the hazards of exposure. Be sure to monitor your health, hydration, and energy levels, and check your field guide for help. You'll need all your resources if you are to survive THE LAST STAND.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 550,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 424,
+						"y": 289,
+						"width": 650,
+						"height": 110,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

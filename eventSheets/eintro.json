@@ -21,6 +21,18 @@
 				}
 			],
 			"sid": 468253911949971
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "PlayIntro_btn",
+					"sid": 829237096093074
+				}
+			],
+			"actions": [],
+			"sid": 609614912451630
 		}
 	],
 	"sid": 112656403791943

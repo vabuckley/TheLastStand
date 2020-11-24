@@ -3,6 +3,13 @@
 	"plugin-id": "Button",
 	"sid": 940580935972606,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "WaitTime",
+			"type": "number",
+			"desc": "",
+			"sid": 253588601153318
+		}
+	],
 	"behaviorTypes": []
 }
