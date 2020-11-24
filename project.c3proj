@@ -149,6 +149,14 @@
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
 		}
 	],
 	"uniqueId": "w8tr8k4u1cf",
@@ -214,7 +222,9 @@
 			"BadWood",
 			"Background_intro",
 			"Play_button",
-			"Intro_txt1"
+			"Intro_txt1",
+			"PlayIntro_btn",
+			"START"
 		],
 		"subfolders": [
 			{

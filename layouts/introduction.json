@@ -28,7 +28,7 @@
 							1,
 							1,
 							1,
-							0.85
+							0.65
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -37,7 +37,7 @@
 				{
 					"type": "Intro_txt1",
 					"properties": {
-						"text": "A deadly pandemic has swept the planet, killing nearly every last person on Earth. The virus spread quickly and killed quickly. Within weeks, around the globe, government infrastructures failed and all communications ceased. ",
+						"text": "A deadly pandemic has swept the planet, killing nearly every last person on Earth. The virus spread quickly and killed quickly. Within weeks around the globe, government infrastructures failed and all communications ceased. ",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 16,
@@ -58,11 +58,188 @@
 					},
 					"uid": 4,
 					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 1,
+								"wait-time": 8,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 439,
+						"y": 90,
+						"width": 600,
+						"height": 179,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlayIntro_btn",
+					"properties": {
+						"type": "button",
+						"text": "PLAY INTRO",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 537,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 445.5,
-						"y": 215,
-						"width": 600,
+						"x": 272,
+						"y": 358,
+						"width": 104,
+						"height": 53,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "START",
+					"properties": {
+						"type": "button",
+						"text": "OK",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 540,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 504,
+						"y": 359,
+						"width": 104,
+						"height": 53,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Intro_txt1",
+					"properties": {
+						"text": "You have survived by sheltering in place for several months, but now your food supply is low. You must take what supplies you can carry and venture out in search of food, water, and other survivors.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 541,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 1,
+								"wait-time": 8,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 437,
+						"y": 181,
+						"width": 634,
+						"height": 179,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Intro_txt1",
+					"properties": {
+						"text": "You will have to find safe food and water, build a fire, and avoid the hazards of exposure. Be sure to monitor your health, hydration, and energy levels, and check your field guide for help. You'll need all your resources if you are to survive THE LAST STAND.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 542,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 1,
+								"wait-time": 8,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 428,
+						"y": 274,
+						"width": 646,
 						"height": 179,
 						"originX": 0.5,
 						"originY": 0.5,

@@ -1,5 +1,28 @@
 {
 	"name": "eIntroduction",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "PlayIntro_btn",
+					"sid": 324635694182377
+				}
+			],
+			"actions": [
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "Intro_txt1",
+					"sid": 617105784903083,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-in-time": "3"
+					}
+				}
+			],
+			"sid": 318859591318918
+		}
+	],
 	"sid": 523011304435780
 }
