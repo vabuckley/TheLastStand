@@ -203,7 +203,7 @@
 			"Text5",
 			"WaterSources",
 			"WaterPrompt2",
-			"FireStartText",
+			"Text7",
 			"Text8",
 			"Text9",
 			"Text10",
@@ -211,13 +211,7 @@
 			"Sprite7",
 			"DialogBox",
 			"GoodWood",
-			"BadWood",
-			"UnlitFire",
-			"FireTextSpawn",
-			"FireTextSpawn2",
-			"Text6",
-			"FireOkayButto",
-			"Text7"
+			"BadWood"
 		],
 		"subfolders": [
 			{
