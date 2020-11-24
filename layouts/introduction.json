@@ -121,7 +121,7 @@
 					"type": "START",
 					"properties": {
 						"type": "button",
-						"text": "OK",
+						"text": "PLAY GAME",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
