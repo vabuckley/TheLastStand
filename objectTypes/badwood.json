@@ -4,7 +4,13 @@
 	"sid": 194603401085727,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 253029535982288
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

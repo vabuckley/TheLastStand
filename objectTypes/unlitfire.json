@@ -1,14 +1,14 @@
 {
-	"name": "GoodWood",
+	"name": "UnlitFire",
 	"plugin-id": "Sprite",
-	"sid": 340510594686666,
+	"sid": 934170043556176,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Pin",
-			"name": "Pin",
-			"sid": 915759160827361
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 564814049222369
 		}
 	],
 	"effectTypes": [],
@@ -17,41 +17,41 @@
 			{
 				"frames": [
 					{
-						"width": 62,
-						"height": 68,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 28,
+						"height": 10,
+						"originX": 0.5357142857142857,
+						"originY": -1.6,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6449872,
+						"imageSpriteId": 7566057,
 						"collisionPoly": {
 							"points": [
+								0.2857142857142857,
 								0,
+								0.5357142857142857,
 								0,
-								0.5,
+								0.7142857142857143,
 								0,
-								0.9838709677419355,
+								0.7857142857142857,
 								0,
-								0.9838709677419355,
-								0.5,
-								0.9838709677419355,
-								0.9852941176470589,
-								0.5,
-								0.9852941176470589,
+								1,
 								0,
-								0.9852941176470589,
+								0.5357142857142857,
+								1,
 								0,
-								0.5
+								0.6,
+								0.17857142857142858,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 510044282270018,
-				"name": "Animation 1",
-				"isLooping": false,
+				"sid": 626625989692130,
+				"name": "Flame",
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
