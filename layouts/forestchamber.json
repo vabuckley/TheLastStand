@@ -13160,140 +13160,7 @@
 		{
 			"name": "Fire Event",
 			"overriden": 0,
-			"instances": [
-				{
-					"type": "WaterPrompt",
-					"properties": {
-						"text": "Uh oh, it looks like the fire is getting a little bit out of control. What will you do?",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "top-left"
-					},
-					"uid": 514,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 378.7646315027374,
-						"y": 387.41837679933974,
-						"width": 200,
-						"height": 85,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PourButton",
-					"properties": {
-						"type": "button",
-						"text": "Pour your water on it?",
-						"tooltip": "",
-						"initially-visible": false,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 515,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 601.377670964117,
-						"y": 335.3556498285333,
-						"width": 97,
-						"height": 48,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
-					"type": "RunButton",
-					"properties": {
-						"type": "button",
-						"text": "Run away!",
-						"tooltip": "",
-						"initially-visible": false,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 516,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 603.1729374113862,
-						"y": 390.1112764702436,
-						"width": 94.25976480178815,
-						"height": 31,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
-					"type": "DirtButton",
-					"properties": {
-						"type": "button",
-						"text": "Cover it with dirt?",
-						"tooltip": "",
-						"initially-visible": false,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 517,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 601.377670964117,
-						"y": 429.6071383101657,
-						"width": 101,
-						"height": 43,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				}
-			],
+			"instances": [],
 			"sid": 797149296521764,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -13322,6 +13189,41 @@
 			"name": "Playable Area",
 			"overriden": 0,
 			"instances": [
+				{
+					"type": "GoodWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 3,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1325,
+						"y": 184,
+						"width": 38.00781441185279,
+						"height": 37.798110665732,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
 				{
 					"type": "Tilemap3",
 					"properties": {
@@ -13352,7 +13254,7 @@
 							"height": 31,
 							"max-width": 63,
 							"max-height": 45,
-							"data": "8x0,1,0,6x1,4x0,1,8x0,1,23x0,1,6x0,1,4x0,1,8x0,1,23x0,1,6x0,1,4x0,1,7x0,2x1,23x0,1,6x0,1,4x0,1,7x0,2x1,23x0,1,6x0,1,4x0,1,7x0,2x1,16x0,8x1,6x0,9x1,4x0,2x1,16x0,1,18x0,1,2x0,1,4x0,1,17x0,1,18x0,1,2x0,1,4x0,1,17x0,1,18x0,1,2x0,1,4x0,1,17x0,1,18x0,1,2x0,1,4x0,1,17x0,1,18x0,1,2x0,1,4x0,1,17x0,1,18x0,1,2x0,1,4x0,1,17x0,1,18x0,1,2x0,1,4x0,1,17x0,1,18x0,1,2x0,1,4x0,1,17x0,1,18x0,1,2x0,1,4x0,1,17x0,1,18x0,1,2x0,1,4x0,1,17x0,1,18x0,1,2x0,1,4x0,1,17x0,1,18x0,4x1,4x0,1,17x0,1,26x0,1,17x0,1,26x0,1,17x0,1,24x0,3x1,17x0,1,18x0,9x1,17x0,1,18x0,1,25x0,1,18x0,1,25x0,1,18x0,8x1,18x0,1,25x0,1,18x0,1,25x0,1,18x0,1,25x0,1,18x0,1,25x0,1,18x0,1,17x0,5x1,3x0,1,18x0,1,17x0,1,3x0,1,3x0,1,18x0,1,17x0,1,3x0,1,3x0,1,18x0,7x1,4x0,8x1,3x0,1,3x0,1,24x0,1,4x0,1,10x0,1,3x0,1,24x0,1,4x0,1,5x0,6x1,3x0,3x1,22x0,1,4x0,1,5x0,1,10x0,1,22x0,1,4x0,1,5x0,1,10x0,1,22x0,1,4x0,5x1,0,1,10x0,1,16x0,7x1,8x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,5x1,2x0,5x1,16x0,4x1,2x0,10x1,5x0,1,2x0,6x1,14x0,4x1,3x0,1,14x0,1,2x0,2x1,3x0,1,14x0,1,2x0,1,3x0,16x1,2x0,2x1,3x0,1,14x0,1,2x0,1,26x0,1,14x0,1,2x0,1,26x0,1,14x0,1,29x0,1,14x0,1,29x0,1,14x0,31x1,419x0"
+							"data": "8x0,1,0,6x1,4x0,1,8x0,1,23x0,1,6x0,1,4x0,1,8x0,1,23x0,1,6x0,1,4x0,1,7x0,2x1,23x0,1,6x0,1,4x0,1,7x0,2x1,23x0,1,6x0,1,4x0,1,7x0,2x1,16x0,8x1,6x0,1,0,4x1,7x0,2x1,16x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,10x0,1,17x0,1,13x0,1,0,1,7x0,4x1,17x0,1,13x0,1,0,1,7x0,1,20x0,1,13x0,1,0,1,7x0,1,20x0,1,13x0,1,0,1,7x0,3x1,18x0,1,13x0,1,0,1,9x0,1,18x0,1,13x0,1,0,1,9x0,1,18x0,1,13x0,1,0,1,9x0,1,18x0,1,13x0,1,0,1,9x0,1,18x0,1,13x0,1,0,7x1,3x0,1,18x0,1,13x0,1,7x0,1,3x0,1,18x0,1,13x0,1,7x0,1,3x0,1,18x0,7x1,5x0,3x1,7x0,1,3x0,1,24x0,1,5x0,1,9x0,1,3x0,1,24x0,1,5x0,1,4x0,6x1,3x0,3x1,22x0,1,5x0,1,4x0,1,10x0,1,22x0,1,5x0,1,4x0,1,10x0,1,22x0,1,5x0,4x1,0,1,10x0,1,16x0,7x1,8x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,1,10x0,1,16x0,1,14x0,1,0,5x1,2x0,5x1,16x0,3x1,3x0,10x1,5x0,1,2x0,6x1,14x0,4x1,3x0,1,14x0,1,2x0,2x1,3x0,1,14x0,1,2x0,1,3x0,16x1,2x0,2x1,3x0,1,14x0,1,2x0,1,26x0,1,14x0,1,2x0,1,26x0,1,14x0,1,29x0,1,14x0,1,29x0,1,14x0,31x1,419x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -13400,7 +13302,7 @@
 							"height": 32,
 							"max-width": 106,
 							"max-height": 61,
-							"data": "10x0,2,4x12,22,6x0,1,6x11,21,41x0,2,4x12,22,6x0,2,6x12,22,41x0,2,4x12,22,6x0,2,6x12,22,41x0,2,4x12,22,6x0,2,6x12,22,41x0,2,4x12,22,6x0,3,2x13,24,2x12,4,23,41x0,2,4x12,22,9x0,2,2x12,22,35x0,1,6x11,26,4x12,6,4x11,21,4x0,2,2x12,22,35x0,2,16x12,22,4x0,2,2x12,22,35x0,2,16x12,22,4x0,2,2x12,22,35x0,2,16x12,22,4x0,2,2x12,22,35x0,2,16x12,22,4x0,2,2x12,22,35x0,2,16x12,22,4x0,2,2x12,22,35x0,2,16x12,22,4x0,2,2x12,22,35x0,2,16x12,22,4x0,2,2x12,22,35x0,2,16x12,22,4x0,2,2x12,22,35x0,2,16x12,22,4x0,2,2x12,22,35x0,2,16x12,22,4x0,2,2x12,22,35x0,2,16x12,22,4x0,2,2x12,22,35x0,2,16x12,6,4x11,26,2x12,22,35x0,2,24x12,22,35x0,2,16x12,4,7x13,23,35x0,2,16x12,22,43x0,2,16x12,22,43x0,2,16x12,22,43x0,2,16x12,22,43x0,2,16x12,6,6x11,21,36x0,2,23x12,22,36x0,2,23x12,22,36x0,2,15x12,4,5x13,24,12,22,36x0,2,15x12,22,5x0,2,12,22,36x0,2,15x12,22,5x0,2,12,22,36x0,3,5x13,24,2x12,4,6x13,23,5x0,2,12,22,42x0,2,2x12,22,12x0,2,12,22,42x0,2,2x12,22,12x0,2,12,22,42x0,2,2x12,22,12x0,2,12,22,42x0,2,2x12,22,7x0,1,4x11,26,12,6,11,21,40x0,2,2x12,22,7x0,2,8x12,22,40x0,2,2x12,22,7x0,2,8x12,22,40x0,2,2x12,6,3x11,21,3x0,2,8x12,22,34x0,1,5x11,26,6x12,22,3x0,2,8x12,22,34x0,2,12x12,22,3x0,2,8x12,22,34x0,2,12x12,22,3x0,2,8x12,22,34x0,2,12x12,22,3x0,2,8x12,22,34x0,2,12x12,22,3x0,2,8x12,22,34x0,2,12x12,22,3x0,3,3x13,24,4,3x13,23,34x0,3,13,24,12,4,8x13,23,7x0,2,22,40x0,2,12,22,16x0,2,22,40x0,2,12,22,16x0,2,22,2x0,1,11,21,32x0,1,21,0,2,12,22,16x0,2,22,2x0,2,12,22,32x0,2,22,0,2,12,6,16x11,26,6,2x11,26,12,22,32x0,2,22,0,2,24x12,22,32x0,2,6,11,26,24x12,22,32x0,3,27x13,23,3263x0"
+							"data": "10x0,2,4x12,22,6x0,1,6x11,21,41x0,2,4x12,22,6x0,2,6x12,22,41x0,2,4x12,22,6x0,2,6x12,22,41x0,2,4x12,22,6x0,2,6x12,22,41x0,2,4x12,22,6x0,2,5x12,4,23,41x0,2,4x12,22,6x0,2,5x12,22,35x0,1,6x11,26,4x12,22,3x0,1,2x11,26,5x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,8x12,22,35x0,2,11x12,22,3x0,2,5x12,4,2x13,23,35x0,2,11x12,22,3x0,2,5x12,22,38x0,2,11x12,22,3x0,2,5x12,22,38x0,2,11x12,22,3x0,2,5x12,22,38x0,2,11x12,22,3x0,2,5x12,22,38x0,2,11x12,22,3x0,2,5x12,6,11,21,36x0,2,11x12,22,3x0,2,7x12,22,36x0,2,11x12,22,3x0,2,7x12,22,36x0,2,11x12,22,3x0,3,5x13,24,12,22,36x0,2,11x12,22,9x0,2,12,22,36x0,2,11x12,22,9x0,2,12,22,36x0,3,5x13,24,3x12,4,13,23,9x0,2,12,22,42x0,2,3x12,22,11x0,2,12,22,42x0,2,3x12,22,11x0,2,12,22,42x0,2,3x12,22,11x0,2,12,22,42x0,2,3x12,22,6x0,1,4x11,26,12,6,11,21,40x0,2,3x12,22,6x0,2,8x12,22,40x0,2,3x12,22,6x0,2,8x12,22,40x0,2,3x12,6,2x11,21,3x0,2,8x12,22,34x0,1,5x11,26,6x12,22,3x0,2,8x12,22,34x0,2,12x12,22,3x0,2,8x12,22,34x0,2,12x12,22,3x0,2,8x12,22,34x0,2,12x12,22,3x0,2,8x12,22,34x0,2,12x12,22,3x0,2,8x12,22,34x0,2,12x12,22,3x0,3,3x13,24,4,3x13,23,34x0,3,13,24,12,4,8x13,23,7x0,2,22,40x0,2,12,22,16x0,2,22,40x0,2,12,22,16x0,2,22,2x0,1,11,21,32x0,1,21,0,2,12,22,16x0,2,22,2x0,2,12,22,32x0,2,22,0,2,12,6,16x11,26,6,2x11,26,12,22,32x0,2,22,0,2,24x12,22,32x0,2,6,11,26,24x12,22,32x0,3,27x13,23,3263x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -13569,8 +13471,8 @@
 						}
 					},
 					"world": {
-						"x": 448,
-						"y": 512,
+						"x": 420,
+						"y": 707,
 						"width": 24,
 						"height": 24,
 						"originX": 2,
@@ -13610,8 +13512,8 @@
 						}
 					},
 					"world": {
-						"x": 514.6198072722395,
-						"y": 531.2119199964233,
+						"x": 374,
+						"y": 797,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13653,8 +13555,8 @@
 						}
 					},
 					"world": {
-						"x": 480,
-						"y": 544,
+						"x": 591,
+						"y": 739,
 						"width": 24,
 						"height": 24,
 						"originX": 2,
@@ -13696,8 +13598,8 @@
 						}
 					},
 					"world": {
-						"x": 448,
-						"y": 544,
+						"x": 314,
+						"y": 785,
 						"width": 24,
 						"height": 24,
 						"originX": 2,
@@ -13737,8 +13639,8 @@
 						}
 					},
 					"world": {
-						"x": 546.6198072722395,
-						"y": 531.2119199964233,
+						"x": 468,
+						"y": 656,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13778,8 +13680,8 @@
 						}
 					},
 					"world": {
-						"x": 546.6198072722395,
-						"y": 563.2119199964233,
+						"x": 486,
+						"y": 766,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13819,8 +13721,8 @@
 						}
 					},
 					"world": {
-						"x": 578.6198072722395,
-						"y": 531.2119199964233,
+						"x": 312,
+						"y": 656,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13860,8 +13762,8 @@
 						}
 					},
 					"world": {
-						"x": 578.6198072722395,
-						"y": 563.2119199964233,
+						"x": 633,
+						"y": 659,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13901,8 +13803,8 @@
 						}
 					},
 					"world": {
-						"x": 610.6198072722395,
-						"y": 563.2119199964233,
+						"x": 231,
+						"y": 734,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13942,8 +13844,8 @@
 						}
 					},
 					"world": {
-						"x": 610.6198072722395,
-						"y": 531.2119199964233,
+						"x": 618,
+						"y": 798,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13999,7 +13901,7 @@
 				{
 					"type": "Fire",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Flame",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -14016,8 +13918,8 @@
 						}
 					},
 					"world": {
-						"x": 1348,
-						"y": 388,
+						"x": 1339,
+						"y": 419,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -14130,6 +14032,318 @@
 						"height": 16.40075322702262,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 532,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1392.5619868948143,
+						"y": 109.1305764221133,
+						"width": 30,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 537,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1220.014877726908,
+						"y": 287.71074236007814,
+						"width": 30,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 540,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1438.885951962916,
+						"y": 478.98182095684956,
+						"width": 30,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 541,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1283.5223056884531,
+						"y": 151.9818209568496,
+						"width": 30,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 542,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1061.9190087329746,
+						"y": 381.44297598145806,
+						"width": 30,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 543,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1437.5157030559687,
+						"y": 283.9355371180039,
+						"width": 30,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UnlitFire",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Flame",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 544,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1337,
+						"y": 422,
+						"width": 28,
+						"height": 10,
+						"originX": 0.5357142857142857,
+						"originY": -1.6,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FireTextSpawn",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 545,
+					"instanceVariables": {
+						"Dialogue": "It's important to start a fire before dark. Look in the field guide for some tips on how to collect wood and start a fire.",
+						"ShowFireText": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 978.7960526315788,
+						"y": 333.2653061224489,
+						"width": 159.73792813660359,
+						"height": 212.2060229818801,
+						"originX": 0.5723684210526315,
+						"originY": 0.4897959183673469,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FireTextSpawn2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 514,
+					"instanceVariables": {
+						"Dialogue2": "Great job! You started a fire! Now its time to find water. Look in the field guide for more information on finding good water sources.",
+						"ShowFireText2": false,
+						"Dialogue": "This looks like a good place to build a fire. Stand here to start a fire using the technique from the field guide.",
+						"Dialogue3": "Hmm it doesn't seem like this wood will light on fire. Check the field guide for tips on finding good firewood."
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1351,
+						"y": 419,
+						"width": 91.73792813660359,
+						"height": 85.2060229818801,
+						"originX": 0.5723684210526315,
+						"originY": 0.4897959183673469,
 						"color": [
 							1,
 							1,
