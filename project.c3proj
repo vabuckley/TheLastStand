@@ -213,7 +213,8 @@
 			"GoodWood",
 			"BadWood",
 			"Background_intro",
-			"Play_button"
+			"Play_button",
+			"Intro_txt1"
 		],
 		"subfolders": [
 			{
