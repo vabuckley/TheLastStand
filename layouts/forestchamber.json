@@ -13343,10 +13343,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1073.8500864792304,
-						"y": 815.603854416407,
-						"width": 72.73792813660361,
-						"height": 91.2060229818801,
+						"x": 1462,
+						"y": 768,
+						"width": 45.961011957934865,
+						"height": 57.63047175379182,
 						"originX": 0.5723684210526315,
 						"originY": 0.4897959183673469,
 						"color": [
@@ -14440,6 +14440,34 @@
 			"overriden": 1,
 			"instances": [],
 			"sid": 436717817116694,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "FG_Shelter",
+			"overriden": 1,
+			"instances": [],
+			"sid": 980294783028904,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [

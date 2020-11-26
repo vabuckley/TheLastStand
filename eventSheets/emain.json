@@ -486,6 +486,114 @@
 						}
 					],
 					"sid": 221134737476141
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 102252624882747,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shelter_FireButton"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-opacity",
+							"objectClass": "System",
+							"sid": 573445065439477,
+							"parameters": {
+								"layer": "\"FG_Shelter\"",
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 196343776365303,
+							"parameters": {
+								"layer": "\"FG_Shelter\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-opacity",
+							"objectClass": "System",
+							"sid": 661796859423537,
+							"parameters": {
+								"layer": "\"Field Guide\"",
+								"opacity": "0"
+							}
+						}
+					],
+					"sid": 665373614269312
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 705542572868584,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ReturnIcon"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-opacity",
+							"objectClass": "System",
+							"sid": 165161715175931,
+							"parameters": {
+								"layer": "\"Field Guide\"",
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-layer-opacity",
+							"objectClass": "System",
+							"sid": 365139853446247,
+							"parameters": {
+								"layer": "\"FG_Shelter\"",
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-layer-opacity",
+							"objectClass": "System",
+							"sid": 467180492046452,
+							"parameters": {
+								"layer": "\"FG_H20Source\"",
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-layer-opacity",
+							"objectClass": "System",
+							"sid": 488884576235369,
+							"parameters": {
+								"layer": "\"FG_H20Sanitize\"",
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-layer-opacity",
+							"objectClass": "System",
+							"sid": 387521850219816,
+							"parameters": {
+								"layer": "\"FG_Food\"",
+								"opacity": "0"
+							}
+						}
+					],
+					"sid": 279920239883135
 				}
 			],
 			"sid": 178142049900453

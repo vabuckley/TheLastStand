@@ -64,16 +64,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Button",
-			"name": "Button",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
+			"id": "Button",
+			"name": "Button",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
@@ -166,17 +166,11 @@
 			"DirtButton",
 			"PourButton",
 			"RunButton",
-			"JournalBackground",
-			"H20_Clean",
-			"S_Fire",
 			"Sprite3",
-			"Env_WF",
-			"Env_WF_Des",
 			"Fire",
 			"Sprite",
 			"BarBacking1",
 			"Video",
-			"FireStartGIF",
 			"Sprite2",
 			"Text",
 			"Text2",
@@ -184,15 +178,7 @@
 			"Sprite4",
 			"WaterTextSpawn",
 			"ItemQuantity",
-			"GoodMushroomPhoto",
-			"BadMushroomPhoto",
-			"BadWaterPhotot",
-			"GoodWaterPhoto",
-			"GoodFirewoodPhoto",
 			"Sprite10",
-			"BadFirewoodPhoto",
-			"BoilingWaterPhoto",
-			"SmotheredCampfirePhoto",
 			"Timer",
 			"Sprite6",
 			"Text3",
@@ -222,7 +208,10 @@
 			"Intro_bkgrd",
 			"PlayIntro_btn",
 			"PlayGame_btn",
-			"IntroText1"
+			"IntroText1",
+			"Sprite11",
+			"Video2",
+			"FG_WaterSourceHeader"
 		],
 		"subfolders": [
 			{
@@ -309,6 +298,31 @@
 					}
 				],
 				"name": "Collectibles"
+			},
+			{
+				"items": [
+					"BadFirewoodPhoto",
+					"BadMushroomPhoto",
+					"BadWaterPhotot",
+					"BoilingWaterPhoto",
+					"FieldGuideDesc",
+					"FireP1",
+					"FireP2",
+					"FireStartGIF",
+					"GoodFirewoodPhoto",
+					"GoodMushroomPhoto",
+					"GoodWaterPhoto",
+					"H20_SanitizeButton",
+					"SmotheredCampfirePhoto",
+					"Shelter_FireButton",
+					"ShelterIcon",
+					"FG_FoodButton",
+					"FG_WaterIcon",
+					"FGBackground",
+					"Shelter_FireHeader"
+				],
+				"subfolders": [],
+				"name": "FieldGuide"
 			}
 		]
 	},
