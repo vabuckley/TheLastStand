@@ -505,45 +505,169 @@
 						}
 					],
 					"sid": 204761716458192
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 612981965909706,
+							"parameters": {
+								"object": "GoodWood"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "GoodWood",
+							"sid": 605330315328667,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Player",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "unpin",
+							"objectClass": "BadWood",
+							"sid": 506191746932448,
+							"behaviorType": "Pin"
+						}
+					],
+					"sid": 915681805765798
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 618535242669242,
+							"parameters": {
+								"object": "BadWood"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "BadWood",
+							"sid": 940021698098087,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Player",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "unpin",
+							"objectClass": "GoodWood",
+							"sid": 286364560948267,
+							"behaviorType": "Pin"
+						}
+					],
+					"sid": 305208426614454
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 492821187194967,
+							"parameters": {
+								"object": "BadWater"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "unpin",
+							"objectClass": "GoodWood",
+							"sid": 480983651613207,
+							"behaviorType": "Pin"
+						}
+					],
+					"sid": 933344893394852
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 177936880768788,
+							"parameters": {
+								"object": "GoodWater"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "unpin",
+							"objectClass": "GoodWood",
+							"sid": 911816584789187,
+							"behaviorType": "Pin"
+						}
+					],
+					"sid": 401697979109901
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 751820564407563,
+							"parameters": {
+								"object": "BadWater"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "unpin",
+							"objectClass": "BadWood",
+							"sid": 300165395128557,
+							"behaviorType": "Pin"
+						}
+					],
+					"sid": 131718189386011
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 621853033188898,
+							"parameters": {
+								"object": "GoodWater"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "unpin",
+							"objectClass": "BadWood",
+							"sid": 666188753502115,
+							"behaviorType": "Pin"
+						}
+					],
+					"sid": 165399858629966
 				}
 			],
 			"sid": 852158478653131
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 990345524458626,
-					"parameters": {
-						"object": "BadWood"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "BadWood",
-					"sid": 271650250880598,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "Player",
-						"image-point": "1",
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				},
-				{
-					"id": "unpin",
-					"objectClass": "GoodWood",
-					"sid": 223038032189141,
-					"behaviorType": "Pin"
-				}
-			],
-			"sid": 269791194428353
 		}
 	],
 	"sid": 354399469016029
