@@ -608,80 +608,6 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Water Prompt",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Player",
-							"sid": 645480924196940,
-							"parameters": {
-								"object": "WaterTextSpawn2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 612944895092396,
-							"parameters": {
-								"layer": "\"ShowDialogue\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Dialogue",
-							"sid": 445415663894004,
-							"parameters": {
-								"text": "WaterTextSpawn2.Dialogue"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "WaterTextSpawn2",
-							"sid": 480563487344789,
-							"parameters": {
-								"instance-variable": "ShowWaterText",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 436138711904815
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 929747168348637
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 318592076924519,
-							"parameters": {
-								"layer": "\"ShowDialogue\"",
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 689660196057544
-				}
-			],
-			"sid": 783932951612032
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
 			"title": "Mushrooms",
 			"description": "",
 			"isActiveOnStart": true,
@@ -752,6 +678,63 @@
 				}
 			],
 			"sid": 437875128808316
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Water Prompt",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 430735882470613,
+							"parameters": {
+								"object": "WaterTextSpawn2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 968687924276239,
+							"parameters": {
+								"layer": "\"ShowDialogue2\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 459772185823070
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 373897534889973
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 400315077223291,
+							"parameters": {
+								"layer": "\"ShowDialogue2\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 130711401194012
+				}
+			],
+			"sid": 820459801066316
 		}
 	],
 	"sid": 354399469016029

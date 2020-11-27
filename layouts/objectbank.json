@@ -801,6 +801,38 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "WaterTextSpawn2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 600,
+					"instanceVariables": {
+						"Dialogue": "Looks like you found a good source of water, great job! Before you drink your water, make sure you check the field guide for some important tips on how to make sure your water is safe to drink.",
+						"ShowWaterText": true
+					},
+					"behaviors": {},
+					"world": {
+						"x": 662,
+						"y": 648,
+						"width": 126.96101195793484,
+						"height": 62.63047175379182,
+						"originX": 0.5723684210526315,
+						"originY": 0.4897959183673469,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 655590328146873,

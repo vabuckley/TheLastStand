@@ -1,0 +1,15 @@
+{
+	"name": "Dialogue2",
+	"plugin-id": "Text",
+	"sid": 901101134257385,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 124988996189559
+		}
+	],
+	"effectTypes": []
+}

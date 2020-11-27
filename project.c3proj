@@ -227,7 +227,9 @@
 			"MushroomTextSpawn",
 			"MushroomTextSpawn2",
 			"WaterTextSpawn3",
-			"WaterTextSpawnx"
+			"WaterTextSpawnx",
+			"Dialogue2",
+			"DialogBox2"
 		],
 		"subfolders": [
 			{
