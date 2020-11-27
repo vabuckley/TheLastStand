@@ -1,0 +1,73 @@
+{
+	"name": "MushroomTextSpawn2",
+	"plugin-id": "Sprite",
+	"sid": 347099587785988,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "MushroomDialogue",
+			"type": "string",
+			"desc": "",
+			"sid": 432482477518447
+		},
+		{
+			"name": "ShowMushText",
+			"type": "boolean",
+			"desc": "",
+			"sid": 768769710016207
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 152,
+						"height": 147,
+						"originX": 0.5723684210526315,
+						"originY": 0.4897959183673469,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2351556,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 131915581359071,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3278616,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 440538126911168,
+				"name": "Blue",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

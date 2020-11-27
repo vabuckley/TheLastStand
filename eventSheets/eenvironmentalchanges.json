@@ -606,68 +606,152 @@
 			"sid": 852158478653131
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Water Prompt",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Player",
-					"sid": 828115571410302,
-					"parameters": {
-						"object": "WaterTextSpawn2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 126394559482383,
-					"parameters": {
-						"layer": "\"ShowDialogue\"",
-						"visibility": "visible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 645480924196940,
+							"parameters": {
+								"object": "WaterTextSpawn2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 612944895092396,
+							"parameters": {
+								"layer": "\"ShowDialogue\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Dialogue",
+							"sid": 445415663894004,
+							"parameters": {
+								"text": "WaterTextSpawn2.Dialogue"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "WaterTextSpawn2",
+							"sid": 480563487344789,
+							"parameters": {
+								"instance-variable": "ShowWaterText",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 436138711904815
 				},
 				{
-					"id": "set-text",
-					"objectClass": "Dialogue",
-					"sid": 578068282904020,
-					"parameters": {
-						"text": "WaterTextSpawn2.Dialogue"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "WaterTextSpawn",
-					"sid": 738156730618411,
-					"parameters": {
-						"instance-variable": "ShowWaterText",
-						"value": "true"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 929747168348637
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 318592076924519,
+							"parameters": {
+								"layer": "\"ShowDialogue\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 689660196057544
 				}
 			],
-			"sid": 718271688694565
+			"sid": 783932951612032
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Mushrooms",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 658500245321906
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 106250468735582,
+							"parameters": {
+								"object": "MushroomTextSpawn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 467629117143609,
+							"parameters": {
+								"layer": "\"ShowDialogue\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Dialogue",
+							"sid": 341440113151267,
+							"parameters": {
+								"text": "MushroomTextSpawn.MushroomDialogue"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "MushroomTextSpawn",
+							"sid": 108569015698511,
+							"parameters": {
+								"instance-variable": "ShowMushText",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 233000592349734
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 308056720700919
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 609143962648450,
+							"parameters": {
+								"layer": "\"ShowDialogue\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 547539639602276
 				}
 			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 441990656220010,
-					"parameters": {
-						"layer": "\"ShowDialogue\"",
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 459333277688970
+			"sid": 437875128808316
 		}
 	],
 	"sid": 354399469016029

@@ -223,7 +223,11 @@
 			"Text12",
 			"Text13",
 			"Text14",
-			"WaterTextSpawn2"
+			"WaterTextSpawn2",
+			"MushroomTextSpawn",
+			"MushroomTextSpawn2",
+			"WaterTextSpawn3",
+			"WaterTextSpawnx"
 		],
 		"subfolders": [
 			{

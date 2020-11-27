@@ -1077,6 +1077,154 @@
 				}
 			],
 			"sid": 673586124447367
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Water Prompt3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 419508873672149,
+							"parameters": {
+								"object": "WaterTextSpawn2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 894524531422788,
+							"parameters": {
+								"layer": "\"ShowDialogue\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Dialogue",
+							"sid": 643048596967864,
+							"parameters": {
+								"text": "WaterTextSpawn2.Dialogue"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "WaterTextSpawn",
+							"sid": 103163698866232,
+							"parameters": {
+								"instance-variable": "ShowWaterText",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 890953561710569
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 417764747115929
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 121936525641013,
+							"parameters": {
+								"layer": "\"ShowDialogue\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 608948491631546
+				}
+			],
+			"sid": 936108113934385
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Mushrooms3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 961599158801727,
+							"parameters": {
+								"object": "MushroomTextSpawn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 295065807439952,
+							"parameters": {
+								"layer": "\"ShowDialogue\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Dialogue",
+							"sid": 651268649934675,
+							"parameters": {
+								"text": "MushroomTextSpawn.MushroomDialogue"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "MushroomTextSpawn",
+							"sid": 323523149496555,
+							"parameters": {
+								"instance-variable": "ShowMushText",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 597896613450445
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 240535389636631
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 785631769175524,
+							"parameters": {
+								"layer": "\"ShowDialogue\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 456360248392516
+				}
+			],
+			"sid": 170347427783887
 		}
 	],
 	"sid": 829106802608209

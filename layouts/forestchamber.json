@@ -14288,6 +14288,38 @@
 					}
 				},
 				{
+					"type": "MushroomTextSpawn",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 524,
+					"instanceVariables": {
+						"MushroomDialogue": "Now that you've found water and started a fire, you can look for some food. Check the field guide for some tips on safely foraging for food.",
+						"ShowMushText": true
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1041,
+						"y": 817,
+						"width": 201.9610119579349,
+						"height": 98.63047175379182,
+						"originX": 0.5723684210526315,
+						"originY": 0.4897959183673469,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "WaterTextSpawn2",
 					"properties": {
 						"initially-visible": false,
@@ -14299,13 +14331,13 @@
 					"uid": 3,
 					"instanceVariables": {
 						"Dialogue": "Looks like you found a good source of water, great job! Before you drink your water, make sure you check the field guide for some important tips on how to make sure your water is safe to drink.",
-						"ShowWaterText": false
+						"ShowWaterText": true
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1509,
-						"y": 766,
-						"width": 113.96101195793486,
+						"x": 1513.4407894736842,
+						"y": 764,
+						"width": 126.96101195793486,
 						"height": 62.63047175379182,
 						"originX": 0.5723684210526315,
 						"originY": 0.4897959183673469,
