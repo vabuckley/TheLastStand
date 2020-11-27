@@ -95,6 +95,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
@@ -209,9 +217,12 @@
 			"PlayIntro_btn",
 			"PlayGame_btn",
 			"IntroText1",
-			"Sprite11",
 			"Video2",
-			"FG_WaterSourceHeader"
+			"Text11",
+			"TextInput",
+			"Text12",
+			"Text13",
+			"Text14"
 		],
 		"subfolders": [
 			{
@@ -319,7 +330,18 @@
 					"FG_FoodButton",
 					"FG_WaterIcon",
 					"FGBackground",
-					"Shelter_FireHeader"
+					"Shelter_FireHeader",
+					"H20P1_1",
+					"Food_Header",
+					"H20P2",
+					"H20SanitizeP1",
+					"FG_WaterSourceHeader",
+					"FG_WoodGoodp1",
+					"FGFoodIcon",
+					"FGShelterWood_Header",
+					"FGFindWoodP2",
+					"FG_H20SourceButton",
+					"FGShelter_WoodButton"
 				],
 				"subfolders": [],
 				"name": "FieldGuide"
@@ -352,7 +374,6 @@
 		"items": [
 			"eMain",
 			"ePlayer",
-			"eFieldGuide",
 			"eEnvironmentalChanges",
 			"eTitle",
 			"eIntro"

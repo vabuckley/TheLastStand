@@ -1,0 +1,57 @@
+{
+	"name": "FGShelter_WoodButton",
+	"plugin-id": "Sprite",
+	"sid": 649829262923399,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 678,
+						"height": 153,
+						"originX": 0.5435103244837758,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8969895,
+						"collisionPoly": {
+							"points": [
+								0.01327433628318584,
+								0.058823529411764705,
+								0.5435103244837758,
+								0.006535947712418301,
+								0.9970501474926253,
+								0.39215686274509803,
+								0.9970501474926253,
+								0.5,
+								0.9970501474926253,
+								0.6013071895424836,
+								0.5435103244837758,
+								0.9869281045751634,
+								0.01327433628318584,
+								0.934640522875817,
+								0.0014749262536873156,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 240817117227729,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

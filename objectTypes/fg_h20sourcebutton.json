@@ -1,0 +1,57 @@
+{
+	"name": "FG_H20SourceButton",
+	"plugin-id": "Sprite",
+	"sid": 858223735855283,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 678,
+						"height": 153,
+						"originX": 0.5346607669616519,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4909565,
+						"collisionPoly": {
+							"points": [
+								0.01327433628318584,
+								0.058823529411764705,
+								0.5346607669616519,
+								0.006535947712418301,
+								0.9970501474926253,
+								0.31372549019607837,
+								0.9970501474926253,
+								0.5,
+								0.9970501474926253,
+								0.6797385620915032,
+								0.5346607669616519,
+								0.9869281045751634,
+								0.01327433628318584,
+								0.934640522875817,
+								0.0014749262536873156,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 380486468426903,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

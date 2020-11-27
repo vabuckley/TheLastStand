@@ -2,6 +2,376 @@
 	"name": "GlobalLayers",
 	"layers": [
 		{
+			"name": "FG_Wood",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "FGBackground",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 589,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 447,
+						"y": 248,
+						"width": 697.5592827364554,
+						"height": 434.25521545001874,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ReturnIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 590,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 718,
+						"y": 416,
+						"width": 34.199652782508515,
+						"height": 34.199652782508515,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FGShelterWood_Header",
+					"properties": {
+						"text": "Shelter: Finding Wood",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 15,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 591,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 216,
+						"y": 71,
+						"width": 224,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ShelterIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 592,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 193,
+						"y": 81,
+						"width": 35.85631317822338,
+						"height": 35.85631317822338,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FG_WoodGoodp1",
+					"properties": {
+						"text": "When gathering firewood, look for dry, hard wood with little or no bark.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 593,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 169,
+						"y": 135,
+						"width": 259,
+						"height": 55,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodFirewoodPhoto",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 594,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 301,
+						"y": 272,
+						"width": 198.3676717064009,
+						"height": 131.66654209512362,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadFirewoodPhoto",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 595,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 600,
+						"y": 239,
+						"width": 227.35611926572452,
+						"height": 128.08795451590117,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 596,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 601,
+						"y": 342,
+						"width": 41.56024034838299,
+						"height": 40.378703173490635,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 597,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 299,
+						"y": 387,
+						"width": 38.00781441185279,
+						"height": 37.798110665732,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FGFindWoodP2",
+					"properties": {
+						"text": "Damp wood is harder to ignite and keep burning.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 598,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 495,
+						"y": 103,
+						"width": 200,
+						"height": 68,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 930235654213439,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": true
+		},
+		{
 			"name": "FG_Food",
 			"overriden": 0,
 			"instances": [
@@ -18,8 +388,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 622,
-						"y": 446,
+						"x": 446,
+						"y": 248,
 						"width": 697.5592827364554,
 						"height": 434.25521545001874,
 						"originX": 0.5,
@@ -47,8 +417,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 899,
-						"y": 618,
+						"x": 722,
+						"y": 414,
 						"width": 34.199652782508515,
 						"height": 34.199652782508515,
 						"originX": 0.5,
@@ -62,11 +432,308 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Food_Header",
+					"properties": {
+						"text": "Food: Mushrooms",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 15,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 581,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 231,
+						"y": 67,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FGFoodIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 582,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 199,
+						"y": 77,
+						"width": 35.856313,
+						"height": 35.856313,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadMushroomPhoto",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 583,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 564,
+						"y": 343,
+						"width": 184.84016941873915,
+						"height": 123.22677961249278,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodMushroomPhoto",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 584,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 336,
+						"y": 355,
+						"width": 107.38755908321387,
+						"height": 107.38755908321387,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodMush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 585,
+					"instanceVariables": {
+						"AddHealth": 5,
+						"AddNutrition": 5,
+						"AddHydration": 5
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 290,
+						"y": 358,
+						"width": 41.98809355043403,
+						"height": 41.98809355043403,
+						"originX": 2,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadMush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 586,
+					"instanceVariables": {
+						"HealthDamage": 5
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 699,
+						"y": 349,
+						"width": 41.988094,
+						"height": 41.988094,
+						"originX": 0.5454545454545454,
+						"originY": 0.5652173913043478,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text13",
+					"properties": {
+						"text": "There are many types of edible mushrooms that can be found in North America. \n\nIn this area, you might be able to find some Oyster Mushrooms like these. They are nutritious and safe to eat, and often grow on fallen trees or stumps. ",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 587,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 174,
+						"y": 114,
+						"width": 272,
+						"height": 181,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text14",
+					"properties": {
+						"text": "Be careful when foraging for mushrooms- Some can be harmful or even fatal for humans to eat. \n\nOne type that might be found in this area is known as Pholiotina Rugosa. It is tall, brown, skinny mushroom and is often found growing in dung or rich soil. Be sure to avoid this mushroom when foraging. Ingesting it can lead to severe illness or death. \n\n",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 588,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 472,
+						"y": 50,
+						"width": 275,
+						"height": 251,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 720012431721928,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,
@@ -80,13 +747,13 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,
 			"blendMode": "normal",
-			"global": false
+			"global": true
 		},
 		{
 			"name": "FG_H20Sanitize",
@@ -105,7 +772,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 449,
+						"x": 447,
 						"y": 246,
 						"width": 697.5592827364554,
 						"height": 434.25521545001874,
@@ -134,8 +801,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 305,
-						"y": 243,
+						"x": 193,
+						"y": 74,
 						"width": 35.856313,
 						"height": 35.856313,
 						"originX": 0.5,
@@ -178,11 +845,203 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Text11",
+					"properties": {
+						"text": "Water: Sanitize",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 15,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 576,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 223,
+						"y": 62,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "GoodWaterFull",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 577,
+					"instanceVariables": {
+						"AddHydration": 5
+					},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 615,
+						"y": 362,
+						"width": 42.02379581715463,
+						"height": 42.02379581715463,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "H20SanitizeP1",
+					"properties": {
+						"text": "Once the fire is going, you can purify the water you collected earlier by boiling it over the fire. Heating up the water can kill any bacteria that might have been living in it, making it much safer to drink. \n\n\nPlace a metal jug directly on the fire to bring it to a boil. Make sure you find a flat, stable area of the fire to place you jug to avoid spilling your water. Also make sure you allow your vessel to cool before you drink your newly-purified water.  \n",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 578,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 166,
+						"y": 103,
+						"width": 275,
+						"height": 319,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text12",
+					"properties": {
+						"text": "Pick up the vessel and carry it to the safest water source. Then, hold it over the fire to sanitize and drink it.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 579,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 494,
+						"y": 240,
+						"width": 247,
+						"height": 91,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BoilingWaterPhoto",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 580,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 614,
+						"y": 141,
+						"width": 158.79929041441773,
+						"height": 158.79929041441773,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 907762036843044,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,
@@ -196,13 +1055,13 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,
 			"blendMode": "normal",
-			"global": false
+			"global": true
 		},
 		{
 			"name": "FG_H20Source",
@@ -365,11 +1224,227 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "H20P1_1",
+					"properties": {
+						"text": "You can never know for sure if a water source is safe to drink, but running water is usually safer than stagnant water.\n",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 570,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 186,
+						"y": 141,
+						"width": 242,
+						"height": 149,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWaterPhoto",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 572,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 306,
+						"y": 299,
+						"width": 175.91075530229148,
+						"height": 117.33109948385261,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RunningWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Running Water",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 573,
+					"instanceVariables": {
+						"WaterCount": 0
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 314,
+						"y": 399,
+						"width": 104.47465497949202,
+						"height": 50.73732748974601,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "StandingWater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 574,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 556,
+						"y": 471,
+						"width": 79.80929651064348,
+						"height": 79.38924758164009,
+						"originX": -0.39473684210526316,
+						"originY": 2.0264550264550265,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BadWaterPhotot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 571,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 554,
+						"y": 191,
+						"width": 155.45738966031817,
+						"height": 206.96989747675497,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "H20P2",
+					"properties": {
+						"text": "It is easier for harmful bacteria and other contaminates to grow in stagnant water.\n",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 575,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 642,
+						"y": 103,
+						"width": 99,
+						"height": 180,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 317776410771410,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,
@@ -383,13 +1458,13 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,
 			"blendMode": "normal",
-			"global": false
+			"global": true
 		},
 		{
 			"name": "FG_Shelter",
@@ -737,10 +1812,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 179,
-						"y": 60,
-						"width": 31.34816188285594,
-						"height": 31.34816188285594,
+						"x": 720,
+						"y": 66,
+						"width": 31.180703379357894,
+						"height": 31.180703379357894,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -766,8 +1841,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 597,
-						"y": 236,
+						"x": 599,
+						"y": 255,
 						"width": 267.16363043146487,
 						"height": 319.0320702378818,
 						"originX": 0.5,
@@ -795,8 +1870,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 305,
-						"y": 280,
+						"x": 309,
+						"y": 321,
 						"width": 276.9093573958833,
 						"height": 62.89681569169028,
 						"originX": 0.5302359882005899,
@@ -824,8 +1899,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 310,
-						"y": 360,
+						"x": 313,
+						"y": 396,
 						"width": 276.909357,
 						"height": 62.896815999999994,
 						"originX": 0.5486725663716814,
@@ -841,7 +1916,7 @@
 					}
 				},
 				{
-					"type": "Sprite11",
+					"type": "FG_H20SourceButton",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -853,8 +1928,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 306,
-						"y": 198,
+						"x": 310,
+						"y": 247,
 						"width": 276.909357,
 						"height": 62.896815999999994,
 						"originX": 0.5346607669616519,
@@ -882,10 +1957,39 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 308,
-						"y": 121,
+						"x": 312,
+						"y": 172,
 						"width": 276.909357,
 						"height": 62.896816,
+						"originX": 0.5435103244837758,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FGShelter_WoodButton",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 599,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 312,
+						"y": 100,
+						"width": 276.909357,
+						"height": 62.896815999999994,
 						"originX": 0.5435103244837758,
 						"originY": 0.5,
 						"color": [
