@@ -1,0 +1,73 @@
+{
+	"name": "WaterTextSpawn2",
+	"plugin-id": "Sprite",
+	"sid": 611744026678213,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Dialogue",
+			"type": "string",
+			"desc": "",
+			"sid": 458380727931997
+		},
+		{
+			"name": "ShowWaterText",
+			"type": "boolean",
+			"desc": "",
+			"sid": 720115335235429
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 152,
+						"height": 147,
+						"originX": 0.5723684210526315,
+						"originY": 0.4897959183673469,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4584117,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 106556393955902,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8752331,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 802943122624243,
+				"name": "Blue",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -13190,41 +13190,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "GoodWood",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1325,
-						"y": 184,
-						"width": 26.97328764712134,
-						"height": 33.35127411682235,
-						"originX": 0.45454545454545453,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Tilemap3",
 					"properties": {
 						"initially-visible": false,
@@ -13324,38 +13289,6 @@
 							1,
 							1
 						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "WaterTextSpawn",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 524,
-					"instanceVariables": {
-						"Dialogue": "Looks like you found a good source of water, great job! Before you drink your water, make sure you check the field guide for some important tips on how to make sure your water is safe to drink.",
-						"ShowWaterText": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1472.4792290889582,
-						"y": 765.6336545462674,
-						"width": 45.961011957934865,
-						"height": 57.63047175379182,
-						"originX": 0.5723684210526315,
-						"originY": 0.4897959183673469,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -13964,111 +13897,6 @@
 					}
 				},
 				{
-					"type": "GoodWood",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 532,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1392.5619868948143,
-						"y": 109.1305764221133,
-						"width": 21.29032258064516,
-						"height": 26.470588235294116,
-						"originX": 0.45454545454545453,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "GoodWood",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 537,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1220.014877726908,
-						"y": 287.71074236007814,
-						"width": 21.29032258064516,
-						"height": 26.470588235294116,
-						"originX": 0.45454545454545453,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "GoodWood",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 540,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1438.885951962916,
-						"y": 478.98182095684956,
-						"width": 21.29032258064516,
-						"height": 26.470588235294116,
-						"originX": 0.45454545454545453,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "BadWood",
 					"properties": {
 						"initially-visible": true,
@@ -14288,7 +14116,7 @@
 					},
 					"uid": 514,
 					"instanceVariables": {
-						"Dialogue2": "Great job! You started a fire! Now its time to find water. Look in the field guide for more information on finding good water sources.",
+						"Dialogue2": "Great job! You started a fire! Now it's time to find water. Look in the field guide for more information on finding good water sources.",
 						"ShowFireText2": false,
 						"Dialogue": "This looks like a good place to build a fire. Stand here to start a fire using the technique from the field guide.",
 						"Dialogue3": "Hmm it doesn't seem like this wood will light on fire. Check the field guide for tips on finding good firewood."
@@ -14344,6 +14172,143 @@
 						"height": 24,
 						"originX": 2,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 532,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1392.5619868948143,
+						"y": 109.1305764221133,
+						"width": 21.29032258064516,
+						"height": 26.470588235294116,
+						"originX": 0.45454545454545453,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 537,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1220.014877726908,
+						"y": 287.71074236007814,
+						"width": 21.29032258064516,
+						"height": 26.470588235294116,
+						"originX": 0.45454545454545453,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 540,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1438.885951962916,
+						"y": 478.98182095684956,
+						"width": 21.29032258064516,
+						"height": 26.470588235294116,
+						"originX": 0.45454545454545453,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "WaterTextSpawn2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 3,
+					"instanceVariables": {
+						"Dialogue": "Looks like you found a good source of water, great job! Before you drink your water, make sure you check the field guide for some important tips on how to make sure your water is safe to drink.",
+						"ShowWaterText": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1509,
+						"y": 766,
+						"width": 113.96101195793486,
+						"height": 62.63047175379182,
+						"originX": 0.5723684210526315,
+						"originY": 0.4897959183673469,
 						"color": [
 							1,
 							1,

@@ -270,41 +270,6 @@
 					}
 				},
 				{
-					"type": "GoodWood",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 597,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 299,
-						"y": 387,
-						"width": 26.97328764712134,
-						"height": 33.35127411682235,
-						"originX": 0.45454545454545453,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "FGFindWoodP2",
 					"properties": {
 						"text": "Damp wood is harder to ignite and keep burning.",
@@ -336,6 +301,41 @@
 						"height": 68,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodWood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 597,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 299,
+						"y": 387,
+						"width": 26.97328764712134,
+						"height": 33.35127411682235,
+						"originX": 0.45454545454545453,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
