@@ -13210,9 +13210,9 @@
 					"world": {
 						"x": 1325,
 						"y": 184,
-						"width": 38.00781441185279,
-						"height": 37.798110665732,
-						"originX": 0.5,
+						"width": 26.97328764712134,
+						"height": 33.35127411682235,
+						"originX": 0.45454545454545453,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -13343,8 +13343,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1462,
-						"y": 768,
+						"x": 1472.4792290889582,
+						"y": 765.6336545462674,
 						"width": 45.961011957934865,
 						"height": 57.63047175379182,
 						"originX": 0.5723684210526315,
@@ -13471,8 +13471,8 @@
 						}
 					},
 					"world": {
-						"x": 420,
-						"y": 707,
+						"x": 434.1469591951402,
+						"y": 686.4869091670469,
 						"width": 24,
 						"height": 24,
 						"originX": 2,
@@ -13512,55 +13512,12 @@
 						}
 					},
 					"world": {
-						"x": 374,
-						"y": 797,
+						"x": 368.34121632194393,
+						"y": 787.097128563402,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
 						"originY": 0.5652173913043478,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "GoodMush",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 9,
-					"instanceVariables": {
-						"AddHealth": 5,
-						"AddNutrition": 5,
-						"AddHydration": 5
-					},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 591,
-						"y": 739,
-						"width": 24,
-						"height": 24,
-						"originX": 2,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -13680,8 +13637,8 @@
 						}
 					},
 					"world": {
-						"x": 486,
-						"y": 766,
+						"x": 495.1955234768411,
+						"y": 756.8044765231589,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13721,7 +13678,7 @@
 						}
 					},
 					"world": {
-						"x": 312,
+						"x": 302.80447652315894,
 						"y": 656,
 						"width": 22,
 						"height": 23,
@@ -13803,8 +13760,8 @@
 						}
 					},
 					"world": {
-						"x": 231,
-						"y": 734,
+						"x": 241.6102193963551,
+						"y": 721.9750846841308,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13844,8 +13801,8 @@
 						}
 					},
 					"world": {
-						"x": 618,
-						"y": 798,
+						"x": 624.366131637813,
+						"y": 786.6824326438879,
 						"width": 22,
 						"height": 23,
 						"originX": 0.5454545454545454,
@@ -13886,42 +13843,6 @@
 						"y": 892.899106156994,
 						"width": 289.6997431720938,
 						"height": 39.475014010201676,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Fire",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Flame",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 526,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1339,
-						"y": 419,
-						"width": 64,
-						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -14063,9 +13984,9 @@
 					"world": {
 						"x": 1392.5619868948143,
 						"y": 109.1305764221133,
-						"width": 30,
-						"height": 30,
-						"originX": 0.5,
+						"width": 21.29032258064516,
+						"height": 26.470588235294116,
+						"originX": 0.45454545454545453,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -14098,9 +14019,9 @@
 					"world": {
 						"x": 1220.014877726908,
 						"y": 287.71074236007814,
-						"width": 30,
-						"height": 30,
-						"originX": 0.5,
+						"width": 21.29032258064516,
+						"height": 26.470588235294116,
+						"originX": 0.45454545454545453,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -14133,9 +14054,9 @@
 					"world": {
 						"x": 1438.885951962916,
 						"y": 478.98182095684956,
-						"width": 30,
-						"height": 30,
-						"originX": 0.5,
+						"width": 21.29032258064516,
+						"height": 26.470588235294116,
+						"originX": 0.45454545454545453,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -14168,9 +14089,9 @@
 					"world": {
 						"x": 1283.5223056884531,
 						"y": 151.9818209568496,
-						"width": 30,
-						"height": 30,
-						"originX": 0.5,
+						"width": 21.29032258064516,
+						"height": 26.470588235294116,
+						"originX": 0.45454545454545453,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -14203,9 +14124,9 @@
 					"world": {
 						"x": 1061.9190087329746,
 						"y": 381.44297598145806,
-						"width": 30,
-						"height": 30,
-						"originX": 0.5,
+						"width": 21.29032258064516,
+						"height": 26.470588235294116,
+						"originX": 0.45454545454545453,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -14238,10 +14159,78 @@
 					"world": {
 						"x": 1437.5157030559687,
 						"y": 283.9355371180039,
-						"width": 30,
-						"height": 30,
+						"width": 21.29032258064516,
+						"height": 26.470588235294116,
+						"originX": 0.45454545454545453,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Fire",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Flame",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 526,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1339,
+						"y": 419,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FireTextSpawn",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 545,
+					"instanceVariables": {
+						"Dialogue": "It's important to start a fire before dark. Look in the field guide for some tips on how to collect wood and start a fire.",
+						"ShowFireText": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 978.7960526315788,
+						"y": 333.2653061224489,
+						"width": 159.73792813660359,
+						"height": 212.2060229818801,
+						"originX": 0.5723684210526315,
+						"originY": 0.4897959183673469,
 						"color": [
 							1,
 							1,
@@ -14289,38 +14278,6 @@
 					}
 				},
 				{
-					"type": "FireTextSpawn",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 545,
-					"instanceVariables": {
-						"Dialogue": "It's important to start a fire before dark. Look in the field guide for some tips on how to collect wood and start a fire.",
-						"ShowFireText": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 978.7960526315788,
-						"y": 333.2653061224489,
-						"width": 159.73792813660359,
-						"height": 212.2060229818801,
-						"originX": 0.5723684210526315,
-						"originY": 0.4897959183673469,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "FireTextSpawn2",
 					"properties": {
 						"initially-visible": false,
@@ -14344,6 +14301,49 @@
 						"height": 85.2060229818801,
 						"originX": 0.5723684210526315,
 						"originY": 0.4897959183673469,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GoodMush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"instanceVariables": {
+						"AddHealth": 5,
+						"AddNutrition": 5,
+						"AddHydration": 5
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 590,
+						"y": 721,
+						"width": 24,
+						"height": 24,
+						"originX": 2,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

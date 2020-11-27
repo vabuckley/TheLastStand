@@ -752,6 +752,25 @@
 									"id": "destroy",
 									"objectClass": "PositiveCollectibles",
 									"sid": 913798404510929
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 954985059070092,
+									"parameters": {
+										"seconds": "10"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 810240006853772,
+									"parameters": {
+										"object-to-create": "GoodMush",
+										"layer": "\"Playable Area\"",
+										"x": "168",
+										"y": "782"
+									}
 								}
 							],
 							"sid": 496308762032687
