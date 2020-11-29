@@ -610,6 +610,32 @@
 		{
 			"eventType": "group",
 			"disabled": false,
+			"title": "Fire Event",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 434975170981605,
+							"parameters": {
+								"layer": "3",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 255106754777511
+				}
+			],
+			"sid": 192554031184551
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
 			"title": "Player/Object Interaction",
 			"description": "",
 			"isActiveOnStart": true,
