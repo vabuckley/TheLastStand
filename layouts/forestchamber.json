@@ -14295,7 +14295,7 @@
 					},
 					"uid": 3,
 					"instanceVariables": {
-						"Dialogue": "Looks like you found a good source of water, great job! Before you drink your water, make sure you check the field guide for some important tips on how to make sure your water is safe to drink.",
+						"Dialogue": "Looks like you found sources of water, great job! Before you drink your water, make sure you check the field guide for some important tips on how to make sure your water is safe to drink.",
 						"ShowWaterText": false
 					},
 					"behaviors": {},

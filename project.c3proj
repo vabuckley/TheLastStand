@@ -399,13 +399,13 @@
 	"layouts": {
 		"items": [
 			"Title",
-			"SettingSave",
+			"Intro",
 			"ForestChamber",
+			"SettingSave",
 			"ObjectBank",
 			"GlobalLayers",
 			"GameOver",
-			"SettingsPage",
-			"Intro"
+			"SettingsPage"
 		],
 		"subfolders": []
 	},

@@ -294,9 +294,17 @@
 							}
 						},
 						{
+							"id": "set-text",
+							"objectClass": "Timer",
+							"sid": 491103519681750,
+							"parameters": {
+								"text": "\"Seconds Remaining:\"&SecondsLeft"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 724855259897601,
+							"sid": 552911485275300,
 							"parameters": {
 								"variable": "SecondsLeft",
 								"value": "900"
