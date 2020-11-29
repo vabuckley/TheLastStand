@@ -231,10 +231,10 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 715282162635781,
+							"sid": 588665614157928,
 							"parameters": {
 								"key": "\"Health\"",
-								"value": "25"
+								"value": "40"
 							}
 						},
 						{
@@ -259,10 +259,10 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 208703786121521,
+							"sid": 244383842816040,
 							"parameters": {
 								"key": "\"Nutrition\"",
-								"value": "25"
+								"value": "40"
 							}
 						},
 						{
@@ -287,10 +287,19 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 165863192341065,
+							"sid": 634227157430329,
 							"parameters": {
 								"key": "\"Hydration\"",
-								"value": "25"
+								"value": "40"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 340148541633938,
+							"parameters": {
+								"variable": "SecondsLeft",
+								"value": "900"
 							}
 						}
 					],
