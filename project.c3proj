@@ -157,6 +157,14 @@
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
 		}
 	],
 	"uniqueId": "w8tr8k4u1cf",
@@ -234,7 +242,8 @@
 			"TestTrigger",
 			"DRINK",
 			"BOIL",
-			"DialogueBox2"
+			"DialogueBox2",
+			"IntroDialogue"
 		],
 		"subfolders": [
 			{

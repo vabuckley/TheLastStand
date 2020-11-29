@@ -31,7 +31,25 @@
 					"sid": 829237096093074
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 407960257520405,
+					"parameters": {
+						"layer": "\"Dialogue\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "IntroDialogue",
+					"sid": 464933947032319,
+					"parameters": {
+						"text": "IntroDialogue.IntroDialog1"
+					}
+				}
+			],
 			"sid": 609614912451630
 		}
 	],

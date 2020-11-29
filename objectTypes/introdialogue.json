@@ -1,0 +1,34 @@
+{
+	"name": "IntroDialogue",
+	"plugin-id": "Text",
+	"sid": 394679182604245,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "IntroDialog1",
+			"type": "string",
+			"desc": "",
+			"sid": 161042296411009
+		},
+		{
+			"name": "IntroDialog2",
+			"type": "string",
+			"desc": "",
+			"sid": 532044882016153
+		},
+		{
+			"name": "IntroDialog3",
+			"type": "string",
+			"desc": "",
+			"sid": 409053871641766
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 647546955235251
+		}
+	],
+	"effectTypes": []
+}
