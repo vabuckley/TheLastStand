@@ -222,9 +222,7 @@
 			"Text7",
 			"Play_button",
 			"Intro_bkgrd",
-			"PlayIntro_btn",
 			"PlayGame_btn",
-			"IntroText1",
 			"Video2",
 			"Text11",
 			"TextInput",
@@ -243,7 +241,9 @@
 			"DRINK",
 			"BOIL",
 			"DialogueBox2",
-			"IntroDialogue"
+			"IntroText01",
+			"IntroText02",
+			"InfoText03"
 		],
 		"subfolders": [
 			{

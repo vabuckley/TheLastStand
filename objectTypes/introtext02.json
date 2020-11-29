@@ -1,0 +1,15 @@
+{
+	"name": "IntroText02",
+	"plugin-id": "Text",
+	"sid": 467117918368288,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 507902617514785
+		}
+	],
+	"effectTypes": []
+}

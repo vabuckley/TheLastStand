@@ -28,42 +28,10 @@
 							1,
 							1,
 							1,
-							0.65
+							0.7
 						],
 						"angle": 0,
 						"zElevation": 0
-					}
-				},
-				{
-					"type": "PlayIntro_btn",
-					"properties": {
-						"type": "button",
-						"text": "PLAY INTRO",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 517,
-					"instanceVariables": {
-						"WaitTime": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 229,
-						"y": 380,
-						"width": 108,
-						"height": 58,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
 					}
 				},
 				{
@@ -82,8 +50,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 498,
-						"y": 380,
+						"x": 372,
+						"y": 379,
 						"width": 108,
 						"height": 58,
 						"originX": 0,
@@ -97,14 +65,14 @@
 					}
 				},
 				{
-					"type": "IntroText1",
+					"type": "IntroText01",
 					"properties": {
-						"text": "A deadly pandemic has swept the planet, killing nearly every last person on Earth. The virus spread quickly and killed quickly. Within weeks, around the globe, government infrastructures failed and all communications ceased.",
+						"text": "A deadly pandemic has swept the planet, killing nearly every last person on Earth. The virus spread quickly and killed quickly. Within weeks, around the globe, government infrastructures failed and all communications ceased. ",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 16,
+						"size": 14,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
 							0,
@@ -116,18 +84,29 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "top-left"
 					},
 					"uid": 548,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 4,
+								"wait-time": 10,
+								"fade-out-time": 3,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
-						"x": 426,
-						"y": -401,
-						"width": 596,
-						"height": 110,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 88,
+						"y": 28,
+						"width": 673,
+						"height": 80,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -139,14 +118,67 @@
 					}
 				},
 				{
-					"type": "IntroText1",
+					"type": "IntroText02",
 					"properties": {
-						"text": "You have survived by sheltering in place for several months, but now your food supply is low. You must take what supplies you can carry and venture out in search of food, water, and other survivors.",
+						"text": "You have survived by sheltering in place for several months, but now your food supply is low. You must take what supplies you can carry and venture out in search of food, water, and other survivors. ",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 16,
+						"size": 14,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "bottom",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 517,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 12,
+								"wait-time": 10,
+								"fade-out-time": 3,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 89,
+						"y": 142,
+						"width": 673,
+						"height": 71,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "InfoText03",
+					"properties": {
+						"text": "You will have to find safe food and water, build a fire, and avoid the hazards of exposure. Be sure to monitor your health, nutrition, and hydration levels, and check your field guide for help. You'll need all your resources if you are to survive THE LAST STAND. ",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 14,
+						"line-height": 0,
+						"bold": true,
 						"italic": false,
 						"color": [
 							0,
@@ -158,60 +190,29 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "top-left"
 					},
 					"uid": 549,
 					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 426,
-						"y": -252,
-						"width": 638,
-						"height": 110,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "IntroText1",
-					"properties": {
-						"text": "You will have to find safe food and water, build a fire, and avoid the hazards of exposure. Be sure to monitor your health, hydration, and energy levels, and check your field guide for help. You'll need all your resources if you are to survive THE LAST STAND.",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 16,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 20,
+								"wait-time": 14,
+								"fade-out-time": 3,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
 					},
-					"uid": 550,
-					"instanceVariables": {},
-					"behaviors": {},
 					"world": {
-						"x": 424,
-						"y": -113,
-						"width": 650,
-						"height": 110,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 63,
+						"y": 241,
+						"width": 728,
+						"height": 98,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -246,92 +247,6 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"global": false
-		},
-		{
-			"name": "Dialogue",
-			"overriden": 0,
-			"instances": [
-				{
-					"type": "IntroDialogue",
-					"properties": {
-						"text": "Intro Dialogue",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 16,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "center"
-					},
-					"uid": 608,
-					"instanceVariables": {
-						"IntroDialog1": "A deadly pandemic has swept the planet, killing nearly every last person on Earth. The virus spread quickly and killed quickly. Within weeks, around the globe, government infrastructures failed and all communications ceased.",
-						"IntroDialog2": "You have survived by sheltering in place for several months, but now your food supply is low. You must take what supplies you can carry and venture out in search of food, water, and other survivors.",
-						"IntroDialog3": "You will have to find safe food and water, build a fire, and avoid the hazards of exposure. Be sure to monitor your health, hydration, and energy levels, and check your field guide for help. You'll need all your resources if you are to survive THE LAST STAND."
-					},
-					"behaviors": {
-						"Fade": {
-							"properties": {
-								"fade-in-time": 1,
-								"wait-time": 8,
-								"fade-out-time": 1,
-								"destroy": true,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 422,
-						"y": 85,
-						"width": 619.289915952133,
-						"height": 92.89348739281995,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 959405524363874,
-			"effectTypes": [],
-			"isInitiallyVisible": false,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"global": true
 		}
 	],
 	"sid": 643696773310828,
