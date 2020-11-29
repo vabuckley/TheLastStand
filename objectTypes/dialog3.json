@@ -1,0 +1,28 @@
+{
+	"name": "Dialog3",
+	"plugin-id": "Text",
+	"sid": 161741435199620,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "FireStartedx",
+			"type": "string",
+			"desc": "",
+			"sid": 733823651773718
+		},
+		{
+			"name": "StartFirex",
+			"type": "string",
+			"desc": "",
+			"sid": 156142831334108
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 777896758893952
+		}
+	],
+	"effectTypes": []
+}

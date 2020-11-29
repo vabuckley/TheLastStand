@@ -243,7 +243,17 @@
 			"DialogueBox2",
 			"IntroText01",
 			"IntroText02",
-			"InfoText03"
+			"InfoText03",
+			"DialogBox3",
+			"Dialog3",
+			"DialogBox4",
+			"DialogueBox3",
+			"DialogueBox4",
+			"DialogBox5",
+			"DialogueBox5",
+			"DialogBox6",
+			"DialogBox7",
+			"DialogueBox6"
 		],
 		"subfolders": [
 			{

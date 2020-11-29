@@ -1,0 +1,15 @@
+{
+	"name": "DialogueBox5",
+	"plugin-id": "Text",
+	"sid": 474345378830631,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 210945846380824
+		}
+	],
+	"effectTypes": []
+}

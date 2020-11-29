@@ -384,27 +384,10 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 491869997430637,
+							"sid": 708683184979716,
 							"parameters": {
-								"layer": "\"ShowDialogue\"",
+								"layer": "\"ShowDialogue7\"",
 								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Dialogue",
-							"sid": 763193673333971,
-							"parameters": {
-								"text": "FireTextSpawn.Dialogue"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "FireTextSpawn",
-							"sid": 935727623272051,
-							"parameters": {
-								"instance-variable": "ShowFireText",
-								"value": "true"
 							}
 						}
 					],
@@ -423,9 +406,9 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 193892994063552,
+							"sid": 178287056170222,
 							"parameters": {
-								"layer": "\"ShowDialogue\"",
+								"layer": "\"ShowDialogue7\"",
 								"visibility": "invisible"
 							}
 						}
@@ -490,35 +473,26 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 491736845305564,
+							"sid": 807913322692965,
 							"parameters": {
-								"layer": "\"ShowDialogue\"",
+								"layer": "\"ShowDialogue3\"",
 								"visibility": "visible"
 							}
 						},
 						{
 							"id": "set-text",
-							"objectClass": "Dialogue",
-							"sid": 202127789947340,
+							"objectClass": "Dialog3",
+							"sid": 827936197340768,
 							"parameters": {
-								"text": "FireTextSpawn2.Dialogue"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "FireTextSpawn2",
-							"sid": 714170902349372,
-							"parameters": {
-								"instance-variable": "ShowFireText2",
-								"value": "true"
+								"text": "Dialog3.StartFirex"
 							}
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 919897731977476,
+							"sid": 290784551877427,
 							"parameters": {
-								"seconds": "8"
+								"seconds": "5"
 							}
 						},
 						{
@@ -548,38 +522,46 @@
 						{
 							"id": "is-visible",
 							"objectClass": "Fire",
-							"sid": 879533985562580
+							"sid": 498065073708338
 						}
 					],
 					"actions": [
 						{
+							"id": "set-text",
+							"objectClass": "Dialog3",
+							"sid": 577144315805964,
+							"parameters": {
+								"text": "Dialog3.FireStartedx"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 235871453242422,
+							"parameters": {
+								"seconds": "10"
+							}
+						},
+						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 113407507135025,
+							"sid": 779973990431401,
 							"parameters": {
-								"layer": "\"ShowDialogue\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Dialogue",
-							"sid": 883890803899044,
-							"parameters": {
-								"text": "FireTextSpawn2.Dialogue2"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "FireTextSpawn2",
-							"sid": 569940824151687,
-							"parameters": {
-								"instance-variable": "ShowFireText2",
-								"value": "true"
+								"layer": "\"ShowDialogue3\"",
+								"visibility": "invisible"
 							}
 						}
 					],
-					"sid": 595948772285034
+					"sid": 535493059493717
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "FireEnd",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 538971275413589
 				},
 				{
 					"eventType": "block",
@@ -603,31 +585,36 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 504745376052823,
+							"sid": 599354694711675,
 							"parameters": {
-								"layer": "\"ShowDialogue\"",
+								"layer": "\"ShowDialogue5\"",
 								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Dialogue",
-							"sid": 502046025037377,
-							"parameters": {
-								"text": "FireTextSpawn2.Dialogue3"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "FireTextSpawn2",
-							"sid": 433450408655015,
-							"parameters": {
-								"instance-variable": "ShowFireText2",
-								"value": "true"
 							}
 						}
 					],
 					"sid": 204761716458192
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 381651593044356
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 557049714997217,
+							"parameters": {
+								"layer": "\"ShowDialogue5\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 247633761881135
 				},
 				{
 					"eventType": "block",

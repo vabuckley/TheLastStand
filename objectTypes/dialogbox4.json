@@ -1,14 +1,14 @@
 {
-	"name": "DialogBox2",
+	"name": "DialogBox4",
 	"plugin-id": "Sprite",
-	"sid": 751059002431698,
+	"sid": 587819225135978,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Anchor",
 			"name": "Anchor",
-			"sid": 873275039785596
+			"sid": 269226265230868
 		}
 	],
 	"effectTypes": [],
@@ -24,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2488292,
+						"imageSpriteId": 6530942,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 384733735971828,
+				"sid": 387313778771838,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

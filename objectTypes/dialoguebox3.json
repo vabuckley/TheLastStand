@@ -1,0 +1,15 @@
+{
+	"name": "DialogueBox3",
+	"plugin-id": "Text",
+	"sid": 353308900452855,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 367990658906505
+		}
+	],
+	"effectTypes": []
+}
