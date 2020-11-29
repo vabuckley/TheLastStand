@@ -229,7 +229,12 @@
 			"WaterTextSpawn3",
 			"WaterTextSpawnx",
 			"Dialogue2",
-			"DialogBox2"
+			"DialogBox2",
+			"DialogueBox",
+			"TestTrigger",
+			"DRINK",
+			"BOIL",
+			"DialogueBox2"
 		],
 		"subfolders": [
 			{
@@ -356,7 +361,15 @@
 		]
 	},
 	"autosaveData": null,
-	"containers": [],
+	"containers": [
+		{
+			"members": [
+				"DialogBox",
+				"DialogueBox"
+			],
+			"selectMode": "normal"
+		}
+	],
 	"families": {
 		"items": [
 			"PositiveCollectibles",

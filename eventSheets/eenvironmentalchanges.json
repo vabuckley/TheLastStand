@@ -31,6 +31,7 @@
 							"id": "set-animation",
 							"objectClass": "BadWater",
 							"sid": 582718359399419,
+							"disabled": true,
 							"parameters": {
 								"animation": "\"EmptyBucket\"",
 								"from": "beginning"
@@ -63,6 +64,31 @@
 						}
 					],
 					"sid": 861407488875070
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "GoodWater",
+							"sid": 655138599548046,
+							"parameters": {
+								"object": "StandingWater"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "GoodWater",
+							"sid": 689409950141217,
+							"parameters": {
+								"animation": "\"BadWaterFull\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 196997969957217
 				},
 				{
 					"eventType": "block",
@@ -128,7 +154,8 @@
 							}
 						}
 					],
-					"sid": 577382623161126
+					"sid": 577382623161126,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -169,7 +196,167 @@
 							}
 						}
 					],
-					"sid": 755356958730492
+					"sid": 755356958730492,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 914638023608541,
+							"parameters": {
+								"object": "TestTrigger"
+							}
+						},
+						{
+							"id": "is-pinned",
+							"objectClass": "GoodWater",
+							"sid": 711813775427171,
+							"behaviorType": "Pin"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "DialogueBox",
+							"sid": 715843987949734,
+							"parameters": {
+								"text": "TestTrigger.Dialogue"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 584261892968102,
+							"parameters": {
+								"object-to-create": "DRINK",
+								"layer": "0",
+								"x": "1199",
+								"y": "748"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 540869640307383,
+							"parameters": {
+								"object-to-create": "BOIL",
+								"layer": "0",
+								"x": "1300",
+								"y": "748"
+							}
+						}
+					],
+					"sid": 733391094489146,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "DRINK",
+									"sid": 854934558924843
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "DialogueBox2",
+									"sid": 967675865353313,
+									"parameters": {
+										"text": "TestTrigger.Dialogue2"
+									}
+								},
+								{
+									"callFunction": "PlayerHurtHealth",
+									"sid": 827616499471146,
+									"parameters": [
+										"NegativeCollectibles.HealthDamage"
+									]
+								}
+							],
+							"sid": 992869765196223
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "BOIL",
+									"sid": 344927134324487
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "DialogueBox2",
+									"sid": 127490613653901,
+									"parameters": {
+										"text": "TestTrigger.Dialogue3"
+									}
+								}
+							],
+							"sid": 483822806547646
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 289686835569283
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "DialogueBox",
+							"sid": 277698787566100,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DialogueBox2",
+							"sid": 964484353397812,
+							"parameters": {
+								"text": "\"\""
+							}
+						}
+					],
+					"sid": 824318523285677
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 343877386732716,
+							"parameters": {
+								"object": "TestTrigger"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "DRINK",
+							"sid": 336039740970425
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BOIL",
+							"sid": 299344069455521
+						}
+					],
+					"sid": 936087319915692
 				}
 			],
 			"sid": 801217814758754
@@ -473,6 +660,12 @@
 							"id": "unpin",
 							"objectClass": "BadWood",
 							"sid": 506191746932448,
+							"behaviorType": "Pin"
+						},
+						{
+							"id": "unpin",
+							"objectClass": "GoodWater",
+							"sid": 537520679134004,
 							"behaviorType": "Pin"
 						}
 					],

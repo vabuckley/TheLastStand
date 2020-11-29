@@ -231,10 +231,10 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 715282162635781,
+							"sid": 826097285693888,
 							"parameters": {
 								"key": "\"Health\"",
-								"value": "25"
+								"value": "40"
 							}
 						},
 						{
@@ -259,10 +259,10 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 208703786121521,
+							"sid": 523828172053477,
 							"parameters": {
 								"key": "\"Nutrition\"",
-								"value": "25"
+								"value": "40"
 							}
 						},
 						{
@@ -287,10 +287,19 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 165863192341065,
+							"sid": 520638378129937,
 							"parameters": {
 								"key": "\"Hydration\"",
-								"value": "25"
+								"value": "40"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 724855259897601,
+							"parameters": {
+								"variable": "SecondsLeft",
+								"value": "900"
 							}
 						}
 					],
@@ -430,23 +439,45 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-clicked",
-							"objectClass": "OpenGuide",
-							"sid": 259041962866136
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 427110044937344
 						}
 					],
 					"actions": [
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 678026931641258,
+							"sid": 173297989729351,
+							"parameters": {
+								"layer": "\"Field Guide\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 844149065193999
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "OpenGuide",
+							"sid": 170110846790091
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 691890181861652,
 							"parameters": {
 								"layer": "\"Field Guide\"",
 								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 652039370201876
+					"sid": 627830749435391
 				},
 				{
 					"eventType": "block",
@@ -454,7 +485,7 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 910850752619290,
+							"sid": 800830988794632,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
@@ -466,7 +497,7 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 333055728850976,
+							"sid": 673185949426581,
 							"parameters": {
 								"layer": "\"Field Guide\"",
 								"visibility": "invisible"
@@ -475,446 +506,507 @@
 						{
 							"id": "set-layer-opacity",
 							"objectClass": "System",
-							"sid": 708211564275255,
+							"sid": 857294384311282,
 							"parameters": {
 								"layer": "\"Field Guide\"",
 								"opacity": "100"
 							}
 						}
 					],
-					"sid": 221134737476141
+					"sid": 949003534644269
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 102252624882747,
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 227531045376370,
 							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "Shelter_FireButton"
+								"layer": "\"Field Guide\""
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-layer-opacity",
+							"id": "set-group-active",
 							"objectClass": "System",
-							"sid": 573445065439477,
+							"sid": 105148742623890,
 							"parameters": {
-								"layer": "\"FG_Shelter\"",
-								"opacity": "100"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 196343776365303,
-							"parameters": {
-								"layer": "\"FG_Shelter\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 661796859423537,
-							"parameters": {
-								"layer": "\"Field Guide\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 243273480308602,
-							"parameters": {
-								"layer": "\"FG_Wood\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 307535670666559,
-							"parameters": {
-								"layer": "\"FG_H20Sanitize\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 727948209696957,
-							"parameters": {
-								"layer": "\"FG_H20Source\"",
-								"opacity": "0"
+								"group-name": "\"Pages\"",
+								"state": "activated"
 							}
 						}
 					],
-					"sid": 665373614269312
+					"sid": 604894162106818
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 111183389861352,
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 355336231499806,
 							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "FGShelter_WoodButton"
-							}
+								"layer": "\"Field Guide\""
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
-							"id": "set-layer-opacity",
+							"id": "set-group-active",
 							"objectClass": "System",
-							"sid": 626535552583373,
+							"sid": 563461067794405,
 							"parameters": {
-								"layer": "\"FG_Wood\"",
-								"opacity": "100"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 640918457084950,
-							"parameters": {
-								"layer": "\"FG_Wood\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 916386060923372,
-							"parameters": {
-								"layer": "\"Field Guide\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 657238755516700,
-							"parameters": {
-								"layer": "\"FG_Shelter\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 704128643853253,
-							"parameters": {
-								"layer": "\"FG_H20Sanitize\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 713543466351130,
-							"parameters": {
-								"layer": "\"FG_H20Source\"",
-								"opacity": "0"
+								"group-name": "\"Pages\"",
+								"state": "deactivated"
 							}
 						}
 					],
-					"sid": 541566941491188
+					"sid": 768159288918992
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pages",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 646923356591225,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "H20_SanitizeButton"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 217660151459806,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "Shelter_FireButton"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 509393057774283,
+									"parameters": {
+										"layer": "\"FG_Shelter\"",
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 460162724822734,
+									"parameters": {
+										"layer": "\"FG_Shelter\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 962976423065998,
+									"parameters": {
+										"layer": "\"Field Guide\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 279803409865814,
+									"parameters": {
+										"layer": "\"FG_Wood\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 187615437170174,
+									"parameters": {
+										"layer": "\"FG_H20Sanitize\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 774628260689586,
+									"parameters": {
+										"layer": "\"FG_H20Source\"",
+										"opacity": "0"
+									}
+								}
+							],
+							"sid": 659589525246006
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 537078540391139,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "FGShelter_WoodButton"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 905497288576514,
+									"parameters": {
+										"layer": "\"FG_Wood\"",
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 840363587611105,
+									"parameters": {
+										"layer": "\"FG_Wood\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 213485899947536,
+									"parameters": {
+										"layer": "\"Field Guide\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 409460070241340,
+									"parameters": {
+										"layer": "\"FG_Shelter\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 620479354904045,
+									"parameters": {
+										"layer": "\"FG_H20Sanitize\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 492012414479613,
+									"parameters": {
+										"layer": "\"FG_H20Source\"",
+										"opacity": "0"
+									}
+								}
+							],
+							"sid": 975230137896427
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 621201687742155,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "H20_SanitizeButton"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 210891576331103,
+									"parameters": {
+										"layer": "\"FG_H20Sanitize\"",
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 127018371542824,
+									"parameters": {
+										"layer": "\"FG_H20Sanitize\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 290583950929280,
+									"parameters": {
+										"layer": "\"Field Guide\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 679141204358186,
+									"parameters": {
+										"layer": "\"FG_Wood\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 369044320019021,
+									"parameters": {
+										"layer": "\"FG_H20Source\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 369399227674928,
+									"parameters": {
+										"layer": "\"FG_Shelter\"",
+										"opacity": "0"
+									}
+								}
+							],
+							"sid": 904208216404277
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 698798006655269,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "FG_H20SourceButton"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 387420130181544,
+									"parameters": {
+										"layer": "\"FG_H20Source\"",
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 488833372128003,
+									"parameters": {
+										"layer": "\"FG_H20Source\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 334059498475978,
+									"parameters": {
+										"layer": "\"Field Guide\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 920875504007786,
+									"parameters": {
+										"layer": "\"FG_Wood\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 266907170161974,
+									"parameters": {
+										"layer": "\"FG_H20Sanitize\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 623199156234948,
+									"parameters": {
+										"layer": "\"FG_Shelter\"",
+										"opacity": "0"
+									}
+								}
+							],
+							"sid": 262789248160824
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 636721334863293,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "FG_FoodButton"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 508930148085061,
+									"parameters": {
+										"layer": "\"FG_Food\"",
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 111084905441275,
+									"parameters": {
+										"layer": "\"FG_Food\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 854069679180017,
+									"parameters": {
+										"layer": "\"Field Guide\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 655695866816343,
+									"parameters": {
+										"layer": "\"FG_Shelter\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 601748056654159,
+									"parameters": {
+										"layer": "\"FG_H20Sanitize\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 389603830458036,
+									"parameters": {
+										"layer": "\"FG_H20Source\"",
+										"opacity": "0"
+									}
+								}
+							],
+							"sid": 340722766366479
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 639602607401726,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "ReturnIcon"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 913097448059823,
+									"parameters": {
+										"layer": "\"Field Guide\"",
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 831388183432819,
+									"parameters": {
+										"layer": "\"FG_Shelter\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 644215536478988,
+									"parameters": {
+										"layer": "\"FG_H20Source\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 535775919958515,
+									"parameters": {
+										"layer": "\"FG_H20Sanitize\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 233749064817761,
+									"parameters": {
+										"layer": "\"FG_Food\"",
+										"opacity": "0"
+									}
+								},
+								{
+									"id": "set-layer-opacity",
+									"objectClass": "System",
+									"sid": 679293330613545,
+									"parameters": {
+										"layer": "\"FG_Wood\"",
+										"opacity": "0"
+									}
+								}
+							],
+							"sid": 799905033250250
 						}
 					],
-					"actions": [
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 534542144515460,
-							"parameters": {
-								"layer": "\"FG_H20Sanitize\"",
-								"opacity": "100"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 560550330479618,
-							"parameters": {
-								"layer": "\"FG_H20Sanitize\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 459104749756220,
-							"parameters": {
-								"layer": "\"Field Guide\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 696071188437217,
-							"parameters": {
-								"layer": "\"FG_Wood\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 374002545832155,
-							"parameters": {
-								"layer": "\"FG_H20Source\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 919279867439040,
-							"parameters": {
-								"layer": "\"FG_Shelter\"",
-								"opacity": "0"
-							}
-						}
-					],
-					"sid": 523222358032643
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 609841100499777,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "FG_H20SourceButton"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 743956385309086,
-							"parameters": {
-								"layer": "\"FG_H20Source\"",
-								"opacity": "100"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 594351071289840,
-							"parameters": {
-								"layer": "\"FG_H20Source\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 841963736462007,
-							"parameters": {
-								"layer": "\"Field Guide\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 833095726482442,
-							"parameters": {
-								"layer": "\"FG_Wood\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 580363733368963,
-							"parameters": {
-								"layer": "\"FG_H20Sanitize\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 345647983967374,
-							"parameters": {
-								"layer": "\"FG_Shelter\"",
-								"opacity": "0"
-							}
-						}
-					],
-					"sid": 174670732692463
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 969735878924658,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "FG_FoodButton"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 152068729406168,
-							"parameters": {
-								"layer": "\"FG_Food\"",
-								"opacity": "100"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 947504755658832,
-							"parameters": {
-								"layer": "\"FG_Food\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 431147463077536,
-							"parameters": {
-								"layer": "\"Field Guide\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 382366638651071,
-							"parameters": {
-								"layer": "\"FG_Shelter\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 550440520068007,
-							"parameters": {
-								"layer": "\"FG_H20Sanitize\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 555877895862013,
-							"parameters": {
-								"layer": "\"FG_H20Source\"",
-								"opacity": "0"
-							}
-						}
-					],
-					"sid": 638414471828820
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 705542572868584,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "ReturnIcon"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 165161715175931,
-							"parameters": {
-								"layer": "\"Field Guide\"",
-								"opacity": "100"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 365139853446247,
-							"parameters": {
-								"layer": "\"FG_Shelter\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 467180492046452,
-							"parameters": {
-								"layer": "\"FG_H20Source\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 488884576235369,
-							"parameters": {
-								"layer": "\"FG_H20Sanitize\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 387521850219816,
-							"parameters": {
-								"layer": "\"FG_Food\"",
-								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-layer-opacity",
-							"objectClass": "System",
-							"sid": 323729205266299,
-							"parameters": {
-								"layer": "\"FG_Wood\"",
-								"opacity": "0"
-							}
-						}
-					],
-					"sid": 279920239883135
+					"sid": 699545655392242
 				}
 			],
 			"sid": 178142049900453

@@ -13809,8 +13809,8 @@
 						}
 					},
 					"world": {
-						"x": 1400.2225723328127,
-						"y": 852.692425348827,
+						"x": 1363,
+						"y": 774,
 						"width": 16.390190300401596,
 						"height": 16.390190300401596,
 						"originX": 0.5,
@@ -13851,41 +13851,6 @@
 						"height": 57.65280554687438,
 						"originX": -0.39473684210526316,
 						"originY": 2.0264550264550265,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BadWater",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "BadWaterFull",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 513,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1406.841562607193,
-						"y": 717.6627107236905,
-						"width": 16.40075322702262,
-						"height": 16.40075322702262,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -14341,6 +14306,216 @@
 						"height": 62.63047175379182,
 						"originX": 0.5723684210526315,
 						"originY": 0.4897959183673469,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DialogueBox",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.9411764705882353,
+							0.9019607843137255,
+							0.9019607843137255,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 603,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1143,
+						"y": 708,
+						"width": 277,
+						"height": 52,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TestTrigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 604,
+					"instanceVariables": {
+						"Dialogue": "Do want to boil or drink the water?",
+						"Dialogue2": "Drinking water before it is sanitized can hurt your health! Check your field guide to learn how to safely drink water.",
+						"Dialogue3": "Great! Place this water over the fire to sanitize it before drinking!"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1285,
+						"y": 868.5,
+						"width": 300,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TestTrigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 605,
+					"instanceVariables": {
+						"Dialogue": "Do want to boil or drink the water?",
+						"Dialogue2": "Drinking water before it is sanitized can hurt your health! Check your field guide to learn how to safely drink water.",
+						"Dialogue3": "Great! Place this water over the fire to sanitize it before drinking!"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1375,
+						"y": 665,
+						"width": 108,
+						"height": 93,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DRINK",
+					"properties": {
+						"type": "button",
+						"text": "DRINK",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 513,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1157,
+						"y": 993,
+						"width": 72,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "BOIL",
+					"properties": {
+						"type": "button",
+						"text": "BOIL",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 606,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1328,
+						"y": 992,
+						"width": 72,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "DialogueBox2",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.9411764705882353,
+							0.9019607843137255,
+							0.9019607843137255,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 607,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1141,
+						"y": 791,
+						"width": 277,
+						"height": 82,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
