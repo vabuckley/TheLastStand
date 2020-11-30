@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## The Last Stand Game
 
 You can use the [editor on GitHub](https://github.com/vabuckley/TheLastStand/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
