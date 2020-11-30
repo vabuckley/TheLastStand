@@ -1251,6 +1251,63 @@
 				}
 			],
 			"sid": 170347427783887
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "WinScreen",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "PlayAgain",
+							"sid": 769552284257879
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 120055513693195,
+							"parameters": {
+								"layout": "ForestChamber"
+							}
+						}
+					],
+					"sid": 393335851950402
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 729786568820764,
+							"parameters": {
+								"variable": "SecondsLeft",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 901037885098587,
+							"parameters": {
+								"layout": "WinScreen"
+							}
+						}
+					],
+					"sid": 163715169021739
+				}
+			],
+			"sid": 913847467732254
 		}
 	],
 	"sid": 829106802608209

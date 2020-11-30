@@ -253,7 +253,10 @@
 			"DialogueBox5",
 			"DialogBox6",
 			"DialogBox7",
-			"DialogueBox6"
+			"DialogueBox6",
+			"WinBackground",
+			"WinText",
+			"PlayAgain"
 		],
 		"subfolders": [
 			{
@@ -278,7 +281,8 @@
 				"items": [
 					"Background",
 					"foliagePack_",
-					"foliagePack_2"
+					"foliagePack_2",
+					"Background2"
 				],
 				"subfolders": [],
 				"name": "Backgrounds"
@@ -405,7 +409,8 @@
 			"ObjectBank",
 			"GlobalLayers",
 			"GameOver",
-			"SettingsPage"
+			"SettingsPage",
+			"WinScreen"
 		],
 		"subfolders": []
 	},
