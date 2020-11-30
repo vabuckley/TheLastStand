@@ -256,7 +256,8 @@
 			"DialogueBox6",
 			"WinBackground",
 			"WinText",
-			"PlayAgain"
+			"PlayAgain",
+			"Sprite8"
 		],
 		"subfolders": [
 			{
