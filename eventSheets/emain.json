@@ -1151,26 +1151,8 @@
 							}
 						},
 						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 454458673944159
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Timer",
-							"sid": 387239663243925,
-							"parameters": {
-								"text": "\"Seconds Remaining:\"&SecondsLeft"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 785385722107206,
-							"parameters": {
-								"variable": "SecondsLeft",
-								"value": "900"
-							}
+							"callFunction": "SaveData_SetDefault",
+							"sid": 652358871209770
 						}
 					],
 					"sid": 972018037262984
@@ -1269,6 +1251,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "SaveData_SetDefault",
+							"sid": 555484067759879
+						},
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",

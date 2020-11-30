@@ -14332,7 +14332,7 @@
 							0.9019607843137255,
 							1
 						],
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
@@ -14371,7 +14371,8 @@
 					"instanceVariables": {
 						"Dialogue": "Do want to boil or drink the water?",
 						"Dialogue2": "Drinking water before it is sanitized can hurt your health! Check your field guide to learn how to safely drink water.",
-						"Dialogue3": "Great! Place this water over the fire to sanitize it before drinking!"
+						"Dialogue3": "Great! Place this water over the fire to sanitize it before drinking!",
+						"ShowText": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -14404,7 +14405,8 @@
 					"instanceVariables": {
 						"Dialogue": "Do want to boil or drink the water?",
 						"Dialogue2": "Drinking water before it is sanitized can hurt your health! Check your field guide to learn how to safely drink water.",
-						"Dialogue3": "Great! Place this water over the fire to sanitize it before drinking!"
+						"Dialogue3": "Great! Place this water over the fire to sanitize it before drinking!",
+						"ShowText": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -14500,7 +14502,7 @@
 							0.9019607843137255,
 							1
 						],
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
@@ -14514,6 +14516,112 @@
 						"y": 791,
 						"width": 277,
 						"height": 82,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text16",
+					"properties": {
+						"text": "Day 1",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 27,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							0.9803921568627451,
+							0.9803921568627451,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 621,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 7,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 582,
+						"y": 202,
+						"width": 106,
+						"height": 50,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text17",
+					"properties": {
+						"text": "Outlast the clock to survive the day...",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 16,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0.984313725490196,
+							0.9764705882352941,
+							0.9764705882352941,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 622,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 6,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 539,
+						"y": 266,
+						"width": 225,
+						"height": 96,
 						"originX": 0,
 						"originY": 0,
 						"color": [

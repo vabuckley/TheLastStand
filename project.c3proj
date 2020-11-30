@@ -257,7 +257,10 @@
 			"WinBackground",
 			"WinText",
 			"PlayAgain",
-			"Sprite8"
+			"Sprite8",
+			"Text15",
+			"Text16",
+			"Text17"
 		],
 		"subfolders": [
 			{

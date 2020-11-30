@@ -21,6 +21,12 @@
 			"type": "string",
 			"desc": "",
 			"sid": 341062582794873
+		},
+		{
+			"name": "ShowText",
+			"type": "number",
+			"desc": "",
+			"sid": 218550753992667
 		}
 	],
 	"behaviorTypes": [],

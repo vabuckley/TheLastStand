@@ -2,24 +2,22 @@
 	"name": "ePlayer",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "PlayerDeath",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 111980662316867
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player Movement",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 814769714664913
-						}
-					],
-					"actions": [],
-					"sid": 825192039327656
-				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -530,9 +528,32 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 186039965032507,
+							"parameters": {
+								"interval-seconds": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "HealthTimerDeplete",
+							"sid": 440434516418181,
+							"parameters": [
+								"80"
+							]
+						}
+					],
+					"sid": 488726501713829
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "compare-value",
 							"objectClass": "Dictionary",
-							"sid": 259943182715674,
+							"sid": 885309476188066,
 							"parameters": {
 								"key": "\"Health\"",
 								"comparison": 3,
@@ -542,7 +563,7 @@
 						{
 							"id": "compare-value",
 							"objectClass": "Dictionary",
-							"sid": 862221913734908,
+							"sid": 884860401976808,
 							"parameters": {
 								"key": "\"Nutrition\"",
 								"comparison": 3,
@@ -552,7 +573,7 @@
 						{
 							"id": "compare-value",
 							"objectClass": "Dictionary",
-							"sid": 379818974547226,
+							"sid": 182375782383823,
 							"parameters": {
 								"key": "\"Hydration\"",
 								"comparison": 3,
@@ -562,47 +583,53 @@
 					],
 					"actions": [
 						{
-							"id": "wait",
+							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 421755068236696,
+							"sid": 849315337833260,
 							"parameters": {
-								"seconds": "1"
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 575609625836642,
-							"parameters": {
-								"layout": "GameOver"
+								"variable": "PlayerDeath",
+								"value": "1"
 							}
 						}
 					],
-					"sid": 856281364115399,
+					"sid": 513835605370112,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 802215270920438,
+									"parameters": {
+										"variable": "PlayerDeath",
+										"comparison": 3,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 417880433643508,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 806125207723349,
+									"parameters": {
+										"layout": "GameOver"
+									}
+								}
+							],
+							"sid": 926377330018765
+						}
+					],
 					"isOrBlock": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 258461837045341,
-							"parameters": {
-								"interval-seconds": "5"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "HealthTimerDeplete",
-							"sid": 811163332738624,
-							"parameters": [
-								"80"
-							]
-						}
-					],
-					"sid": 342033377121918
 				}
 			],
 			"sid": 471889685229618
@@ -764,7 +791,7 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 810240006853772,
+									"sid": 288881397103974,
 									"parameters": {
 										"object-to-create": "GoodMush",
 										"layer": "\"Playable Area\"",
