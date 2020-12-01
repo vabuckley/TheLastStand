@@ -77,10 +77,10 @@
 					}
 				},
 				{
-					"type": "Retry",
+					"type": "TryAgain",
 					"properties": {
 						"type": "button",
-						"text": "Retry?",
+						"text": "Try Again",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -92,40 +92,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 353,
-						"y": 505,
-						"width": 139.42740046346702,
-						"height": 37.475800154489,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
-					"type": "PlayAgain",
-					"properties": {
-						"type": "button",
-						"text": "PLAY AGAIN",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 623,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 368,
-						"y": 259,
-						"width": 117,
-						"height": 62,
+						"x": 394,
+						"y": 257,
+						"width": 109,
+						"height": 46,
 						"originX": 0,
 						"originY": 0,
 						"color": [

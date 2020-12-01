@@ -31,13 +31,13 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3788234,
+						"imageSpriteId": 9900305,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 354664460967930,
-				"name": "GoodWaterFull",
+				"sid": 396774466559845,
+				"name": "EmptyBucket",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -54,13 +54,13 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9900305,
+						"imageSpriteId": 3788234,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 396774466559845,
-				"name": "EmptyBucket",
+				"sid": 354664460967930,
+				"name": "GoodWaterFull",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

@@ -149,25 +149,19 @@
 							}
 						},
 						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 584261892968102,
+							"id": "set-visible",
+							"objectClass": "DRINK",
+							"sid": 652237977027565,
 							"parameters": {
-								"object-to-create": "DRINK",
-								"layer": "0",
-								"x": "1199",
-								"y": "748"
+								"visibility": "visible"
 							}
 						},
 						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 540869640307383,
+							"id": "set-visible",
+							"objectClass": "BOIL",
+							"sid": 295621030890696,
 							"parameters": {
-								"object-to-create": "BOIL",
-								"layer": "0",
-								"x": "1300",
-								"y": "748"
+								"visibility": "visible"
 							}
 						}
 					],
@@ -268,14 +262,20 @@
 					],
 					"actions": [
 						{
-							"id": "destroy",
+							"id": "set-visible",
 							"objectClass": "DRINK",
-							"sid": 336039740970425
+							"sid": 525319602125633,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						},
 						{
-							"id": "destroy",
+							"id": "set-visible",
 							"objectClass": "BOIL",
-							"sid": 299344069455521
+							"sid": 983583534666503,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 936087319915692

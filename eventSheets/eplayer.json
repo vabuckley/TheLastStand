@@ -624,34 +624,14 @@
 									"parameters": {
 										"layout": "GameOver"
 									}
+								},
+								{
+									"id": "reset-global-variables",
+									"objectClass": "System",
+									"sid": 395673769000804
 								}
 							],
 							"sid": 754125116745665
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-clicked",
-									"objectClass": "Retry",
-									"sid": 898481848311017
-								}
-							],
-							"actions": [
-								{
-									"callFunction": "SaveData_SetDefault",
-									"sid": 801654321197962
-								},
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 575519023092665,
-									"parameters": {
-										"layout": "ForestChamber"
-									}
-								}
-							],
-							"sid": 584732533483956
 						}
 					],
 					"sid": 264763893988691
@@ -1397,6 +1377,27 @@
 				}
 			],
 			"sid": 414608574006187
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "TryAgain",
+					"sid": 244441928877907
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 331277158985550,
+					"parameters": {
+						"layout": "ForestChamber"
+					}
+				}
+			],
+			"sid": 630492839011522
 		}
 	],
 	"sid": 247304593041462
