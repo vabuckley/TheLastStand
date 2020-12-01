@@ -508,21 +508,21 @@
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 855562548778833
+							"sid": 896711991370144
 						}
 					],
 					"actions": [
 						{
 							"id": "set-position",
 							"objectClass": "Player",
-							"sid": 282335243228790,
+							"sid": 346243246698699,
 							"parameters": {
 								"x": "Player_Base.X",
 								"y": "Player_Base.Y"
 							}
 						}
 					],
-					"sid": 887238929412813
+					"sid": 884925448854453
 				},
 				{
 					"eventType": "block",
@@ -530,7 +530,7 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 186039965032507,
+							"sid": 989994496471464,
 							"parameters": {
 								"interval-seconds": "5"
 							}
@@ -539,97 +539,122 @@
 					"actions": [
 						{
 							"callFunction": "HealthTimerDeplete",
-							"sid": 440434516418181,
+							"sid": 162253243791916,
 							"parameters": [
 								"80"
 							]
 						}
 					],
-					"sid": 488726501713829
+					"sid": 949432884201403
 				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-value",
-							"objectClass": "Dictionary",
-							"sid": 885309476188066,
-							"parameters": {
-								"key": "\"Health\"",
-								"comparison": 3,
-								"value": "0"
-							}
-						},
-						{
-							"id": "compare-value",
-							"objectClass": "Dictionary",
-							"sid": 884860401976808,
-							"parameters": {
-								"key": "\"Nutrition\"",
-								"comparison": 3,
-								"value": "0"
-							}
-						},
-						{
-							"id": "compare-value",
-							"objectClass": "Dictionary",
-							"sid": 182375782383823,
-							"parameters": {
-								"key": "\"Hydration\"",
-								"comparison": 3,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 849315337833260,
-							"parameters": {
-								"variable": "PlayerDeath",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 513835605370112,
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Death",
+					"description": "",
+					"isActiveOnStart": true,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "Dictionary",
+									"sid": 439855232246311,
+									"parameters": {
+										"key": "\"Health\"",
+										"comparison": 3,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-value",
+									"objectClass": "Dictionary",
+									"sid": 309285351318450,
+									"parameters": {
+										"key": "\"Nutrition\"",
+										"comparison": 3,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-value",
+									"objectClass": "Dictionary",
+									"sid": 431773599781376,
+									"parameters": {
+										"key": "\"Hydration\"",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 213854263767555,
+									"parameters": {
+										"variable": "PlayerDeath",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 929847038546300,
+							"isOrBlock": true
+						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 802215270920438,
+									"sid": 591959485989092,
 									"parameters": {
 										"variable": "PlayerDeath",
-										"comparison": 3,
+										"comparison": 5,
 										"value": "1"
 									}
 								}
 							],
 							"actions": [
 								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 417880433643508,
-									"parameters": {
-										"seconds": "1"
-									}
-								},
-								{
 									"id": "go-to-layout",
 									"objectClass": "System",
-									"sid": 806125207723349,
+									"sid": 646439615355855,
 									"parameters": {
 										"layout": "GameOver"
 									}
 								}
 							],
-							"sid": 926377330018765
+							"sid": 754125116745665
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Retry",
+									"sid": 898481848311017
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "SaveData_SetDefault",
+									"sid": 801654321197962
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 575519023092665,
+									"parameters": {
+										"layout": "ForestChamber"
+									}
+								}
+							],
+							"sid": 584732533483956
 						}
 					],
-					"isOrBlock": true
+					"sid": 264763893988691
 				}
 			],
 			"sid": 471889685229618
@@ -697,6 +722,25 @@
 							"parameters": [
 								"PositiveCollectibles.UID"
 							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 822422464024847,
+							"parameters": {
+								"seconds": "10"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 102921609359846,
+							"parameters": {
+								"object-to-create": "GoodMush",
+								"layer": "\"Playable Area\"",
+								"x": "168",
+								"y": "782"
+							}
 						}
 					],
 					"sid": 119826063695683
@@ -779,25 +823,6 @@
 									"id": "destroy",
 									"objectClass": "PositiveCollectibles",
 									"sid": 913798404510929
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 954985059070092,
-									"parameters": {
-										"seconds": "10"
-									}
-								},
-								{
-									"id": "create-object",
-									"objectClass": "System",
-									"sid": 288881397103974,
-									"parameters": {
-										"object-to-create": "GoodMush",
-										"layer": "\"Playable Area\"",
-										"x": "168",
-										"y": "782"
-									}
 								}
 							],
 							"sid": 496308762032687
@@ -1018,112 +1043,6 @@
 									],
 									"actions": [],
 									"sid": 234157275777003
-								}
-							]
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player",
-							"sid": 773327122012761,
-							"parameters": {
-								"object": "BadWater"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "pin-to-object-imagepoint",
-							"objectClass": "BadWater",
-							"sid": 476839047474020,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "Player",
-								"image-point": "1",
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						}
-					],
-					"sid": 595586301446679,
-					"disabled": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "BadWater",
-									"sid": 325427598550843,
-									"parameters": {
-										"object": "Fire"
-									}
-								}
-							],
-							"actions": [
-								{
-									"callFunction": "PlayerHurtHealth",
-									"sid": 157901114536449,
-									"parameters": [
-										"NegativeCollectibles.HealthDamage"
-									]
-								},
-								{
-									"id": "unpin",
-									"objectClass": "BadWater",
-									"sid": 987680760058542,
-									"behaviorType": "Pin"
-								},
-								{
-									"id": "destroy",
-									"objectClass": "BadWater",
-									"sid": 433123228283600
-								}
-							],
-							"sid": 428684735858921,
-							"disabled": true,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-value",
-											"objectClass": "Dictionary",
-											"sid": 515317302288879,
-											"parameters": {
-												"key": "\"Health\"",
-												"comparison": 2,
-												"value": "Dictionary.Get(\"MaxHealth\")"
-											}
-										}
-									],
-									"actions": [],
-									"sid": 647194485819970,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-value",
-											"objectClass": "Dictionary",
-											"sid": 459656072730857,
-											"parameters": {
-												"key": "\"Hydration\"",
-												"comparison": 2,
-												"value": "Dictionary.Get(\"MaxHydration\")"
-											}
-										}
-									],
-									"actions": [],
-									"sid": 969655123058360,
-									"disabled": true
 								}
 							]
 						}
